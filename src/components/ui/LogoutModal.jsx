@@ -26,7 +26,10 @@ export default function LogoutModal() {
 
         <p>My Account</p>
       </div>
-      <div className="flex gap-7 px-4 py-3 items-center justify-start mt-2 font-normal text-xl font-Rubik w-[95%] rounded-lg hover:bg-gray-100 ">
+      <div
+        onClick={() => navigate("/settings")}
+        className="flex gap-7 px-4 py-3 items-center justify-start mt-2 font-normal text-xl font-Rubik w-[95%] rounded-lg hover:bg-gray-100 "
+      >
         <div className="logoutCircles">
           <img src={settingsIcon} alt="settingsIcon" />
         </div>

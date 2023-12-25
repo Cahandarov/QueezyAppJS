@@ -12,7 +12,7 @@ export default function SideMenu() {
   return (
     <div
       className={`${showSideBar ? "mobileSideBar" : ""} 
-        hidden lg:block w-[18.33%] max-h-max min-h-[1190px] py-12 px-2 xl:px-6 bg-primaryColor`}
+        hidden lg:block sm:w-[50%] md:w-[30%] lg:w-[18.33%] h-screen sticky top-0 overflow-y-auto py-12 px-2 xl:px-6 bg-primaryColor`}
     >
       <img src={oval} alt="oval" className="absolute top-0 left-0" />
       <img src={oval2} alt="oval" className="absolute top-0 left-0" />

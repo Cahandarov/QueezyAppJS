@@ -37,14 +37,14 @@ export default function Podium({ leaderBoardData }) {
         </p>
         <div
           id="pointPlace2"
-          className="w-[3.2rem] h-[1.50rem] sm:w-[4.79rem] sm:h-[2.06rem] rounded-[0.4rem] mb-4 sm:mb-6 border-none bg-secondColor flex items-center justify-center font-normal text-xs sm:text-sm font-Rubik text-textColorWhite"
+          className="w-[3.2rem] h-[1.50rem] sm:w-[4.1rem] sm:h-[1.9rem] rounded-[0.4rem] mb-4 sm:mb-6 border-none bg-secondColor flex items-center justify-center font-normal text-xs sm:text-sm font-Rubik text-textColorWhite"
         >
           {String(leaderBoardData[1].pointsTotal)} <span> QP</span>
         </div>
         <img
           src={Place2}
           alt="Place2"
-          className="w-[58px] h-[85px] sm:w-[76px] sm:h-[102px]"
+          className="w-[58px] h-[85px] sm:w-[76px] sm:h-[110px]"
         />
       </div>
 
@@ -75,7 +75,7 @@ export default function Podium({ leaderBoardData }) {
         </p>
         <div
           id="pointPlace2"
-          className="w-[3.2rem] h-[1.50rem] sm:w-[4.79rem] sm:h-[2.06rem] rounded-[0.4rem] mb-4 sm:mb-6 border-none bg-secondColor flex items-center justify-center font-normal text-xs sm:text-sm font-Rubik text-textColorWhite"
+          className="w-[3.2rem] h-[1.50rem] sm:w-[4.1rem] sm:h-[1.9rem] rounded-[0.4rem] mb-4 sm:mb-6 border-none bg-secondColor flex items-center justify-center font-normal text-xs sm:text-sm font-Rubik text-textColorWhite"
         >
           {String(leaderBoardData[0].pointsTotal)} <span> QP</span>
         </div>
@@ -112,14 +112,14 @@ export default function Podium({ leaderBoardData }) {
         </p>
         <div
           id="pointPlace3"
-          className="w-[3.2rem] h-[1.50rem] sm:w-[4.79rem] sm:h-[2.06rem] rounded-[0.4rem] mb-4 sm:mb-6 border-none bg-secondColor flex items-center justify-center font-normal text-xs sm:text-sm font-Rubik text-textColorWhite"
+          className="w-[3.2rem] h-[1.50rem] sm:w-[4.1rem] sm:h-[1.9rem] rounded-[0.4rem] mb-4 sm:mb-6 border-none bg-secondColor flex items-center justify-center font-normal text-xs sm:text-sm font-Rubik text-textColorWhite"
         >
           {String(leaderBoardData[2].pointsTotal)} <span> QP</span>
         </div>
         <img
           src={Place3}
           alt="Place3"
-          className="w-[58px] h-[85px] sm:w-[76px] sm:h-[102px] translate-x-[2px]"
+          className="w-[58px] h-[85px] sm:w-[76px] sm:h-[90px] translate-x-[2px]"
         />
       </div>
     </div>

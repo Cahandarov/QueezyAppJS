@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import { MenuData } from "./MenuData";
-import ErrorPage from "../ErrorPage/ErrorPage";
 import Login from "../LogIn/Login";
 import SignUp from "../LogIn/SignUp/SignUp";
 import ResetPassword from "../LogIn/Reset/ResetPassword";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 export default function RigthComponent() {
   return (
