@@ -3,7 +3,7 @@ import axios from "axios";
 // import type { PayloadAction } from '@reduxjs/toolkit'
 
 const initialState = {
-  isLogined: false,
+  isLogined: true,
   isRegistered: true,
   users: null,
   status: "idle",

@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 // import { composeWithDevTools } from "redux-devtools-extension";
+// import { getDataThunk } from '../LogIn/userDataSlice';
 import userReducer from "../LogIn/userSlice";
 import userDataReducer from "../LogIn/userSlice";
 import SignUpReducer from "../LogIn/userSlice";
@@ -7,7 +8,9 @@ import PasswordStagesReducer from "../LogIn/userSlice";
 import ForgotPasswordReducer from "../LogIn/userSlice";
 import newUserReducer from "../LogIn/userSlice";
 import mobileReducer from "../Mobile/mobileSlice";
-// import { getDataThunk } from '../LogIn/userDataSlice';
+import createQuizReducer from "../QuizLibary/createQuizSlice";
+import quizDataReducer from "../QuizLibary/quizzesSlice";
+import questionTypeReducer from "../QuizLibary/QuizSettings/questionTypesSlice";
 
 export const store = configureStore({
   reducer: {
@@ -18,6 +21,9 @@ export const store = configureStore({
     ResetPassword: PasswordStagesReducer,
     AddUser: newUserReducer,
     mobile: mobileReducer,
+    addQuiz: createQuizReducer,
+    quizzes: quizDataReducer,
+    questionType: questionTypeReducer,
   },
 
   // middleware: (getDefaultMiddleware) =>

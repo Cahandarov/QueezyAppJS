@@ -10,18 +10,31 @@ const theme = createTheme({
     secondary: {
       main: "#E0C2FF",
       light: "#F5EBFF",
-
       contrastText: "#47008F",
     },
   },
 });
 
-export default function PaginationCompanent() {
+const PaginationComponent = ({
+  totalItems,
+  itemsPerPage,
+  currentPage,
+  onPageChange,
+}) => {
+  // Calculate the total number of pages
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const handlePageChange = (event, page) => {
+    onPageChange(page);
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Stack spacing={2}>
         <Pagination
-          count={2}
+          count={totalPages}
+          page={currentPage}
+          onChange={handlePageChange}
           variant="outlined"
           shape="rounded"
           color="primary"
@@ -29,4 +42,6 @@ export default function PaginationCompanent() {
       </Stack>
     </ThemeProvider>
   );
-}
+};
+
+export default PaginationComponent;

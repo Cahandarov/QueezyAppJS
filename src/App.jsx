@@ -5,9 +5,17 @@ import Login from "./components/LogIn/Login";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { setShowSidebar } from "./components/Mobile/mobileSlice";
+import { getQuizzesThunk } from "./components/QuizLibary/quizzesSlice";
+import { useEffect } from "react";
 
 function App() {
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getQuizzesThunk());
+  }, [dispatch]);
+  const getQuizzesStatus = useSelector(
+    (state) => state.quizzes.GetQuizzes_status
+  );
   const showSideBar = useSelector((state) => state.mobile.showSidebar);
   const isLogined = useSelector((state) => state.login.isLogined);
   const isRegistered = useSelector((state) => state.login.isRegistered);
@@ -15,6 +23,9 @@ function App() {
     if (showSideBar) {
       dispatch(setShowSidebar(false));
     }
+  }
+  if (getQuizzesStatus === "loading") {
+    return <p>Loading...</p>;
   }
   return (
     <Router>

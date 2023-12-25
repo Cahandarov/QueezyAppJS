@@ -4,6 +4,7 @@ import LogoutModal from "./LogoutModal";
 import Modal from "./Modal";
 import { useState } from "react";
 import "primeicons/primeicons.css";
+import AvatarLetter from "./AvatarLetter";
 
 export default function HeaderRigth() {
   const [showModal, setShowModal] = useState(false);
@@ -31,8 +32,10 @@ export default function HeaderRigth() {
       </button>
       <div
         id="user_avatar_box"
-        className="w-8 h-8 md:w-14 md:h-14 rounded-full bg-secondColor"
-      ></div>
+        className="w-8 h-8 md:w-14 md:h-14 flex justify-center items-center rounded-full bg-secondColor"
+      >
+        <AvatarLetter />
+      </div>
       <div
         id="header_rigth_rigth"
         className="flex flex-col justify-center item-start"

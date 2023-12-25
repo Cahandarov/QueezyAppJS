@@ -39,7 +39,8 @@ export default function Podium({ leaderBoardData }) {
           id="pointPlace2"
           className="w-[3.2rem] h-[1.50rem] sm:w-[4.1rem] sm:h-[1.9rem] rounded-[0.4rem] mb-4 sm:mb-6 border-none bg-secondColor flex items-center justify-center font-normal text-xs sm:text-sm font-Rubik text-textColorWhite"
         >
-          {String(leaderBoardData[1].pointsTotal)} <span> QP</span>
+          <span>{String(leaderBoardData[1].pointsTotal)} </span>
+          <span> QP</span>
         </div>
         <img
           src={Place2}
@@ -77,7 +78,8 @@ export default function Podium({ leaderBoardData }) {
           id="pointPlace2"
           className="w-[3.2rem] h-[1.50rem] sm:w-[4.1rem] sm:h-[1.9rem] rounded-[0.4rem] mb-4 sm:mb-6 border-none bg-secondColor flex items-center justify-center font-normal text-xs sm:text-sm font-Rubik text-textColorWhite"
         >
-          {String(leaderBoardData[0].pointsTotal)} <span> QP</span>
+          <span>{String(leaderBoardData[0].pointsTotal)} </span>{" "}
+          <span> QP</span>
         </div>
         <img
           src={Place1}
@@ -114,7 +116,8 @@ export default function Podium({ leaderBoardData }) {
           id="pointPlace3"
           className="w-[3.2rem] h-[1.50rem] sm:w-[4.1rem] sm:h-[1.9rem] rounded-[0.4rem] mb-4 sm:mb-6 border-none bg-secondColor flex items-center justify-center font-normal text-xs sm:text-sm font-Rubik text-textColorWhite"
         >
-          {String(leaderBoardData[2].pointsTotal)} <span> QP</span>
+          <span>{String(leaderBoardData[2].pointsTotal)} </span>
+          <span> QP</span>
         </div>
         <img
           src={Place3}

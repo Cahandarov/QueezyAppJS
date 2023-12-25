@@ -1,25 +1,50 @@
 import { PieChart, pieArcLabelClasses } from "@mui/x-charts/PieChart";
 
-const data = [
-  { label: "Music", value: 40, color: "#6A5AE0" },
-  { label: "Math", value: 30, color: "#FF8FA2" },
-  { label: "Sport", value: 30, color: "#C4D0FB" },
-];
+export default function PieCharMobile({ totalLength, sortedData }) {
+  const sizing = {
+    margin: { right: 5 },
+    width: 180,
+    height: 180,
+    legend: { hidden: true },
+  };
+  const value1 =
+    (sortedData && sortedData[0] && sortedData[0][1].length / totalLength) *
+    100;
+  const value2 =
+    (sortedData && sortedData[1] && sortedData[1][1].length / totalLength) *
+    100;
+  const value3 =
+    (sortedData && sortedData[2] && sortedData[2][1].length / totalLength) *
+    100;
+  const data = [
+    {
+      label: `${sortedData && sortedData[0] && sortedData[0][0]}`,
+      value: value1,
+      color: "#6A5AE0",
+    },
+    {
+      label: `${sortedData && sortedData[1] && sortedData[1][0]}`,
+      value: value2,
+      color: "#FF8FA2",
+    },
+    {
+      label: `${sortedData && sortedData[2] && sortedData[2][0]}`,
+      value: value3,
+      color: "#C4D0FB",
+    },
+    {
+      label: "Other",
+      value: 100 - (value1 + value2 + value3),
+      color: "#C4B0FB",
+    },
+  ];
 
-const sizing = {
-  margin: { right: 5 },
-  width: 180,
-  height: 180,
-  legend: { hidden: true },
-};
-const TOTAL = data.map((item) => item.value).reduce((a, b) => a + b, 0);
+  const TOTAL = data.map((item) => item.value).reduce((a, b) => a + b, 0);
 
-const getArcLabel = (params) => {
-  const percent = params.value / TOTAL;
-  return `${(percent * 100).toFixed(0)}%`;
-};
-
-export default function PieCharMobile() {
+  const getArcLabel = (params) => {
+    const percent = params.value / TOTAL;
+    return `${(percent * 100).toFixed(0)}%`;
+  };
   return (
     <div className="w-full flex flex-col items-center sm:hidden">
       <PieChart
@@ -46,12 +71,12 @@ export default function PieCharMobile() {
               id="data1_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              {data[0].label}
+              {sortedData && sortedData[0] && sortedData[0][0]}
             </p>
           </div>
 
           <p className="font-medium text-sm font-Rubik text-[#6A5AE0]">
-            {data[0].value}%
+            {data[0].value.toFixed(0)}%
           </p>
         </div>
         <div className="flex w-full mx-auto justify-between items-center">
@@ -61,12 +86,12 @@ export default function PieCharMobile() {
               id="data2_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              {data[0].label}
+              {sortedData && sortedData[1] && sortedData[1][0]}
             </p>
           </div>
 
           <p className="font-medium text-sm font-Rubik text-[#FF8FA2]">
-            {data[1].value}%
+            {data[1].value.toFixed(0)}%
           </p>
         </div>
         <div className="flex mx-auto w-full justify-between items-center">
@@ -76,12 +101,28 @@ export default function PieCharMobile() {
               id="data3_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              {data[0].label}
+              {sortedData && sortedData[2] && sortedData[2][0]}
             </p>
           </div>
 
           <p className="font-medium text-sm font-Rubik text-[#C4D0FB]">
-            {data[2].value}%
+            {data[2].value.toFixed(0)}%
+          </p>
+        </div>
+
+        <div className="flex mx-auto w-full justify-between items-center">
+          <div className="flex gap-3 items-center justify-start">
+            <div className="w-3 h-3 rounded-full bg-[#C4B0FB]"></div>
+            <p
+              id="data4_in_pieChart"
+              className="font-medium text-base font-Rubik text-[#49465F]"
+            >
+              Other
+            </p>
+          </div>
+
+          <p className="font-medium text-sm font-Rubik text-[#C4D0FB]">
+            {data[3].value.toFixed(0)}%
           </p>
         </div>
       </div>

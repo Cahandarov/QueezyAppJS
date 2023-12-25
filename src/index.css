@@ -129,3 +129,6 @@ nav .active .navButtons .btn_svg > path {
   left: 0;
   width: 100%;
 }
+#inputFile {
+  display: none;
+}

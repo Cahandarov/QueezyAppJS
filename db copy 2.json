@@ -1,0 +1,3375 @@
+{
+  "quizData": {
+    "Geography": [
+      {
+        "quizId": 1,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 2,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ],
+    "Biology": [
+      {
+        "quizId": 3,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 4,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 5,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ],
+    "Math": [
+      {
+        "quizId": 6,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 7,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 8,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ],
+    "Music": [
+      {
+        "quizId": 9,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 10,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 11,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ],
+    "Sport": [
+      {
+        "quizId": 12,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 13,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ],
+    "Sience": [
+      {
+        "quizId": 14,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 15,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ],
+    "English": [
+      {
+        "quizId": 16,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 17,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ],
+    "Physic": [
+      {
+        "quizId": 18,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 19,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          } 
+        ]
+      },
+      {
+        "quizId": 20,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 21,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ],
+    "Travel": [
+      {
+        "quizId": 22,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 23,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          } 
+        ]
+      },
+      {
+        "quizId": 24,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.12.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 25,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.11.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 26,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.10.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ],
+    "Chemistry": [
+      {
+        "quizId": 27,
+        "difficulty": "easy",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 28,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          } 
+        ]
+      },
+      {
+        "quizId": 29,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 30,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 31,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      },
+      {
+        "quizId": 32,
+        "difficulty": "medium",
+        "title": "World Capitals Quiz",
+        "description": "Test your knowledge of world capitals.",
+        "coverImage": "world_capitals_quiz.jpg",
+        "createdDate":"01.01.2023 10:55:58",
+        "timesPlayed": 1000,
+        "percentageCorrect": 75,
+        "creator": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "avatar": "john_avatar.jpg"
+        },
+        "questions": [
+          {
+            "id": 1,
+            "type": "Multiple",
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 2,
+            "type": "True and False",
+            "question": "The capital of France is Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": "False",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 3,
+            "type": "Type answer",
+            "question": "What is the capital of France?",
+            "correctAnswer": "Paris",
+            "explanation": "Paris is the capital of France.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 4,
+            "type": "Voice note",
+            "question": "Write the sounding fullname correctly.",
+            "noteFile": "audio.mp3",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 5,
+            "type": "Voice answer",
+            "question": "How to pronounce Wojciech Szczesny?",
+            "correctAnswer": "Wojciech Szczesny",
+            "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+            "answerFile": "audio.mp3",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 6,
+            "type": "Checkbox",
+            "question": "Who are three players who share the record for most Premier League red cards (8)?",
+            "options": [
+              "Muhamed Salah",
+              "Sadio Mane",
+              "Aubameyang",
+              "Marcus Rashford"
+            ],
+            "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+            "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+            "answerTime": 15,
+            "score": 10,
+            "image": "question1.jpg"
+          },
+          {
+            "id": 7,
+            "type": "Poll",
+            "question": "What is the best club in England?",
+            "options": [
+              { "option": "Manchester City", "answeredTime": 40 },
+              { "option": "Manchester United", "answeredTime": 15 },
+              { "option": "Liverpool", "answeredTime": 25 },
+              { "option": "Chelsea", "answeredTime": 20 }
+            ],
+            "answerTime": 15,
+            "image": "question1.jpg"
+          }
+          
+        ]
+      }
+    ]
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "quizData": ["Geography":[
+    {
+      "quizId": 1,
+      "difficulty": "easy",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "world_capitals_quiz.jpg",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    }
+  ]
+    
+  ]
+}

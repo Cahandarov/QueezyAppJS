@@ -13,10 +13,19 @@ import { setRegisteredStatus } from "./userSlice";
 import { useFormik } from "formik";
 import { setForgotPasswordStatus } from "./userSlice";
 import { useNavigate } from "react-router-dom";
+import { getDataThunk } from "./userSlice";
+// import { useEffect } from "react";
 
 export default function LoginMain() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  function autherizeLogin() {
+    dispatch(getDataThunk());
+  }
+  // useEffect(() => {
+  //   autherizeLogin();
+  // }, []);
 
   const userData = useSelector((state) => state.userData.users);
 
@@ -182,6 +191,7 @@ export default function LoginMain() {
         <input
           onClick={(e) => {
             e.preventDefault();
+            autherizeLogin();
             checkUserData(formik.values);
           }}
           type="submit"
