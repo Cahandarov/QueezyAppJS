@@ -8,27 +8,30 @@ export default function PieCharMobile({ totalLength, sortedData }) {
     legend: { hidden: true },
   };
   const value1 =
-    (sortedData && sortedData[0] && sortedData[0][1].length / totalLength) *
-    100;
+    (sortedData &&
+      sortedData[0] &&
+      sortedData[0].quizzes.length / totalLength) * 100;
   const value2 =
-    (sortedData && sortedData[1] && sortedData[1][1].length / totalLength) *
-    100;
+    (sortedData &&
+      sortedData[1] &&
+      sortedData[1].quizzes.length / totalLength) * 100;
   const value3 =
-    (sortedData && sortedData[2] && sortedData[2][1].length / totalLength) *
-    100;
+    (sortedData &&
+      sortedData[2] &&
+      sortedData[2].quizzes.length / totalLength) * 100;
   const data = [
     {
-      label: `${sortedData && sortedData[0] && sortedData[0][0]}`,
+      label: `${sortedData && sortedData[0] && sortedData[0].category}`,
       value: value1,
       color: "#6A5AE0",
     },
     {
-      label: `${sortedData && sortedData[1] && sortedData[1][0]}`,
+      label: `${sortedData && sortedData[1] && sortedData[1].category}`,
       value: value2,
       color: "#FF8FA2",
     },
     {
-      label: `${sortedData && sortedData[2] && sortedData[2][0]}`,
+      label: `${sortedData && sortedData[2] && sortedData[2].category}`,
       value: value3,
       color: "#C4D0FB",
     },
@@ -63,7 +66,7 @@ export default function PieCharMobile({ totalLength, sortedData }) {
         }}
         {...sizing}
       />
-      <div className="flex flex-col gap-4 mx-auto mt-8 w-full">
+      <div className="flex flex-col gap-3 mx-auto mt-2 w-full">
         <div className="flex w-full mx-auto justify-between items-center">
           <div className="flex gap-3 items-center justify-start">
             <div className="w-3 h-3 rounded-full bg-[#6A5AE0]"></div>
@@ -71,7 +74,7 @@ export default function PieCharMobile({ totalLength, sortedData }) {
               id="data1_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              {sortedData && sortedData[0] && sortedData[0][0]}
+              {sortedData && sortedData[0] && sortedData[0].category}
             </p>
           </div>
 
@@ -86,7 +89,7 @@ export default function PieCharMobile({ totalLength, sortedData }) {
               id="data2_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              {sortedData && sortedData[1] && sortedData[1][0]}
+              {sortedData && sortedData[1] && sortedData[1].category}
             </p>
           </div>
 
@@ -101,7 +104,7 @@ export default function PieCharMobile({ totalLength, sortedData }) {
               id="data3_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              {sortedData && sortedData[2] && sortedData[2][0]}
+              {sortedData && sortedData[2] && sortedData[2].category}
             </p>
           </div>
 

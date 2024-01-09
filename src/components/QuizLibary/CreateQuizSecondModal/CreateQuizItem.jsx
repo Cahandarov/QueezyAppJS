@@ -1,4 +1,8 @@
-export default function CreateQuizItem({ cover, category, quizNumber }) {
+export default function CreateQuizItem({
+  cover,
+  category,
+  QuizzesInThisCategory,
+}) {
   return (
     <div className="w-[47%] h-[9,25rem] p-6 flex flex-col gap-2 items-center justify-center rounded-[1.25rem] bg-[#EFEEFC] border-none">
       <div className="w-12 h-12 rounded-2xl bg-white flex justify-center items-center">
@@ -8,7 +12,7 @@ export default function CreateQuizItem({ cover, category, quizNumber }) {
         {category}
       </p>
       <p className="font-normal text-sm font-Rubik text-[#6A5AE0] opacity-70">
-        <span>{quizNumber} </span>
+        <span>{QuizzesInThisCategory} </span>
         <span>Quizzes</span>
       </p>
     </div>

@@ -2,11 +2,11 @@
   "quizData": [
     {
       "quizId": 1,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Geography",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "23.12.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -102,11 +102,11 @@
     },
     {
       "quizId": 2,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Geography",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -202,11 +202,11 @@
     },
     {
       "quizId": 3,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Biology",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -302,11 +302,11 @@
     },
     {
       "quizId": 4,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Biology",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -402,11 +402,11 @@
     },
     {
       "quizId": 5,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Biology",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -502,11 +502,11 @@
     },
     {
       "quizId": 6,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Math",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -602,11 +602,11 @@
     },
     {
       "quizId": 7,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Math",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -702,11 +702,11 @@
     },
     {
       "quizId": 8,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Math",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -802,11 +802,11 @@
     },
     {
       "quizId": 9,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Music",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -902,11 +902,11 @@
     },
     {
       "quizId": 10,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Music",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -1002,11 +1002,11 @@
     },
     {
       "quizId": 11,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Music",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {
@@ -1102,11 +1102,2011 @@
     },
     {
       "quizId": 12,
-      "category": "Geography",
-      "difficulty": "easy",
+      "categoryName": "Sport",
       "title": "World Capitals Quiz",
       "description": "Test your knowledge of world capitals.",
-      "coverImage": "world_capitals_quiz.jpg",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 13,
+      "categoryName": "Sport",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 14,
+      "categoryName": "Sience",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 15,
+      "categoryName": "Sience",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 16,
+      "categoryName": "English",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 17,
+      "categoryName": "English",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 18,
+      "categoryName": "Physic",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 19,
+      "categoryName": "Physic",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 20,
+      "categoryName": "Physic",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 21,
+      "categoryName": "Physic",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 22,
+      "categoryName": "Travel",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 23,
+      "categoryName": "Travel",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 24,
+      "categoryName": "Travel",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.12.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 25,
+      "categoryName": "Travel",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.11.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 26,
+      "categoryName": "Travel",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.10.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 27,
+      "categoryName": "Chemistry",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 28,
+      "categoryName": "Chemistry",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 29,
+      "categoryName": "Chemistry",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 30,
+      "categoryName": "Chemistry",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 31,
+      "categoryName": "Chemistry",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
+      "timesPlayed": 1000,
+      "percentageCorrect": 75,
+      "creator": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "avatar": "john_avatar.jpg"
+      },
+      "questions": [
+        {
+          "id": 1,
+          "type": "Multiple",
+          "question": "What is the capital of France?",
+          "options": ["Paris", "London", "Berlin", "Madrid"],
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 2,
+          "type": "True and False",
+          "question": "The capital of France is Berlin.",
+          "options": ["True", "False"],
+          "correctAnswer": "False",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 3,
+          "type": "Type answer",
+          "question": "What is the capital of France?",
+          "correctAnswer": "Paris",
+          "explanation": "Paris is the capital of France.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 4,
+          "type": "Voice note",
+          "question": "Write the sounding fullname correctly.",
+          "noteFile": "audio.mp3",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 5,
+          "type": "Voice answer",
+          "question": "How to pronounce Wojciech Szczesny?",
+          "correctAnswer": "Wojciech Szczesny",
+          "explanation": "Pronunciation English: /ˈvɔɪtʃɛx/ VOY-chekh Polish: [ˈvɔjtɕɛx] ( listen)",
+          "answerFile": "audio.mp3",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 6,
+          "type": "Checkbox",
+          "question": "Who are three players who share the record for most Premier League red cards (8)?",
+          "options": [
+            "Muhamed Salah",
+            "Sadio Mane",
+            "Aubameyang",
+            "Marcus Rashford"
+          ],
+          "correctAnswer": ["Muhamed Salah", "Sadio Mane", "Aubameyang"],
+          "explanation": "Muhamed Salah, Sadio Mane, and Aubameyang share this record.",
+          "answerTime": 15,
+          "score": 10,
+          "image": "question1.jpg"
+        },
+        {
+          "id": 7,
+          "type": "Poll",
+          "question": "What is the best club in England?",
+          "options": [
+            { "option": "Manchester City", "answeredTime": 40 },
+            { "option": "Manchester United", "answeredTime": 15 },
+            { "option": "Liverpool", "answeredTime": 25 },
+            { "option": "Chelsea", "answeredTime": 20 }
+          ],
+          "answerTime": 15,
+          "image": "question1.jpg"
+        }
+      ]
+    },
+    {
+      "quizId": 32,
+      "categoryName": "Chemistry",
+      "title": "World Capitals Quiz",
+      "description": "Test your knowledge of world capitals.",
+      "coverImage": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb24iIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yNTk2Xzg5OTkwKSI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik00MCAyMS4zMzM0SDQwLjAyNjciIHN0cm9rZT0iIzZBNUFFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNDUuMzMzMyAxMC42NjY2SDE4LjY2NjdDMTQuMjQ4NCAxMC42NjY2IDEwLjY2NjcgMTQuMjQ4MyAxMC42NjY3IDE4LjY2NjZWNDUuMzMzM0MxMC42NjY3IDQ5Ljc1MTYgMTQuMjQ4NCA1My4zMzMzIDE4LjY2NjcgNTMuMzMzM0g0NS4zMzMzQzQ5Ljc1MTYgNTMuMzMzMyA1My4zMzMzIDQ5Ljc1MTYgNTMuMzMzMyA0NS4zMzMzVjE4LjY2NjZDNTMuMzMzMyAxNC4yNDgzIDQ5Ljc1MTYgMTAuNjY2NiA0NS4zMzMzIDEwLjY2NjZaIiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZD0iTTEwLjY2NjcgNDBMMjEuMzMzMyAyOS4zMzMzQzIyLjU0OTUgMjguMTYzMSAyMy45MjkgMjcuNTQ3IDI1LjMzMzMgMjcuNTQ3QzI2LjczNzYgMjcuNTQ3IDI4LjExNzIgMjguMTYzMSAyOS4zMzMzIDI5LjMzMzNMNDIuNjY2NyA0Mi42NjY3IiBzdHJva2U9IiM2QTVBRTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNCIgZD0iTTM3LjMzMzMgMzcuMzMzNEw0MCAzNC42NjY3QzQxLjIxNjIgMzMuNDk2NSA0Mi41OTU3IDMyLjg4MDQgNDQgMzIuODgwNEM0NS40MDQzIDMyLjg4MDQgNDYuNzgzOCAzMy40OTY1IDQ4IDM0LjY2NjdMNTMuMzMzMyA0MCIgc3Ryb2tlPSIjNkE1QUUwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI1OTZfODk5OTAiPgo8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "createdDate": "01.01.2023 10:55:58",
       "timesPlayed": 1000,
       "percentageCorrect": 75,
       "creator": {

@@ -12,8 +12,7 @@ const initialState = {
 async function getQuizData() {
   try {
     const response = await axios.get("http://localhost:3000/quizData");
-    // console.log(response.data.categories);
-    console.log("Categories:", response && response.data.categories);
+    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error("Error fetching quiz data:", error);
@@ -28,23 +27,27 @@ export const getQuizzesThunk = createAsyncThunk("quiz/fetchData", async () => {
 
 async function addQuiz(newQuiz) {
   try {
+    console.log(newQuiz);
     const response = await axios.post(
       "http://localhost:3000/quizData",
       newQuiz
     );
-    console.log(response.data);
+    console.log("Quiz posted successfully:", response.data);
     return response.data;
   } catch (error) {
-    console.error("Error posting quiz data:", error);
-    return null;
+    console.error(
+      "Error posting quiz data:",
+      error.response?.data || error.message
+    );
+    throw error; // Rethrow the error to propagate it to the caller
   }
 }
 
 export const postNewQuizThunk = createAsyncThunk(
   "quiz/postData",
   async (newQuiz) => {
-    const quizzes = await addQuiz(newQuiz);
-    return quizzes;
+    const response = await addQuiz(newQuiz);
+    return response.data;
   }
 );
 
@@ -53,8 +56,8 @@ const quizzesSlice = createSlice({
   initialState,
   reducers: {
     setAddQuiz(state, action) {
-      const newQuiz = action.payload;
-      state.quizzes = [...state.quizzes, ...newQuiz];
+      state.newQuiz = action.payload;
+      // state.quizzes.push(action.payload);
     },
   },
 
@@ -69,6 +72,19 @@ const quizzesSlice = createSlice({
       })
       .addCase(getQuizzesThunk.rejected, (state) => {
         state.GetQuizzes_status = "failed";
+      })
+      .addCase(postNewQuizThunk.fulfilled, (state, action) => {
+        // Push the new quiz directly into the main array
+        // state.quizzes.push(action.payload);
+        state.quizzes = [...state.quizzes, action.payload];
+
+        state.AddQuiz_status = "succeeded";
+      })
+      .addCase(postNewQuizThunk.pending, (state) => {
+        state.AddQuiz_status = "loading";
+      })
+      .addCase(postNewQuizThunk.rejected, (state) => {
+        state.AddQuiz_status = "failed";
       });
   },
 });

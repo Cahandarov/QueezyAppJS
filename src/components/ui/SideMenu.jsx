@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 export default function SideMenu() {
   const showSideBar = useSelector((state) => state.mobile.showSidebar);
-  console.log(showSideBar);
+  // console.log(showSideBar);
 
   return (
     <div

@@ -2,27 +2,30 @@ import { PieChart, pieArcLabelClasses } from "@mui/x-charts/PieChart";
 
 export default function PieChartMain({ totalLength, sortedData }) {
   const value1 =
-    (sortedData && sortedData[0] && sortedData[0][1].length / totalLength) *
-    100;
+    (sortedData &&
+      sortedData[0] &&
+      sortedData[0].quizzes.length / totalLength) * 100;
   const value2 =
-    (sortedData && sortedData[1] && sortedData[1][1].length / totalLength) *
-    100;
+    (sortedData &&
+      sortedData[1] &&
+      sortedData[1].quizzes.length / totalLength) * 100;
   const value3 =
-    (sortedData && sortedData[2] && sortedData[2][1].length / totalLength) *
-    100;
+    (sortedData &&
+      sortedData[2] &&
+      sortedData[2].quizzes.length / totalLength) * 100;
   const data = [
     {
-      label: `${sortedData[0] && sortedData[0][0]}`,
+      label: `${sortedData[0] && sortedData[0].category}`,
       value: value1,
       color: "#6A5AE0",
     },
     {
-      label: `${sortedData[1] && sortedData[1][0]}`,
+      label: `${sortedData[1] && sortedData[1].category}`,
       value: value2,
       color: "#FF8FA2",
     },
     {
-      label: `${sortedData[2] && sortedData[2][0]}`,
+      label: `${sortedData[2] && sortedData[2].category}`,
       value: value3,
       color: "#C4D0FB",
     },
@@ -70,7 +73,7 @@ export default function PieChartMain({ totalLength, sortedData }) {
               id="data1_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              {sortedData && sortedData[0] && sortedData[0][0]}
+              {sortedData && sortedData[0] && sortedData[0].category}
             </p>
           </div>
 
@@ -85,7 +88,7 @@ export default function PieChartMain({ totalLength, sortedData }) {
               id="data2_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              {sortedData && sortedData[1] && sortedData[1][0]}
+              {sortedData && sortedData[1] && sortedData[1].category}
             </p>
           </div>
 
@@ -100,7 +103,7 @@ export default function PieChartMain({ totalLength, sortedData }) {
               id="data3_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              {sortedData && sortedData[2] && sortedData[2][0]}
+              {sortedData && sortedData[2] && sortedData[2].category}
             </p>
           </div>
 

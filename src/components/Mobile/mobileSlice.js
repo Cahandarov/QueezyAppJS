@@ -9,7 +9,7 @@ const mobileSlice = createSlice({
   initialState,
   reducers: {
     setShowSidebar: (state, action) => {
-      console.log("Action payload:", action.payload);
+      // console.log("Action payload:", action.payload);
       state.showSidebar = action.payload;
     },
   },

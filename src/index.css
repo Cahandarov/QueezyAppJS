@@ -79,7 +79,7 @@ nav .active .navButtons .btn_svg > path {
   border-radius: 1.25rem;
   box-shadow: 8px 8px 72px 10px rgba(21, 14, 73, 0.08);
 }
-.quizlibrary {
+.boxShadow {
   box-shadow: 8px 8px 72px 10px rgba(21, 14, 73, 0.08);
 }
 .HoverAndFocus {
@@ -131,4 +131,9 @@ nav .active .navButtons .btn_svg > path {
 }
 #inputFile {
   display: none;
+}
+.addCheckboxAnswers:checked {
+  background-image: url(./components/QuizLibary/images/checkIcon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -10,7 +10,10 @@ import newUserReducer from "../LogIn/userSlice";
 import mobileReducer from "../Mobile/mobileSlice";
 import createQuizReducer from "../QuizLibary/createQuizSlice";
 import quizDataReducer from "../QuizLibary/quizzesSlice";
-import questionTypeReducer from "../QuizLibary/QuizSettings/questionTypesSlice";
+import discoverReducer from "../Discover/discoverSlice";
+import dashboardReducer from "../Dashboard/dashboardSlice";
+import uiReducer from "../ui/uiSlice";
+import quizPlayReducer from "../Discover/QuizPlayPage/quizPlaySlice";
 
 export const store = configureStore({
   reducer: {
@@ -23,7 +26,10 @@ export const store = configureStore({
     mobile: mobileReducer,
     addQuiz: createQuizReducer,
     quizzes: quizDataReducer,
-    questionType: questionTypeReducer,
+    discover: discoverReducer,
+    dashboard: dashboardReducer,
+    ui: uiReducer,
+    quizPlay: quizPlayReducer,
   },
 
   // middleware: (getDefaultMiddleware) =>

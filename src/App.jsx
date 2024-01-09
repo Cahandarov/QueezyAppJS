@@ -19,6 +19,11 @@ function App() {
   const showSideBar = useSelector((state) => state.mobile.showSidebar);
   const isLogined = useSelector((state) => state.login.isLogined);
   const isRegistered = useSelector((state) => state.login.isRegistered);
+  const sideBarPage = useSelector((state) => state.ui.sideBarPage);
+  const rigthComponentPage = useSelector(
+    (state) => state.ui.rigthComponentPage
+  );
+
   function handleMobileMenu() {
     if (showSideBar) {
       dispatch(setShowSidebar(false));
@@ -31,11 +36,13 @@ function App() {
     <Router>
       {isLogined && isRegistered ? (
         <div
-          className="container flex w-full max-h-fit min-h-[1190px]"
+          className={`container flex w-full max-h-fit ${
+            sideBarPage ? "min-h-[1190px]" : ""
+          }`}
           onClick={() => handleMobileMenu()}
         >
-          <SideMenu />
-          <RigthComponent />
+          {sideBarPage && <SideMenu />}
+          {rigthComponentPage && <RigthComponent />}
         </div>
       ) : (
         <Login />

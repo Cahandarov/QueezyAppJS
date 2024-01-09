@@ -4,9 +4,21 @@ import { useSelector } from "react-redux";
 
 const SelectOption = ({ selectedCategory, setSelectedCategory }) => {
   const quizzes = useSelector((state) => state.quizzes.quizzes);
-  const categories = quizzes ? Object.keys(quizzes.categories || {}) : [];
-  console.log(categories);
-  const numberOfCategories = categories.length;
+  const categories = [];
+
+  const uniqueCategories = Array.from(
+    new Set(quizzes?.map((quiz) => quiz?.categoryName))
+  );
+
+  uniqueCategories.forEach((category) => {
+    const quizzesForCategory = quizzes?.filter(
+      (quiz) => quiz?.categoryName === category
+    );
+    categories.push(category);
+
+    // console.log(quizzesForCategory);
+  });
+  // console.log(categories);
 
   const [showOptions, setShowOptions] = useState(false);
 
@@ -29,7 +41,7 @@ const SelectOption = ({ selectedCategory, setSelectedCategory }) => {
         <div className="w-full h-full font-normal flex items-center text-base font-Rubik text-[#6A5AE0]">
           {selectedCategory
             ? `${selectedCategory}`
-            : "Category" + " (" + numberOfCategories + ")"}
+            : "Category" + " (" + categories?.length + ")"}
         </div>
         {showOptions && (
           <div className="absolute top-full mt-1 left-0 w-full max-h-[200px] bg-white border-2 border-[#EFEEFC] overflow-y-auto">

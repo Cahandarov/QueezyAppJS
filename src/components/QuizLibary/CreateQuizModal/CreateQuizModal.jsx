@@ -6,7 +6,10 @@ import {
   setCreateQuizModal,
   setCreateQuizSecondModal,
 } from "../createQuizSlice";
+import { setAddQuiz } from "../quizzesSlice";
 import { useDispatch } from "react-redux";
+// import convertFileToBase64 from "../../App/ConvertToBase64";
+import convertFileToBase64ForAllTypeFiles from "../../App/fileToBase64";
 
 export default function CreateQuizModal() {
   const dispatch = useDispatch();
@@ -24,17 +27,34 @@ export default function CreateQuizModal() {
         values.addQuizCategory &&
         values.addQuizDescription
       ) {
+        const newQuiz = {
+          quizId: Date.now(),
+          categoryName: values.addQuizCategory,
+          title: values.addQuizTitle,
+          description: values.addQuizDescription,
+          coverImage: values.addCoverFile,
+          createdDate: new Date().toLocaleString(),
+        };
+        dispatch(setAddQuiz(newQuiz));
         dispatch(setCreateQuizModal(false));
         dispatch(setCreateQuizSecondModal(true));
         console.log(values);
+        formik.setFieldValue("addCoverFile", "");
+        formik.setFieldValue("addQuizTitle", "");
+        formik.setFieldValue("addQuizCategory", "");
+        formik.setFieldValue("addQuizDescription", "");
       }
     },
   });
-  const handleFileChange = (event) => {
+  // const handleFileChange = async (event) => {
+  //   const file = event.target.files[0];
+  //   const base64String = await convertFileToBase64(file);
+  //   formik.setFieldValue("addCoverFile", base64String);
+  // };
+  const handleFileChange = async (event) => {
     const file = event.target.files[0];
-    const blob = URL.createObjectURL(file);
-    const url = blob.slice(5, blob.length - 1);
-    formik.setFieldValue("addCoverFile", url);
+    const base64String = await convertFileToBase64ForAllTypeFiles(file);
+    formik.setFieldValue("addCoverFile", base64String);
   };
 
   return (
@@ -55,7 +75,10 @@ export default function CreateQuizModal() {
             className="pi pi-times"
           ></i>
         </div>
-        <div className="flex justify-center items-center w-full h-[10rem] border-[3px] border-dashed border-[#6A5AE0] rounded-2xl  hover:bg-slate-200 hover:border-none focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300">
+        <div
+          className="flex justify-center items-center w-full h-[10rem] border-[3px] border-dashed border-[#6A5AE0] 
+           rounded-2xl  hover:bg-slate-200 hover:border-none focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300"
+        >
           <input
             id="addCoverFile"
             onChange={handleFileChange}
@@ -69,8 +92,11 @@ export default function CreateQuizModal() {
             className="py-6 px-28 flex flex-col justify-center items-center gap-2"
           >
             <img src={addFile} alt="addFileSVG" />
+
             <p className="w-[160px] text-center font-Rubik font-medium text-baseS text-primaryColor">
-              Add Cover Image
+              {!formik.values.addCoverFile
+                ? "Add Cover Image"
+                : "Cover Image Added"}
             </p>
           </label>
         </div>
@@ -115,7 +141,7 @@ export default function CreateQuizModal() {
 
         <button
           type="submit"
-          className="w-full h-[3.2rem] min-w-[240px] rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-primaryColor border-none mt-2 hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:secondColor focus:ring-offset-2 transition-colors duration-300"
+          className="w-full h-[3.2rem] min-w-[240px] rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-primaryColor border-none mt-2 hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:ring-secondColor focus:ring-offset-2 transition-colors duration-300"
         >
           Next Step
         </button>
