@@ -8,7 +8,6 @@ import {
 } from "../createQuizSlice";
 import { setAddQuiz } from "../quizzesSlice";
 import { useDispatch } from "react-redux";
-// import convertFileToBase64 from "../../App/ConvertToBase64";
 import convertFileToBase64ForAllTypeFiles from "../../App/fileToBase64";
 
 export default function CreateQuizModal() {
@@ -34,6 +33,7 @@ export default function CreateQuizModal() {
           description: values.addQuizDescription,
           coverImage: values.addCoverFile,
           createdDate: new Date().toLocaleString(),
+          timesPlayed: 0,
         };
         dispatch(setAddQuiz(newQuiz));
         dispatch(setCreateQuizModal(false));
@@ -46,11 +46,7 @@ export default function CreateQuizModal() {
       }
     },
   });
-  // const handleFileChange = async (event) => {
-  //   const file = event.target.files[0];
-  //   const base64String = await convertFileToBase64(file);
-  //   formik.setFieldValue("addCoverFile", base64String);
-  // };
+
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
     const base64String = await convertFileToBase64ForAllTypeFiles(file);

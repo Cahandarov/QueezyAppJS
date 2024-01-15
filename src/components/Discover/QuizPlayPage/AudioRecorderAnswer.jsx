@@ -1,12 +1,10 @@
 import { useState, useRef } from "react";
 import audioRecordIcon from "../images/audioRecordIcon.svg";
-import { useContext } from "react";
-// import { FormikContext } from "../CreateQuizModal/FormikContext";
-// import convertFileToBase64 from "../../App/fileToBase64";
 import convertFileToBase64 from "../../App/ConvertToBase64";
+import { useDispatch } from "react-redux";
+import { setAnswer } from "./quizPlaySlice";
 
 const AudioRecorderAnswer = () => {
-  // const formik = useContext(FormikContext);
   const [permission, setPermission] = useState(false);
   const [stream, setStream] = useState(null);
   const mediaRecorder = useRef(null);
@@ -14,6 +12,7 @@ const AudioRecorderAnswer = () => {
   const [audioChunks, setAudioChunks] = useState([]);
   const [audio, setAudio] = useState(null);
   const mimeType = "audio/wav";
+  const dispatch = useDispatch();
 
   const getMicrophonePermission = async () => {
     if ("MediaRecorder" in window) {
@@ -50,13 +49,11 @@ const AudioRecorderAnswer = () => {
     mediaRecorder.current.onstop = async () => {
       const audioBlob = new Blob(audioChunks, { type: mimeType });
 
-      // Convert the Blob to base64 string
       const audioBase64 = await convertFileToBase64(audioBlob);
 
-      // Set the base64-encoded string as the audio state
       setAudio(audioBase64);
       setAudioChunks([]);
-      formik.setFieldValue("addCorrectOption", audioBase64);
+      dispatch(setAnswer(audioBase64));
     };
   };
   return (

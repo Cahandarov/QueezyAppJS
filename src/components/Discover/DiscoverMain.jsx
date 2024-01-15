@@ -14,8 +14,7 @@ export default function DiscoverMain() {
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const LiveQuizzes = [];
+  const LiveQuizzes = useSelector((state) => state.quizPlay.liveQuizzes);
   let [quizzesForDisplay, setQuizzesForDisplay] = useState(LiveQuizzes);
 
   function handleClickQuizItems(id) {

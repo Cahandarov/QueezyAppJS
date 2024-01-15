@@ -1,8 +1,22 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setAnswer, setGainedPoints } from "./quizPlaySlice";
 
 export default function VoiceQuestion() {
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
+  const dispatch = useDispatch();
+  const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
+  const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+
+  function handleGetAnswer(typedAnswer) {
+    dispatch(setAnswer(typedAnswer));
+    if (typedAnswer === correctAnswer[0]) {
+      const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
+      dispatch(setGainedPoints(updatedPoints));
+    } else {
+      return gainedPoints;
+    }
+  }
   return (
     <div className="flex flex-col mt-4">
       <p className="font-Rubik font-medium text-2xl text-[#0C092A] mt-1 mb-4">
@@ -15,8 +29,9 @@ export default function VoiceQuestion() {
       ></audio>
       <input
         name="addTypeAnswer"
-        // value={formik.values.addCorrectOption}
-        // onChange={formik.handleChange}
+        onChange={(e) => {
+          handleGetAnswer(e.target.value);
+        }}
         className="w-full h-[3.5rem] rounded-[1.25rem] mt-4 py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         type="text"
         placeholder="Write your answer"

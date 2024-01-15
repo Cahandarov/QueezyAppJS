@@ -95,8 +95,8 @@ export default function LastAddesQuizzes() {
               category={Quiz.categoryName}
               QuizzesInThisCategory={
                 quizzes.filter(
-                  (item) => item.categoryName === Quiz.categoryName
-                ).length
+                  (item) => item.categoryName === Quiz?.categoryName
+                )?.length
               }
             />
           </button>

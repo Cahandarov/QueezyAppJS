@@ -68,7 +68,7 @@ export default function CreateQuizLastPage() {
             </div>
           </div>
           <div className="flex w-[65%] mb-8 max-h-[860px] pr-6 flex-col gap-3 overflow-auto">
-            {newQuiz.questions.map((question, index) => (
+            {newQuiz?.questions?.map((question, index) => (
               <QuizSettingsItemLast key={index} question={question} />
             ))}
           </div>

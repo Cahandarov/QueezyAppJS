@@ -1,8 +1,26 @@
-import { useSelector } from "react-redux";
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setAnswer, setGainedPoints } from "./quizPlaySlice";
 
 export default function TrueAndFalse() {
+  const [disabled, setDisabled] = useState(false);
+  const dispatch = useDispatch();
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
+  let answer = useSelector((state) => state.quizPlay.answer);
+  const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
+  const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+
+  function handleClickOptions(ClickedValue) {
+    dispatch(setAnswer(ClickedValue));
+    setDisabled(true);
+    if (ClickedValue === correctAnswer[0]) {
+      const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
+      dispatch(setGainedPoints(updatedPoints));
+    } else {
+      return gainedPoints;
+    }
+  }
   return (
     <div className="flex flex-col mt-4">
       <p className="font-Rubik font-medium text-2xl text-[#0C092A] mt-1">
@@ -10,14 +28,31 @@ export default function TrueAndFalse() {
       </p>
       <div className="w-full flex items-center justify-start gap-3 mt-6">
         <button
+          onClick={() => handleClickOptions("False")}
+          disabled={disabled}
           value="False"
-          className="w-[30%] h-[3.2rem] rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-white bg-red-600 border-none hover:bg-red-400 hover:border-red-800 focus:outline-none focus:ring focus:ring-red-400 focus:bg-red-500 focus:ring-offset-2 transition-colors duration-300"
+          className={`w-[30%] h-[3.2rem] rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-red-600 bg-white border-2 border-[#EFEEFC]  transition-colors duration-300 ${
+            answer === "False"
+              ? "False" === correctAnswer[0]
+                ? "border-green-600"
+                : "border-red-600"
+              : ""
+          }`}
         >
           False
         </button>
+
         <button
+          onClick={() => handleClickOptions("True")}
+          disabled={disabled}
           value="True"
-          className="w-[30%] h-[3.2rem]  rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-green-600 border-none hover:bg-green-400 hover:border-green-800 focus:outline-none focus:ring-green-400 focus:bg-green-500  focus:ring-offset-2 focus:ring transition-colors duration-300"
+          className={`w-[30%] h-[3.2rem]  rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-green-600 bg-white border-2 border-[#EFEEFC]  transition-colors duration-300 ${
+            answer === "True"
+              ? "True" === correctAnswer[0]
+                ? "border-green-600"
+                : "border-red-600"
+              : ""
+          }`}
         >
           True
         </button>

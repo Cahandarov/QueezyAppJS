@@ -137,3 +137,21 @@ nav .active .navButtons .btn_svg > path {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@keyframes leftToRight {
+  from {
+    left: -5px;
+    opacity: 0;
+  }
+  to {
+    right: 500px;
+    opacity: 1;
+  }
+}
+
+.pollDiv {
+  animation-name: leftToRight;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+}

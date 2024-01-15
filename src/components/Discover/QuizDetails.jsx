@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-// import coverImage from "./images/coverImage.svg";
 import questionIcon from "./images/questionIcon.svg";
 import pointsIcon from "./images/pointsIcon.svg";
 import avatarPNG from "./images/Avatar.png";
@@ -15,10 +14,16 @@ import {
 } from "./discoverSlice";
 import { useEffect, useRef, useState } from "react";
 import { setSideBarPage } from "../ui/uiSlice";
+import {
+  setLiveQuizzes,
+  setQuizPlayStatus,
+  setRunningTime,
+} from "./QuizPlayPage/quizPlaySlice";
 
 export default function QuizDetails() {
   const quizzes = useSelector((state) => state.quizzes.quizzes);
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
+  const liveQuizzes = useSelector((state) => state.quizPlay.liveQuizzes);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const sortedSuggestedQuizzes = [...quizzes].sort(
@@ -56,6 +61,10 @@ export default function QuizDetails() {
     };
   }, [selectedQuiz]);
 
+  useEffect(() => {
+    // console.log(liveQuizzes);
+  }, [liveQuizzes]);
+
   const scrollRef = useRef(null);
   function handleSeeAll() {
     if (!showAllQuiezzez) {
@@ -83,6 +92,11 @@ export default function QuizDetails() {
     dispatch(setSideBarPage(false));
     dispatch(setQuizPlayPage(true));
     dispatch(setQuizDetailsPage(false));
+    dispatch(setQuizPlayStatus("playing"));
+    dispatch(setRunningTime(selectedQuiz.questions[0].answerTime));
+    // console.log(selectedQuiz);
+    dispatch(setLiveQuizzes([...liveQuizzes, selectedQuiz]));
+    // console.log(liveQuizzes);
     document.body.style.height = "100vh";
   }
 
