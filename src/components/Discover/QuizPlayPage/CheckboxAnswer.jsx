@@ -1,15 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setAnswer, setGainedPoints } from "./quizPlaySlice";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 
 export default function CheckboxAnswer() {
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
-  // let answer = useSelector((state) => state.quizPlay.answer);
+  let answer = useSelector((state) => state.quizPlay.answer);
   const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
   const dispatch = useDispatch();
-  const [checkedOptions, setCheckedOptions] = useState([]);
+  // const [checkedOptions, setCheckedOptions] = useState([]);
 
   const mixedOptions = useMemo(() => {
     const originalOptions = selectedQuiz?.questions[index]?.options || [];
@@ -24,23 +24,27 @@ export default function CheckboxAnswer() {
   }, [selectedQuiz, index]);
 
   function handleCheckOptions(CheckedValue) {
-    setCheckedOptions((prevCheckedOptions) => {
-      const updatedCheckedOptions = [...prevCheckedOptions, CheckedValue];
-      dispatch(setAnswer(updatedCheckedOptions));
+    const isChecked = answer ? answer.includes(CheckedValue) : false;
 
-      const allCorrectAnswersChecked = correctAnswer.every((answer) =>
-        updatedCheckedOptions.includes(answer)
-      );
+    let updatedAnswer;
 
-      if (allCorrectAnswersChecked) {
-        const updatedPoints =
-          gainedPoints + selectedQuiz.questions[index].score;
-        dispatch(setGainedPoints(updatedPoints));
-        console.log(updatedPoints);
-      }
+    if (isChecked) {
+      updatedAnswer = answer.filter((value) => value !== CheckedValue);
+    } else {
+      updatedAnswer = answer ? [...answer, CheckedValue] : [CheckedValue];
+    }
 
-      return updatedCheckedOptions;
-    });
+    dispatch(setAnswer(updatedAnswer));
+
+    const allCorrectAnswersChecked = correctAnswer.every((answer) =>
+      updatedAnswer.includes(answer)
+    );
+
+    if (allCorrectAnswersChecked) {
+      const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
+      dispatch(setGainedPoints(updatedPoints));
+      // console.log(updatedPoints);
+    }
   }
 
   return (
@@ -57,7 +61,6 @@ export default function CheckboxAnswer() {
           >
             <input
               onChange={() => handleCheckOptions(option)}
-              checked={checkedOptions[option]}
               type="checkbox"
               className="appearance-none absolute top-0 left-0 translate-x-4 translate-y-4 addCheckboxAnswers w-6 h-6 checked:bg-primaryColor bg-[#EFEEFC] rounded-lg border-2 border-[#6A5AE0] "
             />{" "}

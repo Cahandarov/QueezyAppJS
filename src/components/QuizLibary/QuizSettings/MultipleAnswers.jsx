@@ -51,7 +51,7 @@ export default function MultipleAnswers() {
         placeholder="Enter explanation to question"
       />
       <label
-        htmlFor="addExplanationToMultipleAnswers"
+        htmlFor="addCorrectOptionToMultipleAnswers"
         className="font-medium my-0 mb-1 mt-3 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
         Add Correct Option

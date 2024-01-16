@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import "primeicons/primeicons.css";
 import { useContext } from "react";
 import { FormikContext } from "../CreateQuizModal/FormikContext";
-export default function CheckboxAnswer() {
+
+export default function AddCheckboxAnswer() {
   const formik = useContext(FormikContext);
   const [answers, setAnswers] = useState([""]);
 

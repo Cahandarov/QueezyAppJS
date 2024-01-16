@@ -10,7 +10,7 @@ import TrueAndFalseAnswers from "./TrueAndFalseAnswers";
 import TypeAnswer from "./TypeAnswer";
 import VoiceAnswer from "./VoiceAnswer";
 import VoiceQuestion from "./VoiceQuestion";
-import CheckboxAnswer from "./CheckboxAnswer";
+import AddCheckboxAnswer from "./AddCheckboxAnswer";
 import Poll from "./Poll";
 import Puzzle from "./Puzzle";
 import SelectPoint from "./SelectPoint";
@@ -180,7 +180,7 @@ export default function QuizSettings() {
                 <VoiceQuestion />
               )}
               {formik.values.selectedQuestionType === "Checkbox" && (
-                <CheckboxAnswer />
+                <AddCheckboxAnswer />
               )}
               {formik.values.selectedQuestionType === "Poll" && <Poll />}
               {formik.values.selectedQuestionType === "Puzzle" && <Puzzle />}

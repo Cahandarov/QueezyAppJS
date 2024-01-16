@@ -130,7 +130,7 @@ export default function QuizPlayModule() {
                 Back
               </button>
             )}
-            {answer && index < selectedQuiz.questions.length - 1 && (
+            {answer && index < selectedQuiz.questions.length && (
               <button
                 onClick={() => handleNextQuiz()}
                 className="w-[35%] h-[3.2rem] mt-8 rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-primaryColor border-none hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:ring-primaryColor focus:secondColor focus:ring-offset-2 transition-colors duration-300"

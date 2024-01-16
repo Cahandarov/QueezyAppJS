@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setAnswer, setGainedPoints } from "./quizPlaySlice";
 
@@ -6,6 +6,7 @@ export default function Puzzle() {
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   let answer = useSelector((state) => state.quizPlay.answer);
+  const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
   const dispatch = useDispatch();
   const [answerArray, setAnswerArray] = useState([]);
@@ -27,13 +28,20 @@ export default function Puzzle() {
     setAnswerArray(uniqeAnswers);
     dispatch(setAnswer(uniqeAnswers));
   }
-  function handleCancelClickOptions(answer) {
+
+  function handleCancelClickOptions(selectedAnswer) {
     const answersAfterDelete = answerArray.filter(
-      (option) => option !== answer
+      (option) => option !== selectedAnswer
     );
     setAnswerArray(answersAfterDelete);
     dispatch(setAnswer(answersAfterDelete));
   }
+  useEffect(() => {
+    if (correctAnswer === answer?.join(" ")) {
+      const updatedPoints = gainedPoints + selectedQuiz.questions[index]?.score;
+      dispatch(setGainedPoints(updatedPoints));
+    }
+  }, [answer, selectedQuiz.questions]);
 
   return (
     <div className="flex flex-col mt-4">
@@ -41,13 +49,13 @@ export default function Puzzle() {
         {selectedQuiz?.questions[index].question}
       </p>
       <div className="w-full h-32 flex justify-start items-start mt-4 flex-wrap gap-4">
-        {answerArray.map((answer, index) => (
+        {answerArray.map((selectedAnswer, index) => (
           <button
-            onClick={() => handleCancelClickOptions(answer)}
+            onClick={() => handleCancelClickOptions(selectedAnswer)}
             key={index}
             className="px-4 flex items-center justify-between gap-4  py-2 border-2 border-[#EFEEFC] rounded-lg"
           >
-            <p>{answer}</p>
+            <p>{selectedAnswer}</p>
             <span className="pi pi-times"></span>
           </button>
         ))}

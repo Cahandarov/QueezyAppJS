@@ -25,7 +25,7 @@ export default function MultiAnswer() {
     ...Options.slice(randomIndex),
   ];
 
-  console.log(randomizedOptions);
+  // console.log(randomizedOptions);
 
   function handleClickOptions(ClickedValue) {
     dispatch(setAnswer(ClickedValue));
@@ -36,7 +36,7 @@ export default function MultiAnswer() {
     } else {
       return gainedPoints;
     }
-    console.log(gainedPoints);
+    // console.log(gainedPoints);
   }
 
   return (
