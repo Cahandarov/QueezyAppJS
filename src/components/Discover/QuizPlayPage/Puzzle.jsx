@@ -1,13 +1,25 @@
 import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setAnswer, setGainedPoints } from "./quizPlaySlice";
+import {
+  setAnswer,
+  setGainedPoints,
+  setNumberOfCorrectAnswers,
+  setNumberOfIncorrectAnswers,
+} from "./quizPlaySlice";
 
 export default function Puzzle() {
+  const [ClickedValue, setClickedValue] = useState(null);
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   let answer = useSelector((state) => state.quizPlay.answer);
   const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+  const numberOfCorrectAnswers = useSelector(
+    (state) => state.quizPlay.numberOfCorrectAnswers
+  );
+  const numberOfIncorrectAnswers = useSelector(
+    (state) => state.quizPlay.numberOfIncorrectAnswers
+  );
   const dispatch = useDispatch();
   const [answerArray, setAnswerArray] = useState([]);
 
@@ -24,6 +36,7 @@ export default function Puzzle() {
   }, [selectedQuiz, index]);
 
   function handleClickOptions(ClickedValue) {
+    setClickedValue(ClickedValue);
     const uniqeAnswers = Array.from(new Set([...answerArray, ClickedValue]));
     setAnswerArray(uniqeAnswers);
     dispatch(setAnswer(uniqeAnswers));
@@ -36,12 +49,30 @@ export default function Puzzle() {
     setAnswerArray(answersAfterDelete);
     dispatch(setAnswer(answersAfterDelete));
   }
-  useEffect(() => {
-    if (correctAnswer === answer?.join(" ")) {
-      const updatedPoints = gainedPoints + selectedQuiz.questions[index]?.score;
-      dispatch(setGainedPoints(updatedPoints));
-    }
-  }, [answer, selectedQuiz.questions]);
+
+  useEffect(
+    function () {
+      if (correctAnswer === answer?.join(" ")) {
+        const updatedPoints =
+          gainedPoints + selectedQuiz.questions[index]?.score;
+        dispatch(setGainedPoints(updatedPoints));
+        dispatch(setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1));
+      } else {
+        const correctAnswerArray = correctAnswer.split(" ");
+        console.log(correctAnswerArray);
+        console.log(answer);
+        const allCorrectAnswersIncorrect = correctAnswerArray.every(
+          (Answer) => !answer?.includes(Answer)
+        );
+        if (allCorrectAnswersIncorrect) {
+          if (correctAnswer.includes(ClickedValue)) {
+            dispatch(setNumberOfIncorrectAnswers(numberOfIncorrectAnswers + 1));
+          }
+        }
+      }
+    },
+    [answer, selectedQuiz.questions]
+  );
 
   return (
     <div className="flex flex-col mt-4">

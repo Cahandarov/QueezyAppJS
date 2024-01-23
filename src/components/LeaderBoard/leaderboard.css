@@ -1,0 +1,10 @@
+.tableLeaderBoard {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    overflow: hidden;
+    border-radius: 10px;
+    -pie-background: linear-gradient(#ece9d8, #e5ecd8);
+    box-shadow: #666 0px 2px 3px;
+    behavior: url(Include/PIE.htc);
+    overflow: hidden;
+}

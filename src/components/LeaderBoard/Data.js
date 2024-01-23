@@ -1,6 +1,6 @@
-import avatar from "./images/Avatar.svg";
+import avatar from "./images/avatar.png";
 
-export const UsersData = [
+export const LeaderData = [
   {
     Name: "John",
     Surname: " Smith",

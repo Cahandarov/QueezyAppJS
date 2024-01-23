@@ -1,4 +1,3 @@
-// import dots3 from "../images/3dots.svg";
 import arrow from "./images/arrowToRigth.svg";
 
 export default function SuggestedQuizItem({

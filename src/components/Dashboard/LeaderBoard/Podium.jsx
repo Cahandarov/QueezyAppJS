@@ -2,7 +2,8 @@ import Place1 from "./images/Rank1.png";
 import Place2 from "./images/Rank2.png";
 import Place3 from "./images/Rank3.png";
 import medal from "./images/Medal.svg";
-// import { LeaderboardProps } from "./LeaderBoard";
+import CountryFlag from "react-country-flag";
+import { CountriesData } from "../../ui/CountriesData";
 
 export default function Podium({ leaderBoardData }) {
   if (!leaderBoardData || leaderBoardData.length < 3) {
@@ -22,11 +23,20 @@ export default function Podium({ leaderBoardData }) {
             alt="avatar"
             className="w-10 h:10 sm:w-12 sm:h-12 rounded-full mb-2 sm:mb-4"
           />
-          <img
-            src={leaderBoardData[1].country}
-            alt="flag"
-            className="absolute translate-x-5 translate-y-2 rounded-sm w-3 h-3 sm:w-4 sm:h-4"
-          />
+
+          <div className="absolute translate-x-5 translate-y-1 rounded-sm w-3 h-3 sm:w-4 sm:h-4">
+            {
+              <CountryFlag
+                countryCode={
+                  CountriesData.filter(
+                    (country) => country.name === leaderBoardData[1]?.country
+                  )[0]?.code
+                }
+                svg
+                style={{ width: "1.53rem", height: "1.2rem" }}
+              />
+            }
+          </div>
         </div>
 
         <p
@@ -61,12 +71,20 @@ export default function Podium({ leaderBoardData }) {
             alt="avatar"
             className="w-10 h:10 sm:w-12 sm:h-12 rounded-full mb-2 sm:mb-4"
           />
-          <img
-            id="flagPlace1"
-            src={leaderBoardData[0].country}
-            alt="flag"
-            className="absolute translate-x-5 translate-y-2 rounded-sm w-3 h-3 sm:w-4 sm:h-4"
-          />
+
+          <div className="absolute translate-x-5 translate-y-1 rounded-sm w-3 h-3 sm:w-4 sm:h-4">
+            {
+              <CountryFlag
+                countryCode={
+                  CountriesData.filter(
+                    (country) => country.name === leaderBoardData[0]?.country
+                  )[0]?.code
+                }
+                svg
+                style={{ width: "1.53rem", height: "1.2rem" }}
+              />
+            }
+          </div>
         </div>
         <p
           id="namePlace2"
@@ -99,12 +117,20 @@ export default function Podium({ leaderBoardData }) {
             alt="avatar"
             className="w-10 h:10 sm:w-12 sm:h-12 rounded-full mb-2 sm:mb-4"
           />
-          <img
-            id="flagPlace3"
-            src={leaderBoardData[2].country}
-            alt="flag"
-            className="absolute translate-x-5 translate-y-2 rounded-sm w-3 h-3 sm:w-4 sm:h-4"
-          />
+
+          <div className="absolute translate-x-5 translate-y-2 rounded-sm w-3 h-3 sm:w-4 sm:h-4">
+            {
+              <CountryFlag
+                countryCode={
+                  CountriesData.filter(
+                    (country) => country.name === leaderBoardData[2]?.country
+                  )[0]?.code
+                }
+                svg
+                style={{ width: "1.53rem", height: "1.2rem" }}
+              />
+            }
+          </div>
         </div>
         <p
           id="namePlace3"

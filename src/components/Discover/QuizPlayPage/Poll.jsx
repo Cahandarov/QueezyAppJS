@@ -6,6 +6,7 @@ export default function Poll() {
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   let answer = useSelector((state) => state.quizPlay.answer);
+
   const [disabled, setDisabled] = useState(false);
   const dispatch = useDispatch();
 

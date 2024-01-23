@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { setShowSidebar } from "./components/Mobile/mobileSlice";
 import { getQuizzesThunk } from "./components/QuizLibary/quizzesSlice";
 import { useEffect } from "react";
+import { setLogoutModal } from "./components/ui/uiSlice";
 
 function App() {
   const dispatch = useDispatch();
@@ -32,6 +33,12 @@ function App() {
   if (getQuizzesStatus === "loading") {
     return <p>Loading...</p>;
   }
+
+  function handleContainerClick() {
+    handleMobileMenu();
+    dispatch(setLogoutModal(false));
+  }
+
   return (
     <Router>
       {isLogined && isRegistered ? (
@@ -39,7 +46,7 @@ function App() {
           className={`container flex w-full max-h-fit ${
             sideBarPage ? "min-h-[1190px]" : ""
           }`}
-          onClick={() => handleMobileMenu()}
+          onClick={() => handleContainerClick()}
         >
           {sideBarPage && <SideMenu />}
           {rigthComponentPage && <RigthComponent />}

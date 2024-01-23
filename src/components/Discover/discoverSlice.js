@@ -5,6 +5,8 @@ const initialState = {
   quizDetailsPage: false,
   quizPlayPage: false,
   selectedQuiz: null,
+  endOfQuizModule: false,
+  reviewAnswerModule: false,
 };
 
 const createDiscoverSlice = createSlice({
@@ -23,6 +25,12 @@ const createDiscoverSlice = createSlice({
     setSelectedQuiz(state, action) {
       state.selectedQuiz = action.payload;
     },
+    setEndOfQuizModule(state, action) {
+      state.endOfQuizModule = action.payload;
+    },
+    setReviewAnswerModule(state, action) {
+      state.reviewAnswerModule = action.payload;
+    },
   },
 });
 export const {
@@ -30,5 +38,7 @@ export const {
   setQuizDetailsPage,
   setQuizPlayPage,
   setSelectedQuiz,
+  setEndOfQuizModule,
+  setReviewAnswerModule,
 } = createDiscoverSlice.actions;
 export default createDiscoverSlice.reducer;

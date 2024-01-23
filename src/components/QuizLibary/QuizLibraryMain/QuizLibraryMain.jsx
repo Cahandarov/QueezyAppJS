@@ -59,8 +59,6 @@ export default function QuizLibraryMain() {
 
   function handleClickQuizItems(id) {
     const clickedQuiz = quizzes.find((quiz) => quiz.id === id);
-    // console.log(id);
-    // console.log(clickedQuiz);
     if (clickedQuiz) {
       dispatch(setSelectedQuiz(clickedQuiz));
     }
@@ -71,7 +69,7 @@ export default function QuizLibraryMain() {
 
   return (
     <div className="flex flex-col gap-8 w-full h-full  min-h-[1086px] px-10 pt-10 pb-4 bg-[#FBFBFC]">
-      <div className="boxShadow flex flex-col mx-auto justify-between h-[63.5rem] w-[98%] rounded-[2rem] p-8 mb-2 border-2 border-[#EFEEFC] bg-white ">
+      <div className="boxShadow flex flex-col mx-auto justify-between h-[63.5rem] w-full rounded-[2rem] p-8 mb-2 border-2 border-[#EFEEFC] bg-white ">
         <div className="">
           <p className="font-medium text-2xl text-textColorNeutralBlack_0C092A font-Rubik text-left">
             Quiz List
@@ -110,7 +108,7 @@ export default function QuizLibraryMain() {
               </button>
             </div>
           </div>
-          <div className="flex flex-wrap overflow-auto sm:overflow-clip justify-center md:justify-start items-start gap-3 sm:gap-6 mx-auto">
+          <div className="flex flex-wrap overflow-auto sm:overflow-clip justify-center md:justify-start items-start gap-3 sm:gap-8 mx-auto">
             {quizzesToDisplay.map((quiz, index) =>
               quiz && quiz.title && quiz.coverImage && quiz.categoryName ? (
                 <button

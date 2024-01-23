@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Countries } from "./Countries";
+import { CountriesData } from "../../ui/CountriesData";
 import CountryFlag from "react-country-flag";
 import countryIcon from "../Images/country-icon.svg";
 
@@ -29,7 +29,7 @@ const SelectOption = ({ handleChange }) => {
         </div>
         {showOptions && (
           <div className="absolute top-full left-0 w-full max-h-[200px] bg-white border-2 border-[#EFEEFC] overflow-y-auto">
-            {Countries.map((country) => (
+            {CountriesData.map((country) => (
               <div
                 onClick={() => handleSelectChange(country.name)}
                 className="flex gap-6 items-center w-full h-8 pl-6 py-2 font-normal text-base font-Rubik hover:bg-violet-400 focus:bg-violet-600 cursor-pointer"

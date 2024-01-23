@@ -16,6 +16,7 @@ import { useEffect, useRef, useState } from "react";
 import { setSideBarPage } from "../ui/uiSlice";
 import {
   setLiveQuizzes,
+  setPlayedQuizz,
   setQuizPlayStatus,
   setRunningTime,
 } from "./QuizPlayPage/quizPlaySlice";
@@ -98,6 +99,13 @@ export default function QuizDetails() {
     dispatch(setLiveQuizzes([...liveQuizzes, selectedQuiz]));
     // console.log(liveQuizzes);
     document.body.style.height = "100vh";
+    const playedQuiz = {
+      id: selectedQuiz.id,
+      categoryName: selectedQuiz.categoryName,
+      title: selectedQuiz.title,
+      questions: [],
+    };
+    dispatch(setPlayedQuizz(playedQuiz));
   }
 
   return (

@@ -1,5 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setAnswer, setGainedPoints } from "./quizPlaySlice";
+import {
+  setAnswer,
+  setGainedPoints,
+  setNumberOfCorrectAnswers,
+  setNumberOfIncorrectAnswers,
+} from "./quizPlaySlice";
 import { useMemo } from "react";
 
 export default function CheckboxAnswer() {
@@ -8,8 +13,13 @@ export default function CheckboxAnswer() {
   let answer = useSelector((state) => state.quizPlay.answer);
   const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+  const numberOfCorrectAnswers = useSelector(
+    (state) => state.quizPlay.numberOfCorrectAnswers
+  );
+  const numberOfIncorrectAnswers = useSelector(
+    (state) => state.quizPlay.numberOfIncorrectAnswers
+  );
   const dispatch = useDispatch();
-  // const [checkedOptions, setCheckedOptions] = useState([]);
 
   const mixedOptions = useMemo(() => {
     const originalOptions = selectedQuiz?.questions[index]?.options || [];
@@ -42,8 +52,18 @@ export default function CheckboxAnswer() {
 
     if (allCorrectAnswersChecked) {
       const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
+      dispatch(setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1));
       dispatch(setGainedPoints(updatedPoints));
-      // console.log(updatedPoints);
+    } else {
+      const allCorrectAnswersIncorrect = correctAnswer.every(
+        (answer) => !updatedAnswer.includes(answer)
+      );
+
+      if (allCorrectAnswersIncorrect) {
+        if (correctAnswer.includes(CheckedValue)) {
+          dispatch(setNumberOfIncorrectAnswers(numberOfIncorrectAnswers + 1));
+        }
+      }
     }
   }
 
@@ -59,9 +79,11 @@ export default function CheckboxAnswer() {
             className="answer-input relative flex justify-start items-center w-full h-[3.5rem] rounded-[1.25rem] px-14 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
             type="text mt-3 "
           >
+            <label htmlFor={Index} className="absolute px-40 py-6 "></label>
             <input
               onChange={() => handleCheckOptions(option)}
               type="checkbox"
+              id={Index}
               className="appearance-none absolute top-0 left-0 translate-x-4 translate-y-4 addCheckboxAnswers w-6 h-6 checked:bg-primaryColor bg-[#EFEEFC] rounded-lg border-2 border-[#6A5AE0] "
             />{" "}
             {option}

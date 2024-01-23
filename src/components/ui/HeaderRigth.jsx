@@ -5,15 +5,26 @@ import Modal from "./Modal";
 import { useState } from "react";
 import "primeicons/primeicons.css";
 import AvatarLetter from "./AvatarLetter";
+import { useDispatch, useSelector } from "react-redux";
+import { setLogoutModal } from "./uiSlice";
 
 export default function HeaderRigth() {
+  const dispatch = useDispatch();
   const [showModal, setShowModal] = useState(false);
-  const [logoutModal, setLogoutModal] = useState(false);
+  const logoutModal = useSelector((state) => state.ui.logoutModal);
   function HandleShowModal() {
     setShowModal(true);
   }
   function HandleCloseModal() {
     setShowModal(false);
+  }
+  function handleClickLogoutModal(event) {
+    event.stopPropagation();
+    if (logoutModal) {
+      dispatch(setLogoutModal(false));
+    } else {
+      dispatch(setLogoutModal(true));
+    }
   }
 
   const currentDate = new Date();
@@ -73,18 +84,20 @@ export default function HeaderRigth() {
           >
             Madelyn Dias
           </p>
-          <img
-            id="select_icon"
-            src={selectIcon}
-            alt="select icon"
-            onClick={() => {
-              setLogoutModal((prev) => !prev);
+          <button
+            onClick={(e) => {
+              {
+                handleClickLogoutModal(e);
+                e.preventDefault();
+              }
             }}
-          />
+          >
+            <img id="select_icon" src={selectIcon} alt="select icon" />
+          </button>
         </div>
       </div>
-      {showModal ? <Modal HandleCloseModal={HandleCloseModal} /> : ""}
-      {logoutModal ? <LogoutModal /> : ""}
+      {showModal && <Modal HandleCloseModal={HandleCloseModal} />}
+      {logoutModal && <LogoutModal />}
     </div>
   );
 }

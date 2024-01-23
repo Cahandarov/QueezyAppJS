@@ -1,9 +1,10 @@
 import { useRef, useState } from "react";
 import groupLeft from "./images/Group-left.svg";
-import groupRigth from "./images/Group-rigth.svg";
+import groupRigth from "./images/GroupRigth.png";
 import buttonSVG from "./images/Button-group.svg";
 import FriendsItem from "./FriendsItem";
 import { FriendsData } from "./FriendsData";
+import { CountriesData } from "../../ui/CountriesData";
 
 export default function Friends() {
   const scrollRef = useRef(null);
@@ -11,16 +12,20 @@ export default function Friends() {
     0,
     3
   );
+  const allFriends = FriendsData.sort((a, b) => b.points - a.points);
   const [friendList, setFriendList] = useState(topThreeFriends);
+  const [showAllFriends, setShowAllFriends] = useState(false);
 
   function handleSeeAll() {
-    const allFriends = FriendsData.sort((a, b) => b.points - a.points);
-    setFriendList(allFriends);
-    console.log("hello");
-    if (scrollRef.current) {
+    if (!showAllFriends) {
+      setFriendList(allFriends);
+      setShowAllFriends(true);
       scrollRef.current.style.overflow = "auto";
+      scrollRef.current.style.gap = "14px";
     } else {
-      console.error("scrollRef is null");
+      setFriendList(topThreeFriends);
+      setShowAllFriends(false);
+      scrollRef.current.style.overflow = "hidden";
     }
   }
 
@@ -39,18 +44,18 @@ export default function Friends() {
       </div>
       <div
         id="findFriends"
-        className="relative w-[99%] h-[12.5rem] p-6 flex flex-col items-center justify-center gap-6 bg-secondColor"
+        className="relative w-[99%] h-[12rem] p-6 flex flex-col items-center justify-center gap-6 bg-secondColor"
       >
         <img
           src={groupLeft}
           alt="groupSVG"
           className="absolute left-0 bottom-0 -translate-x-8 translate-y-20"
         />
-        {/* <img
+        <img
           src={groupRigth}
           alt="groupSVG"
-          className="absolute right-0 top-0 translate-x-24 -translate-y-20"
-        /> */}
+          className="absolute right-20 top-0 translate-x-24 -translate-y-20"
+        />
         <p className="text-base font-medium font-Rubik text-textColorWhite opacity-80  mx-auto">
           FEATURED
         </p>
@@ -62,7 +67,7 @@ export default function Friends() {
         </button>
       </div>
       <div
-        className="flex flex-col items-start justify-start gap-2 sm:gap-4"
+        className="flex flex-col max-h-max pb-2 items-start justify-start gap-2 sm:gap-4"
         ref={scrollRef}
       >
         {friendList.map((friend, index) => (
@@ -71,7 +76,11 @@ export default function Friends() {
             FullName={friend.FullName}
             avatar={friend.avatar}
             points={friend.points}
-            country={friend.country}
+            countryCode={
+              CountriesData.filter(
+                (country) => country.name === friend?.country
+              )[0]?.code
+            }
           />
         ))}
       </div>

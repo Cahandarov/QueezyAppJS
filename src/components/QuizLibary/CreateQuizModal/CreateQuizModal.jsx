@@ -27,7 +27,7 @@ export default function CreateQuizModal() {
         values.addQuizDescription
       ) {
         const newQuiz = {
-          quizId: Date.now(),
+          id: Date.now(),
           categoryName: values.addQuizCategory,
           title: values.addQuizTitle,
           description: values.addQuizDescription,

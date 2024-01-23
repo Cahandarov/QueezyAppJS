@@ -7,19 +7,39 @@ import VoiceQuestion from "./VoiceQuestion";
 import Poll from "./Poll";
 import CheckboxAnswer from "./CheckboxAnswer";
 import { useDispatch, useSelector } from "react-redux";
-import { setAnswer, setChangeQuizIndex, setRunningTime } from "./quizPlaySlice";
+import {
+  setAnswer,
+  setChangeQuizIndex,
+  setNumberOfSkippedQuestions,
+  setPlayedQuizz,
+  setRunningTime,
+} from "./quizPlaySlice";
+import { setEndOfQuizModule } from "../discoverSlice";
 import Puzzle from "./Puzzle";
 import { useEffect, useRef } from "react";
 
 export default function QuizPlayModule() {
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   const quizRunningTime = useSelector((state) => state.quizPlay.runningTime);
+  const playedQuiz = useSelector((state) => state.quizPlay.playedQuizz);
+  const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
 
   // console.log(selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   const answer = useSelector((state) => state.quizPlay.answer);
+  const numberOfSkippedQuestions = useSelector(
+    (state) => state.quizPlay.numberOfSkippedQuestions
+  );
   const progRef = useRef(0);
   const progress = ((index + 1) / selectedQuiz.questions.length) * 100 + "%";
+  const answeredQuestion = {
+    id: selectedQuiz.questions[index].id,
+    type: selectedQuiz.questions[index].type,
+    question: selectedQuiz.questions[index].question,
+    options: selectedQuiz.questions[index].options,
+    correctAnswer: selectedQuiz.questions[index].correctAnswer,
+    explanation: selectedQuiz.questions[index].explanation,
+  };
   const dispatch = useDispatch();
   useEffect(() => {
     progRef.current.style.width = progress;
@@ -31,6 +51,16 @@ export default function QuizPlayModule() {
       dispatch(setChangeQuizIndex(index + 1));
       dispatch(setAnswer(null));
       dispatch(setRunningTime(selectedQuiz?.questions[index]?.answerTime));
+      answeredQuestion.answeredOption = answer;
+      answeredQuestion.gainedPoints = gainedPoints;
+      const updatedQuestions = [...playedQuiz.questions, answeredQuestion];
+      dispatch(setPlayedQuizz({ ...playedQuiz, questions: updatedQuestions }));
+    } else if (index === selectedQuiz.questions.length - 1) {
+      answeredQuestion.answeredOption = answer;
+      answeredQuestion.gainedPoints = gainedPoints;
+      const updatedQuestions = [...playedQuiz.questions, answeredQuestion];
+      dispatch(setPlayedQuizz({ ...playedQuiz, questions: updatedQuestions }));
+      dispatch(setEndOfQuizModule(true));
     }
   }
   function handleBackQuiz() {
@@ -47,8 +77,24 @@ export default function QuizPlayModule() {
         quizRunningTime === 0 &&
         index < selectedQuiz.questions.length - 1
       ) {
+        if (answer === null) {
+          // console.log("Test");
+
+          dispatch(setNumberOfSkippedQuestions(numberOfSkippedQuestions + 1));
+        }
+        answeredQuestion.answeredOption = answer;
+        answeredQuestion.gainedPoints = gainedPoints;
+        const updatedQuestions = [...playedQuiz.questions, answeredQuestion];
+        dispatch(
+          setPlayedQuizz({ ...playedQuiz, questions: updatedQuestions })
+        );
         dispatch(setChangeQuizIndex(index + 1));
         dispatch(setRunningTime(selectedQuiz?.questions[index]?.answerTime));
+      } else if (
+        quizRunningTime === 0 &&
+        index === selectedQuiz.questions.length - 1
+      ) {
+        dispatch(setEndOfQuizModule(true));
       }
     }, 1000);
 
@@ -58,7 +104,7 @@ export default function QuizPlayModule() {
   }, [quizRunningTime, dispatch]);
 
   return (
-    <div className="w-[70%] h-[33rem] flex flex-col p-8 rounded-3xl bg-white mx-auto mt-10">
+    <div className="w-[70%] h-[33rem] flex flex-col p-8 z-10 rounded-3xl bg-white mx-auto mt-6">
       <div className="flex justify-between items-start">
         <div className="flex flex-col justify-evenly items-start w-[50%]">
           <div className="w-full flex gap-4 justify-evenly items-center">

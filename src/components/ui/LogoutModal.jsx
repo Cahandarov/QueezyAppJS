@@ -8,7 +8,8 @@ import { useNavigate } from "react-router-dom";
 export default function LogoutModal() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  function LogOut() {
+  function LogOut(event) {
+    event.stopPropagation();
     dispatch(setLoginStatus(false));
     navigate("/login");
   }
@@ -37,8 +38,8 @@ export default function LogoutModal() {
       </div>
 
       <div
-        onClick={() => {
-          LogOut();
+        onClick={(event) => {
+          LogOut(event);
         }}
         className="flex gap-7 px-4 py-3 items-center justify-start mt-2 font-normal text-xl font-Rubik w-[95%] rounded-lg hover:bg-gray-100 "
       >

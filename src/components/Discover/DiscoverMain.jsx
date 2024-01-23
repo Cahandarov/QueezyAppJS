@@ -16,6 +16,7 @@ export default function DiscoverMain() {
   const navigate = useNavigate();
   const LiveQuizzes = useSelector((state) => state.quizPlay.liveQuizzes);
   let [quizzesForDisplay, setQuizzesForDisplay] = useState(LiveQuizzes);
+  const [title, setTitle] = useState("Live Quiz");
 
   function handleClickQuizItems(id) {
     const clickedQuiz = quizzes.find((quiz) => quiz.id === id);
@@ -43,6 +44,7 @@ export default function DiscoverMain() {
       );
       // console.log(filteredQuizzes);
       setQuizzesForDisplay(filteredQuizzes);
+      setTitle(category);
     }
   }
 
@@ -93,11 +95,11 @@ export default function DiscoverMain() {
       <div className="boxShadow flex flex-col mx-auto justify-between h-[63.5rem] w-full rounded-[2rem] p-8 mb-2 border-2 border-[#EFEEFC] bg-white ">
         <div className="w-full flex justify-between items-center">
           <p className="font-Rubik font-medium text-2xl text-textColorNeutralBlack_0C092A">
-            Live Quiz
+            {title}
           </p>
-          <button className="font-Rubik font-medium text-sm text-primaryColor">
+          {/* <button className="font-Rubik font-medium text-sm text-primaryColor">
             See All
-          </button>
+          </button> */}
         </div>
         <div className="w-full h-full mt-4 relative">
           {quizzesForDisplay.length ? (

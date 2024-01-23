@@ -1,5 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setAnswer, setGainedPoints } from "./quizPlaySlice";
+import {
+  setAnswer,
+  setGainedPoints,
+  setNumberOfCorrectAnswers,
+  setNumberOfIncorrectAnswers,
+} from "./quizPlaySlice";
 import { useState } from "react";
 
 export default function MultiAnswer() {
@@ -11,6 +16,12 @@ export default function MultiAnswer() {
   const originalOptions = selectedQuiz?.questions[index]?.options || [];
   const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+  const numberOfCorrectAnswers = useSelector(
+    (state) => state.quizPlay.numberOfCorrectAnswers
+  );
+  const numberOfIncorrectAnswers = useSelector(
+    (state) => state.quizPlay.numberOfIncorrectAnswers
+  );
 
   let Options = [];
 
@@ -33,8 +44,10 @@ export default function MultiAnswer() {
     if (ClickedValue === correctAnswer[0]) {
       const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
       dispatch(setGainedPoints(updatedPoints));
+      dispatch(setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1));
     } else {
-      return gainedPoints;
+      dispatch(setNumberOfIncorrectAnswers(numberOfIncorrectAnswers + 1));
+      // return gainedPoints;
     }
     // console.log(gainedPoints);
   }
