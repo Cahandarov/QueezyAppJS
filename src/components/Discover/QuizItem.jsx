@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import dots3 from "./images/3dots.svg";
 
 export default function QuizItemDiscover({
@@ -6,6 +7,7 @@ export default function QuizItemDiscover({
   category,
   QuizzesInThisCategory,
 }) {
+  const languageArray = useSelector((state) => state.language.languageArray);
   return (
     <div className="w-[10rem] h-[7.5rem] sm:w-[15.5rem] sm:h-[14rem] p-2 sm:p-4 justify-center items-center flex-col rounded-[1.25rem] bg-white border-2 border-solid border-[#EFEEFC] gap-8  hover:bg-slate-100 hover:border-transparent transition-colors duration-300">
       <div className="flex justify-between items-start">
@@ -20,7 +22,10 @@ export default function QuizItemDiscover({
         {QuizName}
       </p>
       <p className="liveQuizCategory text-left font-normal text-xs sm:text-sm font-Romik text-textColorLigthGrey2_858494 mt-4">
-        {category} <span>• {QuizzesInThisCategory} Quizzes</span>
+        {category}{" "}
+        <span>
+          • {QuizzesInThisCategory} {languageArray[0].quizzes}
+        </span>
       </p>
     </div>
   );

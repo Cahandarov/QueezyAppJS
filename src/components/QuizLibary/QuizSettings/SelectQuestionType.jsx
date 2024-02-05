@@ -1,29 +1,36 @@
 import { useState } from "react";
 import arrowToBottom from "../images/ArrowToBottom.svg";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setQuestionType } from "../createQuizSlice";
+import { eng } from "../../ui/languageData";
 
-const SelectQuestionType = ({ handleChange, formik }) => {
+const SelectQuestionType = ({ handleChange, values, formik }) => {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const dispatch = useDispatch();
   const [showOptions, setShowOptions] = useState(false);
   const [selectedQuestionType, setSelectedQuestionType] =
-    useState("Multiple Answer");
+    useState("multipleAnswer");
 
   const handleSelectChange = (question) => {
+    console.log(question);
     setSelectedQuestionType(question);
+    formik.resetForm();
     handleChange({
-      target: { name: "selectedQuestionType", value: question },
+      target: {
+        name: "selectedQuestionType",
+        value: eng[question],
+      },
     });
     setShowOptions(false);
-    dispatch(setQuestionType(selectedQuestionType));
+    dispatch(setQuestionType(eng[selectedQuestionType]));
   };
 
   const questions = [
-    "Multiple Answer",
-    "True or False",
-    "Type Answer",
-    "Voice Answer",
-    "Voice Question",
+    "multipleAnswer",
+    "trueOrFalse",
+    "typeAnswer",
+    "voiceAnswer",
+    "voiceQuestion",
     "Checkbox",
     "Poll",
     "Puzzle",
@@ -41,7 +48,7 @@ const SelectQuestionType = ({ handleChange, formik }) => {
         className="w-full rounded-[1.25rem] px-6 py-[0.9rem] bg-[#fff] border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300"
       >
         <div className="w-full h-full font-normal flex items-center text-base font-Rubik text-[#49465F]">
-          {selectedQuestionType && `${formik}`}
+          {`${languageArray[0][selectedQuestionType]}`}
         </div>
         {showOptions && (
           <div className="absolute z-40 top-full mt-4 left-0 w-full max-h-[200px] bg-white border-2 border-[#EFEEFC] overflow-y-auto">
@@ -51,7 +58,7 @@ const SelectQuestionType = ({ handleChange, formik }) => {
                 className="flex gap-3 items-center w-full h-8 pl-6 py-2 font-normal text-base font-Rubik hover:bg-violet-400 focus:bg-violet-600 cursor-pointer"
                 key={question}
               >
-                {question}
+                {languageArray[0][question]}
               </div>
             ))}
           </div>

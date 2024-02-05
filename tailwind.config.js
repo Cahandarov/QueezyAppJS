@@ -23,7 +23,8 @@ export default {
         textColorDarkBrown_660012: "#660012",
       },
       fontFamily: {
-        Rubik: "Rubik",
+        // Rubik: "Rubik",
+        Rubik: "Roboto",
       },
     },
   },

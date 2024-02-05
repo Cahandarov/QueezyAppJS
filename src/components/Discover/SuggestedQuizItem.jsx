@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import arrow from "./images/arrowToRigth.svg";
 
 export default function SuggestedQuizItem({
@@ -6,6 +7,7 @@ export default function SuggestedQuizItem({
   category,
   QuizzesInThisCategory,
 }) {
+  const languageArray = useSelector((state) => state.language.languageArray);
   return (
     <div className="w-full h-[6rem] p-6 flex justify-start items-center rounded-[1.25rem] bg-white border-2 border-solid border-[#EFEEFC] gap-6  hover:bg-slate-100 hover:border-transparent transition-colors duration-300">
       <div className="w-12 h-12 sm:w-[6rem] sm:h-[4.2rem] bg-BackRCLigthBlue_C4D0FB rounded-2xl flex justify-center items-center">
@@ -19,7 +21,10 @@ export default function SuggestedQuizItem({
           {quizName}
         </p>
         <p className="liveQuizCategory font-normal text-xs sm:text-sm font-Romik text-textColorLigthGrey2_858494 mt-4">
-          {category} <span>• {QuizzesInThisCategory} Quizzes</span>
+          {category}{" "}
+          <span>
+            • {QuizzesInThisCategory} {languageArray[0].quizzes}
+          </span>
         </p>
       </div>
       <img src={arrow} alt="Arrow" />

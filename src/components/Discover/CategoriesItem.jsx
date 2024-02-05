@@ -1,8 +1,11 @@
+import { useSelector } from "react-redux";
+
 export default function CategoriesItem({
   cover,
   category,
   QuizzesInThisCategory,
 }) {
+  const languageArray = useSelector((state) => state.language.languageArray);
   return (
     <div className="w-full h-full flex justify-start items-center gap-6">
       <div className="w-16 h-12 rounded-xl bg-white flex justify-center items-center">
@@ -13,7 +16,7 @@ export default function CategoriesItem({
           {category}
         </p>
         <p className="font-Rubik font-normal text-sm opacity-75 text-primaryColor group-hover:text-white transition-colors duration-300">
-          {QuizzesInThisCategory} <span> Quizzes</span>
+          {QuizzesInThisCategory} <span> {languageArray[0].quizzes}</span>
         </p>
       </div>
     </div>

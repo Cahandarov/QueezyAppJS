@@ -12,7 +12,7 @@ const initialState = {
 async function getQuizData() {
   try {
     const response = await axios.get("http://localhost:3000/quizData");
-    console.log(response.data);
+    // console.log(response.data);
     return response.data;
   } catch (error) {
     console.error("Error fetching quiz data:", error);
@@ -74,8 +74,6 @@ const quizzesSlice = createSlice({
         state.GetQuizzes_status = "failed";
       })
       .addCase(postNewQuizThunk.fulfilled, (state, action) => {
-        // Push the new quiz directly into the main array
-        // state.quizzes.push(action.payload);
         state.quizzes = [...state.quizzes, action.payload];
 
         state.AddQuiz_status = "succeeded";

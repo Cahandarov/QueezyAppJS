@@ -1,18 +1,18 @@
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 export default function MenuButtons({ btnName, icon, path }) {
+  const languageArray = useSelector((state) => state.language.languageArray);
   return (
     <NavLink
       to={path}
       className="w-full font-Rubik 
-    font-normal text-sm xl:text-base text-textColorLigthGrey_D2CDF6 h-[3.5rem] rounded-xl last-of-type:mt-7 focus:font-medium"
+    font-medium text-sm xl:text-base text-textColorLigthGrey_D2CDF6 h-[3.5rem] rounded-xl last-of-type:mt-7 focus:font-semibold"
     >
-      {/* <nav> */}
       <button className="navButtons w-full flex gap-[0.88rem] items-center justify-start font-Rubik p-4 ">
         <img src={icon} alt="icon" className="btn_svg" />
-        {btnName}
+        {languageArray[0][btnName]}
       </button>
-      {/* </nav> */}
     </NavLink>
   );
 }

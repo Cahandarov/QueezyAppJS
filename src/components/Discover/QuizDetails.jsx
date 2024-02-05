@@ -22,6 +22,7 @@ import {
 } from "./QuizPlayPage/quizPlaySlice";
 
 export default function QuizDetails() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const quizzes = useSelector((state) => state.quizzes.quizzes);
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   const liveQuizzes = useSelector((state) => state.quizPlay.liveQuizzes);
@@ -89,7 +90,7 @@ export default function QuizDetails() {
   }
 
   function handlePlayQuiz() {
-    navigate("/discover");
+    navigate("/discover/quizPlay");
     dispatch(setSideBarPage(false));
     dispatch(setQuizPlayPage(true));
     dispatch(setQuizDetailsPage(false));
@@ -111,10 +112,10 @@ export default function QuizDetails() {
   return (
     <div className="w-full max-h-fit min-h-[1084px] flex flex-col px-10 pt-10 pb-4 bg-[#FBFBFC] gap-6 justify-start items-center">
       <p className="w-full font-Rubik font-medium text-base text-primaryColor">
-        Discover{" "}
+        {languageArray[0].discover}{" "}
         <span className="w-full font-Rubik font-normal text-base text-[#858494]">
           {" "}
-          / Detail Quiz
+          / {languageArray[0].detailQuiz}
         </span>
       </p>
       <div className="flex w-full justify-center items-start gap-8 mx-auto">
@@ -128,24 +129,25 @@ export default function QuizDetails() {
             {selectedQuiz.categoryName}
           </p>
           <p className="font-Rubik font-medium text-2xl text-textColorNeutralBlack_0C092A">
-            Football Team Quiz
+            {selectedQuiz.title}
           </p>
           <div className="w-[60%] h-16 rounded-2xl bg-[#EFEEFC] flex justify-center items-center mt-6 p-4">
             <div className="flex items-center justify-start gap-3 border-r-2 border-slate-200 w-[50%]">
               <img src={questionIcon} alt="Question Icon" />
               <p className="font-Rubik font-medium text-base text-textColorNeutralBlack_0C092A">
-                {selectedQuiz.questions.length} <span> questions</span>
+                {selectedQuiz.questions.length}{" "}
+                <span> {languageArray[0].questions}</span>
               </p>
             </div>
             <div className="flex items-center justify-start gap-3 w-[50%] pl-4">
               <img src={pointsIcon} alt="Points Icon" />
               <p className="font-Rubik font-medium text-base text-textColorNeutralBlack_0C092A">
-                {totalPoints} <span> points</span>
+                {totalPoints} <span> {languageArray[0].points}</span>
               </p>
             </div>
           </div>
           <p className="font-Rubik font-medium text-base text-[#858494] uppercase mt-6">
-            Description
+            {languageArray[0].description}
           </p>
           <p className="font-Rubik  font-normal text-base text-[#49465F] mt-2">
             {selectedQuiz.description}
@@ -163,7 +165,7 @@ export default function QuizDetails() {
                 Brandon Curtis
               </p>
               <p className="font-Rubik font-normal text-sm text-[#858494]">
-                Creator
+                {languageArray[0].Creator}
               </p>
             </div>
           </div>
@@ -172,29 +174,34 @@ export default function QuizDetails() {
               onClick={() => handleBackToDiscoverMain()}
               className="w-[25%] h-[3.2rem] mt-8 rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-primaryColor bg-white border-2 border-primaryColor hover:bg-slate-100 hover:border-slate-400 focus:outline-none focus:ring focus:ring-secondColor focus:ring-offset-2 transition-colors duration-300"
             >
-              Back
+              {languageArray[0].Back}
             </button>
             <button
               onClick={() => handlePlayQuiz()}
               className="w-[35%] h-[3.2rem] mt-8 rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-primaryColor border-none hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:ring-secondColor focus:ring-offset-2 transition-colors duration-300"
             >
-              Play
+              {languageArray[0].Play}
             </button>
           </div>
         </div>
-        <div className="boxShadow flex flex-col h-[45rem] w-[40%] rounded-[2rem] p-8 mb-2 border-2 border-[#EFEEFC] bg-white ">
+        <div className="boxShadow flex flex-col h-[41rem] w-[40%] rounded-[2rem] p-8 mb-2 border-2 border-[#EFEEFC] bg-white ">
           <div className="w-full flex justify-between items-center mb-6">
             <p className="font-Rubik font-medium text-2xl text-textColorNeutralBlack_0C092A">
-              Suggest for You
+              {languageArray[0].suggestForYou}
             </p>
             <button
               onClick={() => handleSeeAll()}
               className="font-Rubik font-medium text-sm text-primaryColor"
             >
-              See All
+              {!showAllQuiezzez
+                ? languageArray[0].seeAll
+                : languageArray[0].seeLess}
             </button>
           </div>
-          <div className="flex flex-col justify-center gap-4" ref={scrollRef}>
+          <div
+            className="flex flex-col justify-start gap-4 pr-1"
+            ref={scrollRef}
+          >
             {suggestedQuizzes.map((quiz, index) => (
               <button
                 onClick={() => handleClickQuizItems(quiz?.id)}

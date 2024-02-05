@@ -16,6 +16,7 @@ import {
 
 export default function QuizLibraryMain() {
   const quizzes = useSelector((state) => state.quizzes.quizzes);
+  const languageArray = useSelector((state) => state.language.languageArray);
 
   const itemsPerPage = 12;
   const [currentPage, setCurrentPage] = useState(1);
@@ -62,7 +63,7 @@ export default function QuizLibraryMain() {
     if (clickedQuiz) {
       dispatch(setSelectedQuiz(clickedQuiz));
     }
-    navigate("/discover");
+    navigate("/discover/quizDetails");
     dispatch(setDiscoverMainPage(false));
     dispatch(setQuizDetailsPage(true));
   }
@@ -72,14 +73,14 @@ export default function QuizLibraryMain() {
       <div className="boxShadow flex flex-col mx-auto justify-between h-[63.5rem] w-full rounded-[2rem] p-8 mb-2 border-2 border-[#EFEEFC] bg-white ">
         <div className="">
           <p className="font-medium text-2xl text-textColorNeutralBlack_0C092A font-Rubik text-left">
-            Quiz List
+            {languageArray[0].quizList}
           </p>
           <div className="my-6 flex items-center justify-between w-full">
             <div className="relative flex items-center justify-center w-[20.43rem] h-[3.5rem]">
               <input
                 id="QuizLibraryInput"
                 type="search"
-                placeholder="Find quiz name or categories"
+                placeholder={languageArray[0].findQuizzes}
                 className="HoverAndFocus w-full h-[3.5rem] p-4 pl-14 rounded-[1.25rem] text-textColorBlack font-normal text-base font-Rubik"
                 value={searchQuery}
                 onChange={handleSearchChange}
@@ -104,7 +105,8 @@ export default function QuizLibraryMain() {
                 }}
                 className="w-[12.12rem] buttons  HoverAndFocusDark flex justify-center items-center gap-4 py-4 px-8"
               >
-                Create Quiz <span className="font-semibol text-2xl">+</span>
+                {languageArray[0].createQuiz}{" "}
+                <span className="font-semibol text-2xl">+</span>
               </button>
             </div>
           </div>

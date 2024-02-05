@@ -25,8 +25,24 @@ nav .active {
   transition: all ease-out 300ms;
 }
 
-.navButtons:active svg {
+nav .active .btn_svg path {
+  stroke: #fff;
+}
+nav:has(nav .active) .btn_svg path {
   fill: #fff;
+  stroke: #fff;
+  color: #fff;
+}
+
+.navButtons.active .btn_svg path {
+  stroke: white !important; /* Change to the desired stroke color for the active state */
+}
+.navButtons.active .btn_svg {
+  fill: white;
+}
+
+nav .active > img path {
+  fill: white !important;
   stroke: #fff;
   color: #fff;
 }
@@ -36,13 +52,13 @@ nav .active {
   stroke: #fff;
   color: #fff;
 }
-.navButtons .active svg {
+.navButtons .active img {
   fill: #fff;
   stroke: #fff;
   color: #fff;
 }
 
-nav .active svg {
+nav .active img {
   fill: #fff;
   stroke: #fff;
   color: #fff;
@@ -59,7 +75,7 @@ nav .active svg {
   border-radius: 0.75rem;
 }
 
-nav .active .navButtons .btn_svg > path {
+nav .active .navButtons img > path {
   fill: white;
   stroke: #fff;
   color: #fff;
@@ -155,6 +171,10 @@ nav .active .navButtons .btn_svg > path {
   animation-timing-function: ease;
   animation-delay: 0s;
 }
-/* .tableLeaderBoard {
-  border-radius: 40px;
+/* .p-chart {
+  color: white;
+} */
+
+/* .p-chart canvas {
+  color: white;
 } */

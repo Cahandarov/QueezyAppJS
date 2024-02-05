@@ -11,31 +11,31 @@ import Settings from "../Settings/Settings";
 
 export const MenuData = [
   {
-    button: "Dashboard",
+    button: "dashboard",
     btnIcon: img1,
     path: "/",
     component: <Dashboard />,
   },
   {
-    button: "Discover",
+    button: "discover",
     btnIcon: img2,
     path: "/discover",
     component: <Discover />,
   },
   {
-    button: "Quiz Library",
+    button: "quizLibrary",
     btnIcon: img3,
     path: "/quizlibrary",
     component: <QuizLibrary />,
   },
   {
-    button: "Leaderboard",
+    button: "leaderboard",
     btnIcon: img4,
     path: "/leaderboard",
     component: <Leaderboard />,
   },
   {
-    button: "Settings",
+    button: "settings",
     btnIcon: img5,
     path: "/settings",
     component: <Settings />,

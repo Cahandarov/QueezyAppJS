@@ -1,21 +1,23 @@
 import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { FormikContext } from "../CreateQuizModal/FormikContext";
+import { useSelector } from "react-redux";
+import convertFileToBase64 from "../../App/ConvertToBase64";
 
 export default function VoiceQuestion() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const [selectedAudio, setSelectedAudio] = useState("");
   const formik = useContext(FormikContext);
 
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
-    const blobUrl = URL.createObjectURL(file);
+    // const blobUrl = URL.createObjectURL(file);
+    const blobUrl = await convertFileToBase64(file);
     setSelectedAudio(blobUrl);
-    formik.setFieldValue("addQuestion", blobUrl); // Update the field name accordingly
+    formik.setFieldValue("addQuestion", blobUrl);
   };
 
-  useEffect(() => {
-    // Place any logic related to selectedAudio here if needed
-  }, [selectedAudio]);
+  useEffect(() => {}, [selectedAudio]);
 
   return (
     <div className="flex flex-col w-full mt-6">
@@ -28,7 +30,11 @@ export default function VoiceQuestion() {
           htmlFor="addAudioFile"
           className="font-medium my-0 mb-1 px-40 py-8 text-base font-Rubik text-left text-primaryColor"
         >
-          {`${!selectedAudio ? `Add Audio File` : `File Selected`}`}
+          {`${
+            !selectedAudio
+              ? languageArray[0].addAudioFile
+              : languageArray[0].fileSelected
+          }`}
         </label>
         <input
           id="addAudioFile"
@@ -39,8 +45,6 @@ export default function VoiceQuestion() {
         />
       </div>
 
-      {/* <audio src={selectedAudio} controls></audio> */}
-
       <audio
         src={`data:audio/wav;base64,${formik.values.addQuestion}`}
         controls
@@ -49,7 +53,7 @@ export default function VoiceQuestion() {
         htmlFor="addExplanationToVoiceQuestion"
         className="font-medium my-0 mb-2 mt-3 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
-        Add Explanation
+        {languageArray[0].addExplanation}
       </label>
 
       <input
@@ -59,13 +63,13 @@ export default function VoiceQuestion() {
         onChange={formik.handleChange}
         className="w-full h-[3.5rem] rounded-[1.25rem]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         type="text"
-        placeholder="Enter explanation to question"
+        placeholder={languageArray[0].enterExplanationToQuestion}
       />
       <label
         htmlFor="addAnswerToVoiceQuestion"
         className="font-medium my-0 mt-6 mb-2 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
-        Add Answer
+        {languageArray[0].addAnswer}
       </label>
       <input
         id="addAnswerToVoiceQuestion"
@@ -74,7 +78,7 @@ export default function VoiceQuestion() {
         onChange={formik.handleChange}
         className="w-full h-[3.5rem] rounded-[1.25rem] font-Rubik font-normal text-base text-[#858494]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300"
         type="text"
-        placeholder="Enter your answer"
+        placeholder={languageArray[0].enterYourAnswer}
       />
     </div>
   );

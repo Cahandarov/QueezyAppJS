@@ -1,10 +1,11 @@
 import { useState, useRef } from "react";
 import audioRecordIcon from "../images/audioRecordIcon.svg";
 import convertFileToBase64 from "../../App/ConvertToBase64";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setAnswer } from "./quizPlaySlice";
 
 const AudioRecorderAnswer = () => {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const [permission, setPermission] = useState(false);
   const [stream, setStream] = useState(null);
   const mediaRecorder = useRef(null);
@@ -27,7 +28,7 @@ const AudioRecorderAnswer = () => {
         alert(err.message);
       }
     } else {
-      alert("The MediaRecorder API is not supported in your browser.");
+      alert(languageArray[0].mediaRecorderNotSupport);
     }
   };
   const startRecording = async () => {
@@ -65,7 +66,7 @@ const AudioRecorderAnswer = () => {
           name="addVoiceAnswer"
           className="w-[55%] h-[3.5rem] rounded-[1.25rem] font-Rubik font-normal text-base text-[#858494] mt-2 flex justify-start items-center gap-8 px-4 bg-white border-2 border-[#EFEEFC] hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         >
-          Get Microphone
+          {languageArray[0].getMicrophone}
           <img src={audioRecordIcon} alt="recorIcon" />
         </button>
       )}
@@ -75,9 +76,9 @@ const AudioRecorderAnswer = () => {
           onClick={startRecording}
           type="button"
           name="addVoiceAnswer"
-          className="w-[55%] h-[3.5rem] rounded-[1.25rem] font-Rubik font-normal text-base text-[#858494] mt-6 flex justify-start items-center gap-8 px-4 bg-white border-2 border-[#EFEEFC] hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
+          className="w-[55%] h-[3.5rem] rounded-[1.25rem] font-Rubik font-normal text-base text-[#858494] mt-2 flex justify-start items-center gap-8 px-4 bg-white border-2 border-[#EFEEFC] hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         >
-          Start Recording
+          {languageArray[0].startRecording}
           <img src={audioRecordIcon} alt="recorIcon" />
         </button>
       )}
@@ -87,9 +88,9 @@ const AudioRecorderAnswer = () => {
           onClick={stopRecording}
           type="button"
           name="addVoiceAnswer"
-          className="w-[55%] h-[3.5rem] rounded-[1.25rem] font-Rubik font-normal text-base text-[#858494] mt-6 flex justify-start items-center gap-8 px-4 bg-white border-2 border-[#EFEEFC] hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
+          className="w-[55%] h-[3.5rem] rounded-[1.25rem] font-Rubik font-normal text-sm text-[#858494] mt-2 flex justify-start items-center gap-8 px-4 bg-white border-2 border-[#EFEEFC] hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         >
-          Stop Recording
+          {languageArray[0].stopRecording}
           <img src={audioRecordIcon} alt="recorIcon" />
         </button>
       )}
@@ -97,7 +98,7 @@ const AudioRecorderAnswer = () => {
         <div className="audio-container flex flex-col justify-center items-center gap-2">
           <audio src={`data:audio/wav;base64,${audio}`} controls></audio>
           <a download href={audio}>
-            Download Recording
+            {languageArray[0].downloadRecording}
           </a>
         </div>
       ) : null}

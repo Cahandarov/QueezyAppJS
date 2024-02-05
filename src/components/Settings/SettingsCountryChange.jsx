@@ -1,21 +1,28 @@
 import { useState } from "react";
-import { CountriesData } from "../../ui/CountriesData";
+import { CountriesData } from "../ui/CountriesData";
 import CountryFlag from "react-country-flag";
-import countryIcon from "../Images/country-icon.svg";
+import countryIcon from "./images/country-icon.svg";
+import { useSelector } from "react-redux";
+import { eng } from "../ui/languageData";
 
-const SelectOption = ({ handleChange }) => {
-  const [selectedOption, setSelectedOption] = useState("");
+const SettingsCountryChange = ({
+  handleChange,
+  selectedOption,
+  setSelectedOption,
+}) => {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const [showOptions, setShowOptions] = useState(false);
+  const enteries = Object.entries(eng);
 
   const handleSelectChange = (country) => {
     setSelectedOption(country);
     handleChange({
-      target: { name: "countrySignUp", value: country },
+      target: { name: "countryChange", value: country },
     });
   };
 
   return (
-    <div className="relative mt-4 w-full h-full">
+    <div className="relative mt-1 w-full h-full">
       <div
         role="button"
         tabIndex={0}
@@ -25,10 +32,12 @@ const SelectOption = ({ handleChange }) => {
       >
         <div className="font-normal flex items-center gap-4 text-base font-Rubik text-textColorLigthGrey2_858494">
           <img src={countryIcon} alt="Country Icon" />
-          {!selectedOption ? "Select your Country" : `${selectedOption}`}
+          {!selectedOption
+            ? languageArray[0].selectYourCountry
+            : `${selectedOption}`}
         </div>
         {showOptions && (
-          <div className="absolute top-full left-0 w-full max-h-[200px] bg-white border-2 border-[#EFEEFC] overflow-y-auto">
+          <div className="absolute top-full mt-[10px] left-0 w-full max-h-[200px] bg-white border-2 border-[#EFEEFC] overflow-y-auto">
             {CountriesData.map((country) => (
               <div
                 onClick={() => handleSelectChange(country.name)}
@@ -40,7 +49,11 @@ const SelectOption = ({ handleChange }) => {
                   svg
                   style={{ width: "1.5em", height: "1.5em" }}
                 />
-                {country.name}
+                {
+                  languageArray[0][
+                    enteries.find((data) => data[1] === country.name)[0]
+                  ]
+                }
               </div>
             ))}
           </div>
@@ -50,4 +63,4 @@ const SelectOption = ({ handleChange }) => {
   );
 };
 
-export default SelectOption;
+export default SettingsCountryChange;

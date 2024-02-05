@@ -3,8 +3,8 @@ import avatar from "./images/Avatar.svg";
 export const UsersData = [
   {
     Name: "John",
-    Surname: " Smith",
-    avatar: avatar,
+    Surname: "Smith",
+    avatar: null,
     country: "Azerbaijan",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -17,7 +17,7 @@ export const UsersData = [
   },
   {
     Name: "Patrick",
-    Surname: " Johnson",
+    Surname: "Johnson",
     avatar: avatar,
     country: "Bahamas",
     pointsTotal: [
@@ -36,7 +36,7 @@ export const UsersData = [
   {
     Name: "Brundi",
     Surname: "Black",
-    avatar: avatar,
+    avatar: null,
     country: "Georgia",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -51,7 +51,7 @@ export const UsersData = [
   {
     Name: "Nikoloz",
     Surname: "Tordia",
-    avatar: avatar,
+    avatar: null,
     country: "Georgia",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -66,7 +66,7 @@ export const UsersData = [
   {
     Name: "Kuanish",
     Surname: "Duanov",
-    avatar: avatar,
+    avatar: null,
     country: "Kazakhstan",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -81,7 +81,7 @@ export const UsersData = [
   {
     Name: "Shahmuhammed",
     Surname: "Hojayev",
-    avatar: avatar,
+    avatar: null,
     country: "Turkmenistan",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -96,7 +96,7 @@ export const UsersData = [
   {
     Name: "Artemis",
     Surname: "Mici",
-    avatar: avatar,
+    avatar: null,
     country: "Albania",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -125,7 +125,7 @@ export const UsersData = [
   },
   {
     Name: "Bruce",
-    Surname: " White",
+    Surname: "White",
     avatar: avatar,
     country: "Australia",
     pointsTotal: [
@@ -148,7 +148,7 @@ export const UsersData = [
   {
     Name: "Lee",
     Surname: "Bruce",
-    avatar: avatar,
+    avatar: null,
     country: "Brazil",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -160,10 +160,10 @@ export const UsersData = [
     ],
   },
   {
-    Name: "Sasha",
-    Surname: "Green",
-    avatar: avatar,
-    country: "Finland",
+    Name: "Azamat",
+    Surname: "Seitkaliyev",
+    avatar: null,
+    country: "Kazakhstan",
     pointsTotal: [
       { point: 57, gainedDate: "14.11.2023 17:43" },
       { point: 57, gainedDate: "14.11.2023 17:43" },

@@ -3,8 +3,8 @@ import avatar from "./images/avatar.png";
 export const LeaderData = [
   {
     Name: "John",
-    Surname: " Smith",
-    avatar: avatar,
+    Surname: "Smith",
+    avatar: null,
     country: "Azerbaijan",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -16,10 +16,10 @@ export const LeaderData = [
     ],
   },
   {
-    Name: "Patrick",
-    Surname: " Johnson",
+    Name: "Azamat",
+    Surname: "Seitkaliyev",
     avatar: avatar,
-    country: "Bahamas",
+    country: "Kazakhstan",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
       { point: 207, gainedDate: "12.11.2023 17:43" },
@@ -36,7 +36,7 @@ export const LeaderData = [
   {
     Name: "Brundi",
     Surname: "Black",
-    avatar: avatar,
+    avatar: null,
     country: "Georgia",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -51,7 +51,7 @@ export const LeaderData = [
   {
     Name: "Nikoloz",
     Surname: "Tordia",
-    avatar: avatar,
+    avatar: null,
     country: "Georgia",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -66,7 +66,7 @@ export const LeaderData = [
   {
     Name: "Kuanish",
     Surname: "Duanov",
-    avatar: avatar,
+    avatar: null,
     country: "Kazakhstan",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -81,7 +81,7 @@ export const LeaderData = [
   {
     Name: "Shahmuhammed",
     Surname: "Hojayev",
-    avatar: avatar,
+    avatar: null,
     country: "Turkmenistan",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -96,7 +96,7 @@ export const LeaderData = [
   {
     Name: "Artemis",
     Surname: "Mici",
-    avatar: avatar,
+    avatar: null,
     country: "Albania",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -125,7 +125,7 @@ export const LeaderData = [
   },
   {
     Name: "Bruce",
-    Surname: " White",
+    Surname: "White",
     avatar: avatar,
     country: "Australia",
     pointsTotal: [
@@ -148,7 +148,7 @@ export const LeaderData = [
   {
     Name: "Lee",
     Surname: "Bruce",
-    avatar: avatar,
+    avatar: null,
     country: "Brazil",
     pointsTotal: [
       { point: 107, gainedDate: "12.01.2023 17:43" },
@@ -162,7 +162,7 @@ export const LeaderData = [
   {
     Name: "Sasha",
     Surname: "Green",
-    avatar: avatar,
+    avatar: null,
     country: "Finland",
     pointsTotal: [
       { point: 57, gainedDate: "14.11.2023 17:43" },

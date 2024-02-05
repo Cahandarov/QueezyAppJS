@@ -1,10 +1,10 @@
 import Logo from "../Images/Logo_Queezy_Dark.svg";
 import LogoText from "../Images/Queezy_Text_Dark.svg";
-import SelectOption from "./SelectOption";
 import { useDispatch } from "react-redux";
 import { setSignUpStages } from "../userSlice";
 import { MyContext } from "./SignUpContext";
 import { useContext } from "react";
+import SelectOptionCountry from "./SelectOptionCountry";
 
 export default function SignUpAddCountry() {
   const dispatch = useDispatch();
@@ -48,7 +48,7 @@ export default function SignUpAddCountry() {
         id="countrySignUp"
         className="w-[66%] h-[3.5rem] min-w-[240px] mx-auto lg:mx-0 flex items-center justify-center relative"
       >
-        <SelectOption handleChange={formik.handleChange} />
+        <SelectOptionCountry handleChange={formik.handleChange} />
       </div>
 
       <button

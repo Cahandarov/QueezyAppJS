@@ -5,8 +5,10 @@ import buttonSVG from "./images/Button-group.svg";
 import FriendsItem from "./FriendsItem";
 import { FriendsData } from "./FriendsData";
 import { CountriesData } from "../../ui/CountriesData";
+import { useSelector } from "react-redux";
 
 export default function Friends() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const scrollRef = useRef(null);
   const topThreeFriends = FriendsData.sort((a, b) => b.points - a.points).slice(
     0,
@@ -33,13 +35,13 @@ export default function Friends() {
     <div className="w-full sm:w-[80%] md:w-[47%] lg:w-[23rem] h-[30rem] order-4 xl:order-5 p-6 flex flex-col gap-4 rounden-[2rem] bg-white dashboard_boxes">
       <div className="flex justify-between items-center">
         <p className="text-sm sm:text-2xl font-medium font-Rubik text-textColorNeutralBlack_0C092A leading-10">
-          Friends
+          {languageArray[0].friends}
         </p>
         <button
           className="text-sm sm:text-base font-medium font-Rubik text-primaryColor z-40"
           onClick={handleSeeAll}
         >
-          See all
+          {!showAllFriends ? languageArray[0].seeAll : languageArray[0].seeLess}
         </button>
       </div>
       <div
@@ -73,7 +75,8 @@ export default function Friends() {
         {friendList.map((friend, index) => (
           <FriendsItem
             key={index}
-            FullName={friend.FullName}
+            Name={friend.Name}
+            Surname={friend.Surname}
             avatar={friend.avatar}
             points={friend.points}
             countryCode={

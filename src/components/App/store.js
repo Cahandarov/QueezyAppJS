@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 // import { composeWithDevTools } from "redux-devtools-extension";
 // import { getDataThunk } from '../LogIn/userDataSlice';
+import languageReducer from "../ui/languageSlice";
 import userReducer from "../LogIn/userSlice";
 import userDataReducer from "../LogIn/userSlice";
 import SignUpReducer from "../LogIn/userSlice";
@@ -14,9 +15,12 @@ import discoverReducer from "../Discover/discoverSlice";
 import dashboardReducer from "../Dashboard/dashboardSlice";
 import uiReducer from "../ui/uiSlice";
 import quizPlayReducer from "../Discover/QuizPlayPage/quizPlaySlice";
+import settingsReducer from "../Settings/settingsSlice";
+import favoritesReducer from "../QuizLibary/favoritesSlice";
 
 export const store = configureStore({
   reducer: {
+    language: languageReducer,
     login: userReducer,
     userData: userDataReducer,
     SignUpStages: SignUpReducer,
@@ -30,6 +34,8 @@ export const store = configureStore({
     dashboard: dashboardReducer,
     ui: uiReducer,
     quizPlay: quizPlayReducer,
+    settings: settingsReducer,
+    favorites: favoritesReducer,
   },
 
   // middleware: (getDefaultMiddleware) =>

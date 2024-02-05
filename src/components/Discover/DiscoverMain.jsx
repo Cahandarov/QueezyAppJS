@@ -10,22 +10,22 @@ import {
 import { useNavigate } from "react-router-dom";
 
 export default function DiscoverMain() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const quizzes = useSelector((state) => state.quizzes.quizzes);
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const LiveQuizzes = useSelector((state) => state.quizPlay.liveQuizzes);
   let [quizzesForDisplay, setQuizzesForDisplay] = useState(LiveQuizzes);
-  const [title, setTitle] = useState("Live Quiz");
+  const [title, setTitle] = useState(null);
 
   function handleClickQuizItems(id) {
     const clickedQuiz = quizzes.find((quiz) => quiz.id === id);
-    // console.log(id);
-    // console.log(clickedQuiz);
+
     if (clickedQuiz) {
       dispatch(setSelectedQuiz(clickedQuiz));
     }
-    navigate("/discover");
+    navigate("/discover/quizDetails");
     dispatch(setDiscoverMainPage(false));
     dispatch(setQuizDetailsPage(true));
   }
@@ -75,7 +75,7 @@ export default function DiscoverMain() {
   return (
     <div className="w-full h-full min-h-[1086px] flex flex-col px-10 pt-10 pb-4 bg-[#FBFBFC] gap-6 justify-start items-center">
       <p className="w-full font-Rubik font-bold text-[1.75rem] text-textColorNeutralBlack_0C092A">
-        Categories
+        {languageArray[0].Categories}
       </p>
       <div className="flex flex-wrap w-full flex-start items-center gap-4 mx-auto">
         {slicedCategories.map((quiz, index) => (
@@ -95,11 +95,8 @@ export default function DiscoverMain() {
       <div className="boxShadow flex flex-col mx-auto justify-between h-[63.5rem] w-full rounded-[2rem] p-8 mb-2 border-2 border-[#EFEEFC] bg-white ">
         <div className="w-full flex justify-between items-center">
           <p className="font-Rubik font-medium text-2xl text-textColorNeutralBlack_0C092A">
-            {title}
+            {title ? title : languageArray[0].liveQuiz}
           </p>
-          {/* <button className="font-Rubik font-medium text-sm text-primaryColor">
-            See All
-          </button> */}
         </div>
         <div className="w-full h-full mt-4 relative">
           {quizzesForDisplay.length ? (
@@ -124,7 +121,7 @@ export default function DiscoverMain() {
             </div>
           ) : (
             <p className="absolute left-[28%] bottom-[50%] font-Rubik font-medium text-3xl text-textColorNeutralBlack_0C092A">
-              There are currently no live quizzes.
+              {languageArray[0].liveQuizText}
             </p>
           )}
         </div>

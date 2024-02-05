@@ -8,6 +8,7 @@ const initialState = {
   playedQuizz: {},
   runningTime: 0,
   answer: null,
+  gainedPointsForQuestion: 0,
   gainedPoints: 0,
   numberOfCorrectAnswers: 0,
   numberOfIncorrectAnswers: 0,
@@ -36,6 +37,9 @@ const quizPlaySlice = createSlice({
     setGainedPoints(state, action) {
       state.gainedPoints = action.payload;
     },
+    setGainedPointsForQuestion(state, action) {
+      state.gainedPointsForQuestion = action.payload;
+    },
     setNumberOfCorrectAnswers(state, action) {
       state.numberOfCorrectAnswers = action.payload;
     },
@@ -56,6 +60,7 @@ export const {
   setLiveQuizzes,
   setRunningTime,
   setAnswer,
+  setGainedPointsForQuestion,
   setGainedPoints,
   setNumberOfCorrectAnswers,
   setNumberOfIncorrectAnswers,

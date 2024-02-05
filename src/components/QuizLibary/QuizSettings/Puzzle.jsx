@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import "primeicons/primeicons.css";
 import { useContext } from "react";
 import { FormikContext } from "../CreateQuizModal/FormikContext";
+import { useSelector } from "react-redux";
 
 export default function Puzzle() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const formik = useContext(FormikContext);
   const [answers, setAnswers] = useState([""]);
 
@@ -36,7 +38,7 @@ export default function Puzzle() {
         htmlFor="addQuestion"
         className="font-medium my-0 mb-2 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
-        Add Question
+        {languageArray[0].addQuestion}
       </label>
       <input
         id="addQuestionToPoll"
@@ -45,14 +47,14 @@ export default function Puzzle() {
         onChange={formik.handleChange}
         className="w-full h-[3.5rem] rounded-[1.25rem]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         type="text"
-        placeholder="Enter your questions"
+        placeholder={languageArray[0].enterYourQuestion}
       />
 
       <label
         htmlFor="addExplanationToPuzzle"
         className="font-medium my-0 mb-1 mt-3 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
-        Add Explanation
+        {languageArray[0].addExplanation}
       </label>
 
       <input
@@ -62,14 +64,14 @@ export default function Puzzle() {
         onChange={formik.handleChange}
         className="w-full h-[3.5rem] rounded-[1.25rem]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         type="text"
-        placeholder="Enter explanation to question"
+        placeholder={languageArray[0].enterExplanationToQuestion}
       />
 
       <label
         htmlFor="addCorrectOptionToPuzzle"
         className="font-medium my-0 mb-1 mt-3 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
-        Add Correct Option
+        {languageArray[0].addCorectOption}
       </label>
 
       <input
@@ -79,14 +81,14 @@ export default function Puzzle() {
         onChange={formik.handleChange}
         className="w-full h-[3.5rem] rounded-[1.25rem]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         type="text"
-        placeholder="Enter correct option"
+        placeholder={languageArray[0].enterCorectOption}
       />
       <div className="flex items-center justify-start gap-4  mt-6">
         <label
           htmlFor="addAnswersToPuzzle"
           className="font-medium my-0 text-base font-Rubik text-left text-textColorNeutralBlack_0C092A"
         >
-          Add Answers
+          {languageArray[0].addAnswers}
         </label>
         <button type="button" onClick={addAnswer}>
           <i className="pi pi-plus-circle font-extrabold text-2xl scale-75 hover:scale-110 transition-all duration-300"></i>
@@ -106,7 +108,7 @@ export default function Puzzle() {
               onChange={(e) => handleAnswerChange(index, e.target.value)}
               className="addAnswerToPuzzle w-full h-full rounded-[1.25rem] p-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
               type="text"
-              placeholder={`Add choice answer ${index + 1}`}
+              placeholder={`${languageArray[0].enterOption} ${index + 1}`}
             />
             {answers.length > 1 && (
               <button

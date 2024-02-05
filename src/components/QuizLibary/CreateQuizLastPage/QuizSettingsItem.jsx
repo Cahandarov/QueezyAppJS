@@ -1,7 +1,12 @@
-import dotsIcon from "../images/6dots.svg";
 import dots3Icon from "../images/3dotsBlack.svg";
 import timeIcon from "../images/timeIcon.svg";
+import { eng } from "../../ui/languageData";
+import { useSelector } from "react-redux";
+
 export default function QuizSettingsItemLast({ question }) {
+  const enteries = Object.entries(eng);
+  const languageArray = useSelector((state) => state.language.languageArray);
+
   return (
     <div className="w-[100%] h-[9.5rem] flex items-start justify-center">
       <div className="w-full h-full flex items-start border-2 border-[#EFEEFC] rounded-2xl hover:border-primaryColor">
@@ -17,7 +22,7 @@ export default function QuizSettingsItemLast({ question }) {
         <div className="w-[87%] h-full flex flex-col p-6 gap-2">
           <div className="w-full flex justify-between items-center">
             <p className="font-Rubik font-bold text-base text-[#49465F]">
-              Question {question.id}
+              {languageArray[0].Question} {question.id}
             </p>
             <img src={dots3Icon} alt="icon" />
           </div>
@@ -28,10 +33,14 @@ export default function QuizSettingsItemLast({ question }) {
             <div className="flex items-center justify-center gap-1 font-Rubik font-medium text-sm text-textColorNeutralBlack_0C092A">
               <img src={timeIcon} alt="Time icon" />
               <span>{question.answerTime} </span>
-              <span> Sec</span>
+              <span> {languageArray[0].Sec}</span>
             </div>
             <p className="font-Rubik font-medium text-sm text-[#49465F]">
-              {question.type}
+              {
+                languageArray[0][
+                  enteries.find((data) => data[1] === question.type)[0]
+                ]
+              }
             </p>
           </div>
         </div>

@@ -1,26 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import arrowToBottom from "../images/ArrowToBottom.svg";
 import { useSelector } from "react-redux";
 
 const SelectOption = ({ selectedCategory, setSelectedCategory }) => {
   const quizzes = useSelector((state) => state.quizzes.quizzes);
-  const categories = [];
-
-  const uniqueCategories = Array.from(
-    new Set(quizzes?.map((quiz) => quiz?.categoryName))
-  );
-
-  uniqueCategories.forEach((category) => {
-    const quizzesForCategory = quizzes?.filter(
-      (quiz) => quiz?.categoryName === category
-    );
-    categories.push(category);
-
-    // console.log(quizzesForCategory);
-  });
-  // console.log(categories);
-
   const [showOptions, setShowOptions] = useState(false);
+
+  const [categories, setCategories] = useState([]);
+  const languageArray = useSelector((state) => state.language.languageArray);
+
+  useEffect(() => {
+    const uniqueCategories = Array.from(
+      new Set(quizzes?.map((quiz) => quiz?.categoryName))
+    );
+    setCategories(uniqueCategories);
+  }, [quizzes]);
 
   const handleSelectChange = (category) => {
     setSelectedCategory(category);
@@ -41,15 +35,15 @@ const SelectOption = ({ selectedCategory, setSelectedCategory }) => {
         <div className="w-full h-full font-normal flex items-center text-base font-Rubik text-[#6A5AE0]">
           {selectedCategory
             ? `${selectedCategory}`
-            : "Category" + " (" + categories?.length + ")"}
+            : languageArray[0].Category + " (" + categories?.length + ")"}
         </div>
         {showOptions && (
           <div className="absolute top-full mt-1 left-0 w-full max-h-[200px] bg-white border-2 border-[#EFEEFC] overflow-y-auto">
-            {categories?.map((category) => (
+            {categories?.map((category, index) => (
               <div
                 onClick={() => handleSelectChange(category)}
                 className="flex gap-6 items-center w-full h-8 pl-6 py-2 font-normal text-base font-Rubik hover:bg-violet-400 focus:bg-violet-600 cursor-pointer"
-                key={category}
+                key={index}
               >
                 {category}
               </div>

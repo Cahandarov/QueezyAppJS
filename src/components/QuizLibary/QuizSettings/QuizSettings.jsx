@@ -1,7 +1,6 @@
 import plusIcon from "../images/plusIcon.svg";
 import addFile from "../images/addFile.svg";
 import SelectTime from "./SelectTime";
-import { useState } from "react";
 import { useFormik } from "formik";
 import { FormikContext } from "../CreateQuizModal/FormikContext";
 import SelectQuestionType from "./SelectQuestionType";
@@ -20,10 +19,12 @@ import { setSetQuestionsLastPage } from "../createQuizSlice";
 import { setSetQuestionsPage } from "../createQuizSlice";
 import { setAddQuiz } from "../quizzesSlice";
 import convertFileToBase64ForAllTypeFiles from "../../App/fileToBase64";
+import { eng } from "../../ui/languageData";
 
 // import { setQuestionType } from "./questionTypesslice";
 const questions = [];
 export default function QuizSettings() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const newQuiz = useSelector((state) => state.quizzes.newQuiz);
   const dispatch = useDispatch();
 
@@ -32,7 +33,7 @@ export default function QuizSettings() {
       addCoverFileToQuestion: "",
       addQuizTimeToQuestion: "10",
       addPointsToQuestion: "10",
-      selectedQuestionType: "Multiple Answer",
+      selectedQuestionType: eng.multipleAnswer,
       addQuestion: "",
       addExplanation: "",
       addOptions: [],
@@ -66,7 +67,7 @@ export default function QuizSettings() {
       formik.setFieldValue("addCoverFileToQuestion", "");
       formik.setFieldValue("addQuizTimeToQuestion", "10");
       formik.setFieldValue("addPointsToQuestion", "10");
-      formik.setFieldValue("selectedQuestionType", "Multiple Answer");
+      formik.setFieldValue("selectedQuestionType", eng.multipleAnswer);
       formik.setFieldValue("addQuestion", "");
       formik.setFieldValue("addExplanation", "");
       formik.setFieldValue("addCorrectOption", []);
@@ -95,7 +96,7 @@ export default function QuizSettings() {
         <div className="quizlibrary flex flex-col mx-auto justify-between h-[63.5rem] w-[98%] rounded-[2rem] p-6 mb-2 border-2 border-[#EFEEFC] bg-white ">
           <div className="w-full flex justify-between items-center">
             <p className="font-medium text-2xl text-textColorNeutralBlack_0C092A font-Rubik text-left">
-              Quiz Settings
+              {languageArray[0].quizSettings}
             </p>
             <button
               onClick={() => {
@@ -103,7 +104,7 @@ export default function QuizSettings() {
               }}
               className="w-[8,43rem] h-14 buttons  HoverAndFocusDark flex justify-center items-center gap-4 py-4 px-8"
             >
-              Continue
+              {languageArray[0].Continue}
             </button>
           </div>
           <form
@@ -115,7 +116,8 @@ export default function QuizSettings() {
                 type="submit"
                 className="w-full h-14 rounded-2xl bg-[#EFEEFC] font-Rubik font-medium text-base text-primaryColor flex justify-center items-center gap-3  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300"
               >
-                <img src={plusIcon} alt="plus" /> Add New Question
+                <img src={plusIcon} alt="plus" />{" "}
+                {languageArray[0].addNewQuestion}
               </button>
               <div className="w-full h-full flex flex-col items-start justify-start gap-3 mt-4 pb-4 overflow-auto ">
                 {questions.map((question, index) => (
@@ -141,8 +143,8 @@ export default function QuizSettings() {
 
                   <p className="w-[160px] text-center font-Rubik font-medium text-baseS text-primaryColor">
                     {!formik.values.addCoverFileToQuestion
-                      ? "Add Cover Image"
-                      : "Cover Image Added"}
+                      ? languageArray[0].addCoverImage
+                      : languageArray[0].coverImageAdded}
                   </p>
                 </label>
               </div>
@@ -161,7 +163,8 @@ export default function QuizSettings() {
 
                 <SelectQuestionType
                   handleChange={formik.handleChange}
-                  formik={formik.values.selectedQuestionType}
+                  values={formik.values.selectedQuestionType}
+                  formik={formik}
                 />
               </div>
               {formik.values.selectedQuestionType === "Multiple Answer" && (

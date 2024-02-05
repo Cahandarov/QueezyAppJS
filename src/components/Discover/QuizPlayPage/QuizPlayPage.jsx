@@ -24,6 +24,7 @@ import EndOfQuizModule from "./EndOfQuizModule";
 import ReviewAnswersModule from "./ReviewAnswersModule";
 
 export default function QuizPlayPage() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   const liveQuizzes = useSelector((state) => state.quizPlay.liveQuizzes);
   const endOfQuizModule = useSelector(
@@ -44,7 +45,7 @@ export default function QuizPlayPage() {
     dispatch(setLiveQuizzes(updatedLiveQuizzes));
     dispatch(setQuizPlayPage(false));
     dispatch(setChangeQuizIndex(0));
-    navigate(-1);
+    navigate(-2);
     dispatch(setDiscoverMainPage(true));
     dispatch(setQuizLibraryMainPage(true));
     dispatch(setDashboardMainPage(true));
@@ -76,7 +77,7 @@ export default function QuizPlayPage() {
           onClick={() => handleQuitQuiz()}
           className="w-[6.68rem] h-[3rem] rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-transparent border border-[#EFEEFC] hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:secondColor focus:ring-offset-2 transition-colors duration-300"
         >
-          End Quiz
+          {languageArray[0].endQuiz}
         </button>
       </div>
       <QuizPlayModule />

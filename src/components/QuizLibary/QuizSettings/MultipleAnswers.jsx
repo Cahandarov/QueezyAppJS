@@ -1,7 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { FormikContext } from "../CreateQuizModal/FormikContext";
+import { useSelector } from "react-redux";
 
 export default function MultipleAnswers() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const formik = useContext(FormikContext);
   const [addWrongOptions, setAddWrongOptions] = useState(["", "", ""]);
   const handleOptions = (index, value) => {
@@ -22,7 +24,7 @@ export default function MultipleAnswers() {
         htmlFor="addQuestionToMultipleAnswers"
         className="font-medium my-0 mb-1 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
-        Add Question
+        {languageArray[0].addQuestion}
       </label>
       <input
         id="addQuestionToMultipleAnswers"
@@ -31,14 +33,14 @@ export default function MultipleAnswers() {
         onChange={formik.handleChange}
         className="w-full h-[3.5rem] rounded-[1.25rem]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         type="text"
-        placeholder="Enter your question"
+        placeholder={languageArray[0].enterYourQuestion}
       />
 
       <label
         htmlFor="addExplanationToMultipleAnswers"
         className="font-medium my-0 mb-1 mt-3 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
-        Add Explanation
+        {languageArray[0].addExplanation}
       </label>
 
       <input
@@ -48,13 +50,13 @@ export default function MultipleAnswers() {
         onChange={formik.handleChange}
         className="w-full h-[3.5rem] rounded-[1.25rem]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         type="text"
-        placeholder="Enter explanation to question"
+        placeholder={languageArray[0].enterExplanationToQuestion}
       />
       <label
         htmlFor="addCorrectOptionToMultipleAnswers"
         className="font-medium my-0 mb-1 mt-3 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
-        Add Correct Option
+        {languageArray[0].addCorectOption}
       </label>
 
       <input
@@ -64,14 +66,14 @@ export default function MultipleAnswers() {
         onChange={formik.handleChange}
         className="w-full h-[3.5rem] rounded-[1.25rem]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         type="text"
-        placeholder="Enter correct option"
+        placeholder={languageArray[0].enterCorectOption}
       />
 
       <label
         htmlFor="addExplanationToMultipleAnswers"
         className="font-medium my-0 mb-1 mt-3 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
       >
-        Add Wrong Options
+        {languageArray[0].addWrongOption}
       </label>
 
       {addWrongOptions.map((wrongOption, index) => (
@@ -82,7 +84,7 @@ export default function MultipleAnswers() {
           value={wrongOption}
           className="w-full h-[3.5rem] rounded-[1.25rem] py-4 px-4 mb-4 bg-white border-2 border-[#EFEEFC] hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300"
           type="text"
-          placeholder="Enter wrong option"
+          placeholder={languageArray[0].enterWrongOption}
         />
       ))}
     </div>

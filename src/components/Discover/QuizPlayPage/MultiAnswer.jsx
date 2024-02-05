@@ -4,6 +4,7 @@ import {
   setGainedPoints,
   setNumberOfCorrectAnswers,
   setNumberOfIncorrectAnswers,
+  setGainedPointsForQuestion,
 } from "./quizPlaySlice";
 import { useState } from "react";
 
@@ -16,6 +17,7 @@ export default function MultiAnswer() {
   const originalOptions = selectedQuiz?.questions[index]?.options || [];
   const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+
   const numberOfCorrectAnswers = useSelector(
     (state) => state.quizPlay.numberOfCorrectAnswers
   );
@@ -43,6 +45,7 @@ export default function MultiAnswer() {
     setDisabled(true);
     if (ClickedValue === correctAnswer[0]) {
       const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
+      dispatch(setGainedPointsForQuestion(selectedQuiz.questions[index].score));
       dispatch(setGainedPoints(updatedPoints));
       dispatch(setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1));
     } else {

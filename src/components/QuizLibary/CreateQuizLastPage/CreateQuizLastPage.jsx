@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
   setQuizLibraryMainPage,
   setSetQuestionsLastPage,
@@ -8,30 +9,29 @@ import photo from "../images/photo.png";
 import { postNewQuizThunk } from "../quizzesSlice";
 import QuizSettingsItemLast from "./QuizSettingsItem";
 import { useDispatch, useSelector } from "react-redux";
+
 export default function CreateQuizLastPage() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const newQuiz = useSelector((state) => state.quizzes.newQuiz);
   const quizzes = useSelector((state) => state.quizzes.quizzes);
+  const languageArray = useSelector((state) => state.language.languageArray);
 
   const filteredData =
     quizzes && newQuiz
       ? quizzes.filter((item) => {
-          // console.log("item:", item);
-          // console.log("newQuiz:", newQuiz);
           return item?.categoryName === newQuiz?.categoryName;
         })
       : [];
 
-  console.log(quizzes);
-
   function handleSaveQuizzes() {
     if (newQuiz) {
       dispatch(postNewQuizThunk(newQuiz));
-      console.log(quizzes);
     } else {
       console.error("newQuiz is null or undefined");
     }
     dispatch(setQuizLibraryMainPage(true));
+    navigate("/quizlibrary");
     dispatch(setSetQuestionsLastPage(false));
   }
 
@@ -46,7 +46,7 @@ export default function CreateQuizLastPage() {
           <div className="w-[35%] h-[27rem] p-6 flex flex-col gap-4 rounded-3xl border-2 border-[#EFEEFC] bg-white">
             <div className="w-full flex justify-between items-start">
               <p className="font-Rubik font-medium text-2xl text-textColorNeutralBlack_0C092A">
-                Quiz Information
+                {languageArray[0].quizInformation}
               </p>
               <img src={edit} alt="Edit Icon" />
             </div>
@@ -63,7 +63,7 @@ export default function CreateQuizLastPage() {
               </p>
               <div className="w-[5px] h-[5px] rounded-full bg-[#49465F]"></div>
               <p className="font-Rubik font-normal text-base text-[#49465F]">
-                {filteredData.length} <span>Quizzes</span>
+                {filteredData.length} <span>{languageArray[0].quizzes}</span>
               </p>
             </div>
           </div>
@@ -78,13 +78,13 @@ export default function CreateQuizLastPage() {
             onClick={() => handleBackPreviusPage()}
             className="w-[8rem] h-[3.2rem] rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-primaryColor bg-white border-2 border-primaryColor hover:bg-slate-100 hover:border-slate-400 focus:outline-none focus:ring focus:ring-secondColor focus:ring-offset-2 transition-colors duration-300"
           >
-            Back
+            {languageArray[0].Back}
           </button>
           <button
             onClick={() => handleSaveQuizzes()}
             className="w-[8rem] h-[3.2rem] rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-primaryColor border-none hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:ring-secondColor focus:ring-offset-2 transition-colors duration-300"
           >
-            Save
+            {languageArray[0].Save}
           </button>
         </div>
       </div>

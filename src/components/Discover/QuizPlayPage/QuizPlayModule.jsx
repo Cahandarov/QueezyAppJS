@@ -13,18 +13,22 @@ import {
   setNumberOfSkippedQuestions,
   setPlayedQuizz,
   setRunningTime,
+  setGainedPointsForQuestion,
 } from "./quizPlaySlice";
 import { setEndOfQuizModule } from "../discoverSlice";
 import Puzzle from "./Puzzle";
 import { useEffect, useRef } from "react";
 
 export default function QuizPlayModule() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   const quizRunningTime = useSelector((state) => state.quizPlay.runningTime);
   const playedQuiz = useSelector((state) => state.quizPlay.playedQuizz);
-  const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+  // const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+  const gainedPointsForQuestion = useSelector(
+    (state) => state.quizPlay.gainedPointsForQuestion
+  );
 
-  // console.log(selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   const answer = useSelector((state) => state.quizPlay.answer);
   const numberOfSkippedQuestions = useSelector(
@@ -52,12 +56,17 @@ export default function QuizPlayModule() {
       dispatch(setAnswer(null));
       dispatch(setRunningTime(selectedQuiz?.questions[index]?.answerTime));
       answeredQuestion.answeredOption = answer;
-      answeredQuestion.gainedPoints = gainedPoints;
+
+      answeredQuestion.gainedPoints = gainedPointsForQuestion;
+      dispatch(setGainedPointsForQuestion(0));
+      // answeredQuestion.gainedPoints = gainedPoints;
       const updatedQuestions = [...playedQuiz.questions, answeredQuestion];
       dispatch(setPlayedQuizz({ ...playedQuiz, questions: updatedQuestions }));
     } else if (index === selectedQuiz.questions.length - 1) {
       answeredQuestion.answeredOption = answer;
-      answeredQuestion.gainedPoints = gainedPoints;
+      answeredQuestion.gainedPoints = gainedPointsForQuestion;
+      dispatch(setGainedPointsForQuestion(0));
+      // answeredQuestion.gainedPoints = gainedPoints;
       const updatedQuestions = [...playedQuiz.questions, answeredQuestion];
       dispatch(setPlayedQuizz({ ...playedQuiz, questions: updatedQuestions }));
       dispatch(setEndOfQuizModule(true));
@@ -83,7 +92,9 @@ export default function QuizPlayModule() {
           dispatch(setNumberOfSkippedQuestions(numberOfSkippedQuestions + 1));
         }
         answeredQuestion.answeredOption = answer;
-        answeredQuestion.gainedPoints = gainedPoints;
+        answeredQuestion.gainedPoints = gainedPointsForQuestion;
+        dispatch(setGainedPointsForQuestion(0));
+        // answeredQuestion.gainedPoints = gainedPoints;
         const updatedQuestions = [...playedQuiz.questions, answeredQuestion];
         dispatch(
           setPlayedQuizz({ ...playedQuiz, questions: updatedQuestions })
@@ -126,9 +137,6 @@ export default function QuizPlayModule() {
             </div>
           </div>
 
-          {/* <p className="font-Rubik font-medium text-base text-[#858494] mt-3">
-            QUESTION <span>1</span> <span>OF</span> <span>10</span>
-          </p> */}
           {selectedQuiz?.questions[index]?.type === "Multiple" && (
             <MultiAnswer />
           )}
@@ -154,7 +162,7 @@ export default function QuizPlayModule() {
         <div className="w-[50%] flex flex-col justify-start items-start pl-6">
           <div className="w-full flex justify-end items-center gap-4">
             <p className="font-Rubik font-normal text-base text-[#858494]">
-              Time Remaining
+              {languageArray[0].timeRemaining}
             </p>
             <div className="w-10 h-10 rounded-full flex justify-center items-center bg-primaryColor font-Rubik font-semibold text-base text-white">
               {quizRunningTime}
@@ -173,7 +181,7 @@ export default function QuizPlayModule() {
                 onClick={() => handleBackQuiz()}
                 className="w-[35%] h-[3.2rem] mt-8 rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-primaryColor bg-white border-2 border-primaryColor hover:bg-slate-100 focus:ring-primaryColor hover:border-secondColor focus:outline-none focus:ring focus:secondColor focus:ring-offset-2 transition-colors duration-300"
               >
-                Back
+                {languageArray[0].Back}
               </button>
             )}
             {answer && index < selectedQuiz.questions.length && (
@@ -181,7 +189,7 @@ export default function QuizPlayModule() {
                 onClick={() => handleNextQuiz()}
                 className="w-[35%] h-[3.2rem] mt-8 rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-primaryColor border-none hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:ring-primaryColor focus:secondColor focus:ring-offset-2 transition-colors duration-300"
               >
-                Next
+                {languageArray[0].Next}
               </button>
             )}
           </div>

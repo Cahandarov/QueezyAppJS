@@ -7,10 +7,11 @@ import {
   setCreateQuizSecondModal,
 } from "../createQuizSlice";
 import { setAddQuiz } from "../quizzesSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import convertFileToBase64ForAllTypeFiles from "../../App/fileToBase64";
 
 export default function CreateQuizModal() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const dispatch = useDispatch();
   const formik = useFormik({
     initialValues: {
@@ -64,7 +65,7 @@ export default function CreateQuizModal() {
       >
         <div className="flex items-center justify-between w-full">
           <p className="font-medium text-2xl font-Rubik text-textColorNeutralBlack_0C092A">
-            Create Quiz
+            {languageArray[0].createQuiz}
           </p>
           <i
             onClick={() => dispatch(setCreateQuizModal(false))}
@@ -89,10 +90,10 @@ export default function CreateQuizModal() {
           >
             <img src={addFile} alt="addFileSVG" />
 
-            <p className="w-[160px] text-center font-Rubik font-medium text-baseS text-primaryColor">
+            <p className="w-[170px] text-center font-Rubik font-medium text-baseS text-primaryColor">
               {!formik.values.addCoverFile
-                ? "Add Cover Image"
-                : "Cover Image Added"}
+                ? languageArray[0].addCoverImage
+                : languageArray[0].coverImageAdded}
             </p>
           </label>
         </div>
@@ -100,7 +101,7 @@ export default function CreateQuizModal() {
           htmlFor="addQuizTitle"
           className="font-medium my-0 text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
         >
-          Title
+          {languageArray[0].Title}
         </label>
         <input
           id="addQuizTitle"
@@ -109,14 +110,14 @@ export default function CreateQuizModal() {
           onChange={formik.handleChange}
           className="w-full h-[3.5rem] rounded-[1.25rem]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
           type="text"
-          placeholder="Enter quiz title"
+          placeholder={languageArray[0].enterQuizTitle}
         />
 
         <label
           htmlFor="addQuizCategory"
           className="font-medium text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
         >
-          Quiz Category
+          {languageArray[0].quizCategory}
         </label>
         <SelectAddCategory handleChange={formik.handleChange} />
 
@@ -124,13 +125,13 @@ export default function CreateQuizModal() {
           htmlFor="addQuizDescription"
           className="font-medium text-base font-Rubik w-full text-left text-textColorNeutralBlack_0C092A"
         >
-          Description
+          {languageArray[0].Description}
         </label>
         <textarea
           id="addQuizDescription"
           value={formik.values.addQuizDescription}
           onChange={formik.handleChange}
-          placeholder="Enter quiz description"
+          placeholder={languageArray[0].enterQuizDescription}
           rows="3"
           className="bg-white border-2 w-full border-[#EFEEFC] px-4 py-[0.9rem] rounded-[1.25rem] resize-none  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300"
         ></textarea>
@@ -139,7 +140,7 @@ export default function CreateQuizModal() {
           type="submit"
           className="w-full h-[3.2rem] min-w-[240px] rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-primaryColor border-none mt-2 hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:ring-secondColor focus:ring-offset-2 transition-colors duration-300"
         >
-          Next Step
+          {languageArray[0].nextStep}
         </button>
       </form>
     </div>

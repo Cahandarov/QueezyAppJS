@@ -4,8 +4,10 @@ import { UsersData } from "./LeaderBoardData";
 import { useEffect, useState } from "react";
 import LeaderboardButtonMobile from "./LeaderBoardButtonMobile";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function LeaderBoard() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const [viewType, setViewType] = useState("Weekly");
   const [leaderBoardData, setLeaderBoardData] = useState([]);
   const navigate = useNavigate();
@@ -56,13 +58,13 @@ export default function LeaderBoard() {
     <div className="w-full sm:w-[80%] md:w-[47%] lg:w-[23rem] h-[25rem] sm:h-[30rem] lg:order-3 px-6 pt-6 pb-0 flex flex-col justify-between gap-0 sm:gap-6 rounden-[2rem] bg-white dashboard_boxes">
       <div className="flex justify-between items-center">
         <p className="text-sm sm:text-2xl font-medium font-Rubik text-textColorNeutralBlack_0C092A leading-10">
-          Leaderboard
+          {languageArray[0].leaderboard}
         </p>
         <button
           onClick={() => navigate("/leaderboard")}
           className="text-sm sm:text-base font-medium font-Rubik text-primaryColor"
         >
-          See all
+          {languageArray[0].seeAll}
         </button>
       </div>
       <div className="z-0">

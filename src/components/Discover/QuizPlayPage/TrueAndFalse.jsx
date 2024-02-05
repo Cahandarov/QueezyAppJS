@@ -5,9 +5,11 @@ import {
   setGainedPoints,
   setNumberOfCorrectAnswers,
   setNumberOfIncorrectAnswers,
+  setGainedPointsForQuestion,
 } from "./quizPlaySlice";
 
 export default function TrueAndFalse() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const [disabled, setDisabled] = useState(false);
   const dispatch = useDispatch();
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
@@ -15,6 +17,7 @@ export default function TrueAndFalse() {
   let answer = useSelector((state) => state.quizPlay.answer);
   const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+
   const numberOfCorrectAnswers = useSelector(
     (state) => state.quizPlay.numberOfCorrectAnswers
   );
@@ -27,6 +30,7 @@ export default function TrueAndFalse() {
     setDisabled(true);
     if (ClickedValue === correctAnswer[0]) {
       const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
+      dispatch(setGainedPointsForQuestion(selectedQuiz.questions[index].score));
       dispatch(setGainedPoints(updatedPoints));
       dispatch(setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1));
     } else {
@@ -52,7 +56,7 @@ export default function TrueAndFalse() {
               : ""
           }`}
         >
-          False
+          {languageArray[0].false}
         </button>
 
         <button
@@ -67,7 +71,7 @@ export default function TrueAndFalse() {
               : ""
           }`}
         >
-          True
+          {languageArray[0].true}
         </button>
       </div>
     </div>

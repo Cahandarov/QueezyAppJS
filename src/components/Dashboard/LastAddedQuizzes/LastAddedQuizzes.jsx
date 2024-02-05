@@ -9,6 +9,7 @@ import {
 import { useNavigate } from "react-router-dom";
 
 export default function LastAddesQuizzes() {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const quizzes = useSelector((state) => state.quizzes.quizzes);
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   const dispatch = useDispatch();
@@ -16,18 +17,16 @@ export default function LastAddesQuizzes() {
 
   function handleClickQuizItems(id) {
     const clickedQuiz = quizzes.find((quiz) => quiz.id === id);
-    // console.log(id);
-    // console.log(clickedQuiz);
     if (clickedQuiz) {
       dispatch(setSelectedQuiz(clickedQuiz));
     }
-    navigate("/discover");
+    navigate("/discover/quizDetails");
     dispatch(setDiscoverMainPage(false));
     dispatch(setQuizDetailsPage(true));
   }
   useEffect(() => {
     return () => {
-      console.log("Selected Quiz:", selectedQuiz);
+      // console.log("Selected Quiz:", selectedQuiz);
     };
   }, [selectedQuiz]);
 
@@ -70,13 +69,15 @@ export default function LastAddesQuizzes() {
     <div className="w-full sm:w-[80%] md:w-[98%] lg:w-[48rem] h-[30rem] order-5 xl:order-4 p-6 flex flex-col gap-4 rounden-[2rem] bg-white dashboard_boxes">
       <div className="flex justify-between items-center">
         <p className="text-sm sm:text-2xl font-medium font-Rubik text-textColorNeutralBlack_0C092A leading-10">
-          Last Added Quizzes
+          {languageArray[0].lastAddedQuizzes}
         </p>
         <button
           className="text-sm sm:text-base font-medium font-Rubik text-primaryColor"
           onClick={() => handleSeeAll()}
         >
-          {!showAllQuiezzez ? "See all" : "See less"}
+          {!showAllQuiezzez
+            ? languageArray[0].seeAll
+            : languageArray[0].seeLess}
         </button>
       </div>
       <div
@@ -90,12 +91,14 @@ export default function LastAddesQuizzes() {
             onClick={() => handleClickQuizItems(Quiz?.id)}
           >
             <LastAddesQuizzesItem
-              QuizName={Quiz.title}
-              cover={Quiz.coverImage}
-              category={Quiz.categoryName}
+              id={Quiz.id}
+              index={index}
+              QuizName={Quiz?.title}
+              cover={Quiz?.coverImage}
+              category={Quiz?.categoryName}
               QuizzesInThisCategory={
                 quizzes.filter(
-                  (item) => item.categoryName === Quiz?.categoryName
+                  (item) => item?.categoryName === Quiz?.categoryName
                 )?.length
               }
             />

@@ -5,22 +5,25 @@ import {
   setGainedPoints,
   setNumberOfCorrectAnswers,
   setNumberOfIncorrectAnswers,
+  setGainedPointsForQuestion,
 } from "./quizPlaySlice";
 
 export default function Puzzle() {
+  const dispatch = useDispatch();
   const [ClickedValue, setClickedValue] = useState(null);
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   let answer = useSelector((state) => state.quizPlay.answer);
   const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+
   const numberOfCorrectAnswers = useSelector(
     (state) => state.quizPlay.numberOfCorrectAnswers
   );
   const numberOfIncorrectAnswers = useSelector(
     (state) => state.quizPlay.numberOfIncorrectAnswers
   );
-  const dispatch = useDispatch();
+
   const [answerArray, setAnswerArray] = useState([]);
 
   const mixedOptions = useMemo(() => {
@@ -55,12 +58,14 @@ export default function Puzzle() {
       if (correctAnswer === answer?.join(" ")) {
         const updatedPoints =
           gainedPoints + selectedQuiz.questions[index]?.score;
+        dispatch(
+          setGainedPointsForQuestion(selectedQuiz.questions[index]?.score)
+        );
         dispatch(setGainedPoints(updatedPoints));
         dispatch(setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1));
       } else {
         const correctAnswerArray = correctAnswer.split(" ");
-        console.log(correctAnswerArray);
-        console.log(answer);
+
         const allCorrectAnswersIncorrect = correctAnswerArray.every(
           (Answer) => !answer?.includes(Answer)
         );

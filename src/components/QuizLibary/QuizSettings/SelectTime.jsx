@@ -1,7 +1,9 @@
 import { useState } from "react";
 import timeIcon from "../images/timeIcon.svg";
+import { useSelector } from "react-redux";
 
 const SelectTime = ({ handleChange, formik }) => {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const [showOptions, setShowOptions] = useState(false);
   const [selectedTime, setSelectedTime] = useState("10");
 
@@ -32,7 +34,7 @@ const SelectTime = ({ handleChange, formik }) => {
               <img src={timeIcon} alt="time" />
               <div className="flex items-center justify-center gap-1">
                 {/* {`${selectedTime}`} <span>Sec</span> */}
-                {`${formik}`} <span>Sec</span>
+                {`${formik}`} <span>{languageArray[0].Sec}</span>
               </div>
             </div>
           )}
@@ -48,7 +50,7 @@ const SelectTime = ({ handleChange, formik }) => {
                 <img src={timeIcon} alt="time" />
                 <div>
                   {time}
-                  <span> Sec</span>
+                  <span> {languageArray[0].Sec}</span>
                 </div>
               </div>
             ))}

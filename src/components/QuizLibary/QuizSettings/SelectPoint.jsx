@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const SelectPoint = ({ handleChange, formik }) => {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const [showOptions, setShowOptions] = useState(false);
   const [selectedPoint, setSelectedPoint] = useState("10");
 
@@ -30,7 +32,7 @@ const SelectPoint = ({ handleChange, formik }) => {
             <div className="flex items-center justify-center gap-4">
               <div className="flex items-center justify-center gap-1">
                 {/* {`${selectedPoint}`} <span>Points</span> */}
-                {`${formik}`} <span>Points</span>
+                {`${formik}`} <span>{languageArray[0].Points}</span>
               </div>
             </div>
           )}
@@ -45,7 +47,7 @@ const SelectPoint = ({ handleChange, formik }) => {
               >
                 <div>
                   {points}
-                  <span> Points</span>
+                  <span> {languageArray[0].Points}</span>
                 </div>
               </div>
             ))}

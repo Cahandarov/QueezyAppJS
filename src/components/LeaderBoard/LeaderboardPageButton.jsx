@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import SwitchSelector from "react-switch-selector";
 
 export default function LeaderboardPageButton({ setViewType }) {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const [isWeekly, setIsWeekly] = useState(true);
   const options = [
     {
@@ -11,7 +13,7 @@ export default function LeaderboardPageButton({ setViewType }) {
             isWeekly ? "text-white" : "text-primaryColor"
           } font-Rubik text-base font-medium`}
         >
-          Weekly
+          {languageArray[0].weekly}
         </span>
       ),
       value: "Weekly",
@@ -24,7 +26,7 @@ export default function LeaderboardPageButton({ setViewType }) {
             isWeekly ? "text-primaryColor" : "text-white"
           } font-Rubik text-base font-medium `}
         >
-          All Time
+          {languageArray[0].allTime}
         </span>
       ),
       value: "All Time",
