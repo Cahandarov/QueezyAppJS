@@ -129,7 +129,7 @@ export default function ReviewAnswersModule() {
             />
             <div className="relative">
               <CircularProgressBar {...props} />
-              <p className="absolute top-8 left-6 font-Rubik font-medium text-3xl text-white">
+              <p className="absolute top-9 left-6 font-Rubik font-medium text-xl text-white">
                 {answeredQuestions}/{playedQuizz?.questions?.length}
               </p>
             </div>

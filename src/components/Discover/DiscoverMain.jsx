@@ -74,14 +74,14 @@ export default function DiscoverMain() {
 
   return (
     <div className="w-full h-full min-h-[1086px] flex flex-col px-10 pt-10 pb-4 bg-[#FBFBFC] gap-6 justify-start items-center">
-      <p className="w-full font-Rubik font-bold text-[1.75rem] text-textColorNeutralBlack_0C092A">
+      <p className="w-full font-Rubik font-bold text-xl md:text-[1.75rem] text-textColorNeutralBlack_0C092A">
         {languageArray[0].Categories}
       </p>
-      <div className="flex flex-wrap w-full flex-start items-center gap-4 mx-auto">
+      <div className="columns-1 sm:columns-2 lg:columns-4 gap-4 w-full">
         {slicedCategories.map((quiz, index) => (
           <button
             onClick={() => handleClickCategoryButtons(quiz.category)}
-            className="HoverAndFocusDark group w-[23.9%] h-[6rem] rounded-[1.25rem] p-6 bg-[#EFEEFC] transition-colors duration-300"
+            className="HoverAndFocusDark group w-full xl:w-full mb-6 h-[6rem] rounded-[1.25rem] p-6 bg-[#EFEEFC] transition-colors duration-300"
             key={index}
           >
             <CategoriesItem
@@ -94,19 +94,21 @@ export default function DiscoverMain() {
       </div>
       <div className="boxShadow flex flex-col mx-auto justify-between h-[63.5rem] w-full rounded-[2rem] p-8 mb-2 border-2 border-[#EFEEFC] bg-white ">
         <div className="w-full flex justify-between items-center">
-          <p className="font-Rubik font-medium text-2xl text-textColorNeutralBlack_0C092A">
+          <p className="font-Rubik font-medium text-xl md:text-2xl text-textColorNeutralBlack_0C092A">
             {title ? title : languageArray[0].liveQuiz}
           </p>
         </div>
         <div className="w-full h-full mt-4 relative">
           {quizzesForDisplay.length ? (
-            <div className="flex flex-wrap overflow-auto sm:overflow-clip justify-center md:justify-start items-start gap-3 sm:gap-6 mx-auto">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap w-full max-h-[57rem] overflow-auto justify-center md:justify-start items-center sm:items-start gap-12 sm:gap-6 mx-auto">
               {quizzesForDisplay.map((quiz, index) => (
                 <button
+                  className="w-[80%] sm:w-[45%] md:w-[48%] lg:w-[22%] xl:w-[22.8%] 2xl:w-[23.1%] h-[7.5rem] sm:h-[14rem]"
                   onClick={() => handleClickQuizItems(quiz?.id)}
                   key={index}
                 >
                   <QuizItemDiscover
+                    id={quiz?.id}
                     QuizName={quiz?.title}
                     cover={quiz?.coverImage}
                     category={quiz?.categoryName}
@@ -120,9 +122,11 @@ export default function DiscoverMain() {
               ))}
             </div>
           ) : (
-            <p className="absolute left-[28%] bottom-[50%] font-Rubik font-medium text-3xl text-textColorNeutralBlack_0C092A">
-              {languageArray[0].liveQuizText}
-            </p>
+            <div className="w-full h-full flex items-center justify-center">
+              <p className="text-center font-Rubik font-medium text-xl md:text-3xl text-textColorNeutralBlack_0C092A">
+                {languageArray[0].liveQuizText}
+              </p>
+            </div>
           )}
         </div>
       </div>

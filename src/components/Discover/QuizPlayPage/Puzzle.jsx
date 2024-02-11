@@ -10,11 +10,11 @@ import {
 
 export default function Puzzle() {
   const dispatch = useDispatch();
-  const [ClickedValue, setClickedValue] = useState(null);
+  // const [ClickedValue, setClickedValue] = useState(null);
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   let answer = useSelector((state) => state.quizPlay.answer);
-  const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
+  const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer;
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
 
   const numberOfCorrectAnswers = useSelector(
@@ -27,7 +27,7 @@ export default function Puzzle() {
   const [answerArray, setAnswerArray] = useState([]);
 
   const mixedOptions = useMemo(() => {
-    const originalOptions = selectedQuiz?.questions[index]?.options || [];
+    const originalOptions = selectedQuiz?.questions[index]?.options;
 
     const optionsCopy = [...originalOptions];
     for (let i = optionsCopy.length - 1; i > 0; i--) {
@@ -39,7 +39,7 @@ export default function Puzzle() {
   }, [selectedQuiz, index]);
 
   function handleClickOptions(ClickedValue) {
-    setClickedValue(ClickedValue);
+    // setClickedValue(ClickedValue);
     const uniqeAnswers = Array.from(new Set([...answerArray, ClickedValue]));
     setAnswerArray(uniqeAnswers);
     dispatch(setAnswer(uniqeAnswers));
@@ -55,7 +55,7 @@ export default function Puzzle() {
 
   useEffect(
     function () {
-      if (correctAnswer === answer?.join(" ")) {
+      if (correctAnswer[0] === answer?.join(" ")) {
         const updatedPoints =
           gainedPoints + selectedQuiz.questions[index]?.score;
         dispatch(
@@ -64,15 +64,15 @@ export default function Puzzle() {
         dispatch(setGainedPoints(updatedPoints));
         dispatch(setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1));
       } else {
-        const correctAnswerArray = correctAnswer.split(" ");
+        const correctAnswerArray = correctAnswer[0].split(" ");
 
         const allCorrectAnswersIncorrect = correctAnswerArray.every(
           (Answer) => !answer?.includes(Answer)
         );
         if (allCorrectAnswersIncorrect) {
-          if (correctAnswer.includes(ClickedValue)) {
-            dispatch(setNumberOfIncorrectAnswers(numberOfIncorrectAnswers + 1));
-          }
+          // if (correctAnswer.includes(ClickedValue)) {
+          dispatch(setNumberOfIncorrectAnswers(numberOfIncorrectAnswers + 1));
+          // }
         }
       }
     },

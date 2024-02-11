@@ -4,6 +4,7 @@ const initialState = {
   updateProfilePage: true,
   changeEmailPage: false,
   changePasswordPage: null,
+  updateAvatarPage: false,
   logoutPage: false,
   FAQpage: false,
 };
@@ -21,6 +22,9 @@ const createSettingsSlice = createSlice({
     setChangePasswordPage(state, action) {
       state.changePasswordPage = action.payload;
     },
+    setUpdateAvatarPage(state, action) {
+      state.updateAvatarPage = action.payload;
+    },
     setLogoutPage(state, action) {
       state.logoutPage = action.payload;
     },
@@ -33,6 +37,7 @@ export const {
   setUpdateProfilePage,
   setChangeEmailPage,
   setChangePasswordPage,
+  setUpdateAvatarPage,
   setLogoutPage,
   setFAQpage,
 } = createSettingsSlice.actions;

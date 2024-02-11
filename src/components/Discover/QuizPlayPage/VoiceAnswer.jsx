@@ -6,7 +6,7 @@ export default function VoiceAnswer() {
   let index = useSelector((state) => state.quizPlay.index);
 
   return (
-    <div className="flex flex-col mt-4">
+    <div className="flex flex-col mt-4 w-full">
       <p className="font-Rubik font-medium text-2xl text-[#0C092A] mt-1 mb-4">
         {selectedQuiz?.questions[index].question}
       </p>

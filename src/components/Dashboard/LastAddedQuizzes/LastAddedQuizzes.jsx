@@ -49,7 +49,6 @@ export default function LastAddesQuizzes() {
     })
     .slice(0, 6);
 
-  // console.log(quizDataSortedByDate);
   const [Quizzes, setQuizzes] = useState(quizDataSortedByDate);
   const [showAllQuiezzez, setShowAllQuizzes] = useState(false);
   const scrollRef = useRef(null);
@@ -66,9 +65,9 @@ export default function LastAddesQuizzes() {
     }
   }
   return (
-    <div className="w-full sm:w-[80%] md:w-[98%] lg:w-[48rem] h-[30rem] order-5 xl:order-4 p-6 flex flex-col gap-4 rounden-[2rem] bg-white dashboard_boxes">
+    <div className="w-full sm:w-[80%] md:w-[98%] lg:w-[48rem] h-[30rem] order-5 2xl:order-4 p-6 flex flex-col gap-4 rounden-[2rem] bg-white dashboard_boxes">
       <div className="flex justify-between items-center">
-        <p className="text-sm sm:text-2xl font-medium font-Rubik text-textColorNeutralBlack_0C092A leading-10">
+        <p className="text-sm sm:text-xl md:text-2xl font-medium text-left font-Rubik text-textColorNeutralBlack_0C092A leading-10">
           {languageArray[0].lastAddedQuizzes}
         </p>
         <button
@@ -81,18 +80,17 @@ export default function LastAddesQuizzes() {
         </button>
       </div>
       <div
-        className="flex flex-wrap overflow-auto sm:overflow-clip justify-center md:justify-start items-start gap-3 sm:gap-5 mx-auto"
+        className="flex flex-wrap overflow-auto md:overflow-clip justify-center md:justify-start items-start gap-3 md:gap-5 mx-auto"
         ref={scrollRef}
       >
         {Quizzes.map((Quiz, index) => (
           <button
-            className="w-[10rem] h-[7.5rem] sm:w-[31%] sm:h-[11rem] p-2 sm:p-4  rounded-[1.25rem] bg-white border-2 border-solid border-[#EFEEFC] hover:bg-slate-100 hover:border-transparent transition-colors duration-300"
+            className="w-[9rem] h-[7.5rem] md:w-[31%] md:h-[11rem] p-2 sm:p-4  rounded-[1.25rem] bg-white border-2 border-solid border-[#EFEEFC] hover:bg-slate-100 hover:border-transparent transition-colors duration-300"
             key={index}
             onClick={() => handleClickQuizItems(Quiz?.id)}
           >
             <LastAddesQuizzesItem
               id={Quiz.id}
-              index={index}
               QuizName={Quiz?.title}
               cover={Quiz?.coverImage}
               category={Quiz?.categoryName}

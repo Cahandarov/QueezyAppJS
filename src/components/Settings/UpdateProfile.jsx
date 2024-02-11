@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Logo from "./images/Logo_Queezy_Dark.svg";
-import LogoText from "./images/Queezy_Text_Dark.svg";
 import UserIcon from "./images/UserIcon.svg";
 import SettingsCountryChange from "./SettingsCountryChange";
 import { useFormik } from "formik";
@@ -23,13 +21,8 @@ export default function UpdateProfile() {
     },
   });
   return (
-    <div className="w-[65%] min-h-[43rem] pl-[5rem] border-l flex flex-col mx-auto items-start justify-center lg:items-start lg:justify-start ">
-      <div className="flex items-center gap-4">
-        <img src={Logo} alt="Logo" />
-        <img src={LogoText} alt="LogoText" />
-      </div>
-
-      <p className="font-bold text-[1.5rem] sm:text-[1.8rem] font-Rubik text-textColorNeutralBlack_0C092A mt-6 lg:mt-[2.5rem]">
+    <div className="w-[65%] min-h-[43rem] pl-[5rem] pt-2 border-l flex flex-col mx-auto items-start justify-center lg:items-start lg:justify-start ">
+      <p className="font-bold text-[1.5rem] sm:text-[1.8rem] font-Rubik text-textColorNeutralBlack_0C092A ">
         {languageArray[0].updateYourProfile}
       </p>
       <form onSubmit={formik.handleSubmit} className="w-[70%] mt-10">

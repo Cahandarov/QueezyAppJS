@@ -5,7 +5,6 @@ import {
   setSetQuestionsPage,
 } from "../createQuizSlice";
 import edit from "../images/editIcon.svg";
-import photo from "../images/photo.png";
 import { postNewQuizThunk } from "../quizzesSlice";
 import QuizSettingsItemLast from "./QuizSettingsItem";
 import { useDispatch, useSelector } from "react-redux";
@@ -50,7 +49,7 @@ export default function CreateQuizLastPage() {
               </p>
               <img src={edit} alt="Edit Icon" />
             </div>
-            <img src={photo} alt="Quiz Cover" className="w-full" />
+            <img src={newQuiz.coverImage} alt="Quiz Cover" className="w-full" />
             <p className="font-Rubik font-medium text-xl text-textColorNeutralBlack_0C092A">
               {newQuiz.title}
             </p>

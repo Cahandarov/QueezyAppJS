@@ -35,7 +35,7 @@ export default function TypeAnswer() {
     }
   }
   return (
-    <div className="flex flex-col mt-4">
+    <div className="flex flex-col mt-4 w-full">
       <p className="font-Rubik font-medium text-2xl text-[#0C092A] mt-1">
         {selectedQuiz?.questions[index]?.question}
       </p>

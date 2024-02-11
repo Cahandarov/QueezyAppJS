@@ -5,18 +5,18 @@ import {
   setNumberOfCorrectAnswers,
   setNumberOfIncorrectAnswers,
   setGainedPointsForQuestion,
+  setDisabled,
 } from "./quizPlaySlice";
-import { useState } from "react";
+import { useMemo } from "react";
 
 export default function MultiAnswer() {
   const dispatch = useDispatch();
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   let answer = useSelector((state) => state.quizPlay.answer);
-  const [disabled, setDisabled] = useState(false);
-  const originalOptions = selectedQuiz?.questions[index]?.options || [];
-  const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
+  const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer;
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+  const disabled = useSelector((state) => state.quizPlay.disabled);
 
   const numberOfCorrectAnswers = useSelector(
     (state) => state.quizPlay.numberOfCorrectAnswers
@@ -25,24 +25,24 @@ export default function MultiAnswer() {
     (state) => state.quizPlay.numberOfIncorrectAnswers
   );
 
-  let Options = [];
+  const randomizedOptions = useMemo(() => {
+    const originalOptions = selectedQuiz?.questions[index]?.options || [];
 
-  const randomIndex = Math.round(Math.random() * Options.length);
-  for (let i = 0; i < originalOptions.length; i++) {
-    Options.push(originalOptions[i]);
-    Options.push(Options.splice(randomIndex - 1, 1)[0]);
-  }
-  const randomizedOptions = [
-    ...Options.slice(0, randomIndex),
-    correctAnswer[0],
-    ...Options.slice(randomIndex),
-  ];
+    const optionsCopy = [...originalOptions, ...correctAnswer];
+    for (let i = optionsCopy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
+    }
 
-  // console.log(randomizedOptions);
+    return optionsCopy;
+  }, [selectedQuiz, index, correctAnswer]);
 
   function handleClickOptions(ClickedValue) {
     dispatch(setAnswer(ClickedValue));
-    setDisabled(true);
+    if (ClickedValue) {
+      dispatch(setDisabled(true));
+    }
+
     if (ClickedValue === correctAnswer[0]) {
       const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
       dispatch(setGainedPointsForQuestion(selectedQuiz.questions[index].score));
@@ -56,8 +56,8 @@ export default function MultiAnswer() {
   }
 
   return (
-    <div className="flex flex-col mt-4">
-      <p className="font-Rubik font-medium text-2xl text-[#0C092A] mt-1">
+    <div className="flex flex-col mt-4 w-full">
+      <p className="font-Rubik font-medium text-lg text-[#0C092A] mt-1">
         {selectedQuiz?.questions[index].question}
       </p>
       <div className="w-full flex flex-col items-start  justify-start gap-3 mt-4">
@@ -67,7 +67,7 @@ export default function MultiAnswer() {
             disabled={disabled}
             key={Index}
             value={option}
-            className={`w-full h-[3rem] text-left px-8 border-2 border-[#EFEEFC] font-Formik font-medium text-lg  ${
+            className={`w-full h-[4rem] text-left px-8 border-2 border-[#EFEEFC] font-Formik font-medium text-base  ${
               answer === option
                 ? option === correctAnswer[0]
                   ? "border-green-600"

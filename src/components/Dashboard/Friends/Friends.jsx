@@ -32,12 +32,13 @@ export default function Friends() {
   }
 
   return (
-    <div className="w-full sm:w-[80%] md:w-[47%] lg:w-[23rem] h-[30rem] order-4 xl:order-5 p-6 flex flex-col gap-4 rounden-[2rem] bg-white dashboard_boxes">
+    <div className="w-full sm:w-[80%] md:w-[47%] lg:w-[23rem] h-[30rem] order-4 2xl:order-5 p-6 flex flex-col gap-4 rounden-[2rem] bg-white dashboard_boxes">
       <div className="flex justify-between items-center">
-        <p className="text-sm sm:text-2xl font-medium font-Rubik text-textColorNeutralBlack_0C092A leading-10">
+        <p className="text-sm sm:text-xl md:text-2xl font-medium text-left font-Rubik text-textColorNeutralBlack_0C092A leading-10">
           {languageArray[0].friends}
         </p>
         <button
+          disabled={allFriends.length < 4}
           className="text-sm sm:text-base font-medium font-Rubik text-primaryColor z-40"
           onClick={handleSeeAll}
         >

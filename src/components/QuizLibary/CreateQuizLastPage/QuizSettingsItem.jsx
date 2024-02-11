@@ -26,7 +26,7 @@ export default function QuizSettingsItemLast({ question }) {
             </p>
             <img src={dots3Icon} alt="icon" />
           </div>
-          <p className="font-Rubik font-normal text-base text-textColorLigthGrey2_858494">
+          <p className="font-Rubik font-normal text-base text-textColorLigthGrey2_858494 overflow-hidden">
             {question.question}
           </p>
           <div className="w-full flex justify-between items-center">

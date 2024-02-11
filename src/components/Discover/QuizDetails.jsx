@@ -209,6 +209,7 @@ export default function QuizDetails() {
                 key={index}
               >
                 <SuggestedQuizItem
+                  id={quiz?.id}
                   quizName={quiz.title}
                   cover={quiz.coverImage}
                   category={quiz.categoryName}

@@ -6,17 +6,18 @@ import {
   setNumberOfCorrectAnswers,
   setNumberOfIncorrectAnswers,
   setGainedPointsForQuestion,
+  setDisabled,
 } from "./quizPlaySlice";
 
 export default function TrueAndFalse() {
   const languageArray = useSelector((state) => state.language.languageArray);
-  const [disabled, setDisabled] = useState(false);
   const dispatch = useDispatch();
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   let answer = useSelector((state) => state.quizPlay.answer);
   const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer || [];
   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+  const disabled = useSelector((state) => state.quizPlay.disabled);
 
   const numberOfCorrectAnswers = useSelector(
     (state) => state.quizPlay.numberOfCorrectAnswers
@@ -27,7 +28,9 @@ export default function TrueAndFalse() {
 
   function handleClickOptions(ClickedValue) {
     dispatch(setAnswer(ClickedValue));
-    setDisabled(true);
+    if (ClickedValue) {
+      dispatch(setDisabled(true));
+    }
     if (ClickedValue === correctAnswer[0]) {
       const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
       dispatch(setGainedPointsForQuestion(selectedQuiz.questions[index].score));
@@ -39,7 +42,7 @@ export default function TrueAndFalse() {
     }
   }
   return (
-    <div className="flex flex-col mt-4">
+    <div className="flex flex-col mt-4 w-full">
       <p className="font-Rubik font-medium text-2xl text-[#0C092A] mt-1">
         {selectedQuiz?.questions[index].question}
       </p>

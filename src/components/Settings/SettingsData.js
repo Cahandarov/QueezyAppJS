@@ -1,6 +1,7 @@
 import profile from "./images/profileIcon.svg";
 import mail from "./images/mailIcon.svg";
 import lock from "./images/lockIcon.svg";
+import portrait from "./images/portrait.svg";
 
 const buttonData = [
   {
@@ -17,6 +18,11 @@ const buttonData = [
     image: lock,
     text1: "changePassword",
     text2: "lastPasswordChanges",
+  },
+  {
+    image: portrait,
+    text1: "updateAvatar",
+    text2: "addAvatar",
   },
 ];
 const FAQs = [

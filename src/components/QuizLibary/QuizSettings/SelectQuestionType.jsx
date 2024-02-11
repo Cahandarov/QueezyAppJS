@@ -6,13 +6,14 @@ import { eng } from "../../ui/languageData";
 
 const SelectQuestionType = ({ handleChange, values, formik }) => {
   const languageArray = useSelector((state) => state.language.languageArray);
+  const enteries = Object.entries(eng);
+  console.log(enteries);
   const dispatch = useDispatch();
   const [showOptions, setShowOptions] = useState(false);
   const [selectedQuestionType, setSelectedQuestionType] =
     useState("multipleAnswer");
 
   const handleSelectChange = (question) => {
-    console.log(question);
     setSelectedQuestionType(question);
     formik.resetForm();
     handleChange({
@@ -48,7 +49,7 @@ const SelectQuestionType = ({ handleChange, values, formik }) => {
         className="w-full rounded-[1.25rem] px-6 py-[0.9rem] bg-[#fff] border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300"
       >
         <div className="w-full h-full font-normal flex items-center text-base font-Rubik text-[#49465F]">
-          {`${languageArray[0][selectedQuestionType]}`}
+          {languageArray[0][enteries.find((data) => data[1] === values)[0]]}
         </div>
         {showOptions && (
           <div className="absolute z-40 top-full mt-4 left-0 w-full max-h-[200px] bg-white border-2 border-[#EFEEFC] overflow-y-auto">

@@ -29,8 +29,11 @@ export default function Poll() {
     const newAnswers = [...answers];
     newAnswers[index] = value;
     setAnswers(newAnswers);
-    formik.setFieldValue("addOptions", newAnswers);
+
+    const resultArray = newAnswers.map((answer) => ({ [answer]: 0 }));
+    formik.setFieldValue("addOptionsPoll", resultArray);
   };
+
   return (
     <div className="flex flex-col w-full mt-8">
       <label

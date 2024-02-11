@@ -10,6 +10,7 @@ import {
   setChangePasswordPage,
   setFAQpage,
   setLogoutPage,
+  setUpdateAvatarPage,
   setUpdateProfilePage,
 } from "./settingsSlice";
 import { setLoginStatus } from "../LogIn/userSlice";
@@ -17,6 +18,7 @@ import { useNavigate } from "react-router-dom";
 import UpdateProfile from "./UpdateProfile";
 import ChangeEmail from "./ChangeEmail";
 import ChangePassword from "./ChangePassword";
+import UpdateAvatar from "./UpdateAvatar";
 
 export default function SettingsMain() {
   const languageArray = useSelector((state) => state.language.languageArray);
@@ -32,6 +34,9 @@ export default function SettingsMain() {
   const changePasswordPage = useSelector(
     (state) => state.settings.changePasswordPage
   );
+  const updateAvatarPage = useSelector(
+    (state) => state.settings.updateAvatarPage
+  );
 
   function handleClickFAQ() {
     dispatch(setFAQpage(true));
@@ -39,6 +44,7 @@ export default function SettingsMain() {
     dispatch(setChangeEmailPage(false));
     dispatch(setChangePasswordPage(false));
     dispatch(setLogoutPage(false));
+    dispatch(setUpdateAvatarPage(false));
   }
   function handleClickMainButtons(button) {
     if (button === "updateProfile") {
@@ -47,14 +53,24 @@ export default function SettingsMain() {
       dispatch(setChangeEmailPage(false));
       dispatch(setChangePasswordPage(false));
       dispatch(setLogoutPage(false));
+      dispatch(setUpdateAvatarPage(false));
     } else if (button === "changeEmail") {
       dispatch(setChangeEmailPage(true));
       dispatch(setUpdateProfilePage(false));
       dispatch(setFAQpage(false));
       dispatch(setChangePasswordPage(false));
       dispatch(setLogoutPage(false));
+      dispatch(setUpdateAvatarPage(false));
     } else if (button === "changePassword") {
       dispatch(setChangePasswordPage(true));
+      dispatch(setChangeEmailPage(false));
+      dispatch(setUpdateProfilePage(false));
+      dispatch(setFAQpage(false));
+      dispatch(setLogoutPage(false));
+      dispatch(setUpdateAvatarPage(false));
+    } else if (button === "updateAvatar") {
+      dispatch(setUpdateAvatarPage(true));
+      dispatch(setChangePasswordPage(false));
       dispatch(setChangeEmailPage(false));
       dispatch(setUpdateProfilePage(false));
       dispatch(setFAQpage(false));
@@ -97,7 +113,7 @@ export default function SettingsMain() {
                   {languageArray[0][button.text1]}
                 </p>
                 <p className="font-Rubik font-normal text-sm text-left text-[#858494] group-hover:text-white group-hover:text-opacity-70">
-                  {(index == 0 || index == 2) && languageArray[0][button.text2]}
+                  {index !== 1 && languageArray[0][button.text2]}
                   {index == 1 && "madias@yahoo.com"}
                 </p>
               </div>
@@ -140,6 +156,7 @@ export default function SettingsMain() {
         </div>
         {updateProfilePage && <UpdateProfile />}
         {changeEmailPage && <ChangeEmail />}
+        {updateAvatarPage && <UpdateAvatar />}
         {FAQpage && <FAQ />}
         {changePasswordPage && <ChangePassword />}
       </div>

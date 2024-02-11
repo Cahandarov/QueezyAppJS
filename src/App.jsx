@@ -8,12 +8,14 @@ import { setShowSidebar } from "./components/Mobile/mobileSlice";
 import { getQuizzesThunk } from "./components/QuizLibary/quizzesSlice";
 import { useEffect } from "react";
 import { setLogoutModal } from "./components/ui/uiSlice";
+import Loader from "./components/ui/Loader";
 
 function App() {
   const dispatch = useDispatch();
+  const quizzes = useSelector((state) => state.quizzes.quizzes);
   useEffect(() => {
     dispatch(getQuizzesThunk());
-  }, [dispatch]);
+  }, [quizzes.length]);
   const getQuizzesStatus = useSelector(
     (state) => state.quizzes.GetQuizzes_status
   );
@@ -31,7 +33,7 @@ function App() {
     }
   }
   if (getQuizzesStatus === "loading") {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   function handleContainerClick() {

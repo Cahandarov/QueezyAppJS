@@ -6,6 +6,7 @@ import QuizPlayModule from "./QuizPlayModule";
 import {
   setAnswer,
   setChangeQuizIndex,
+  setDisabled,
   setGainedPoints,
   setLiveQuizzes,
   setNumberOfCorrectAnswers,
@@ -57,6 +58,7 @@ export default function QuizPlayPage() {
     dispatch(setGainedPoints(0));
     dispatch(setAnswer(null));
     dispatch(setRunningTime(0));
+    dispatch(setDisabled(false));
   }
 
   return (

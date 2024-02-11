@@ -112,7 +112,7 @@ export default function AddCheckboxAnswer() {
               onChange={(e) => handleAnswerChange(index, e.target.value)}
               className="addAnswerToCheckbox w-full h-full rounded-[1.25rem] px-14 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
               type="text"
-              placeholder={`${languageArray[0].addAnswers} ${index + 1}`}
+              placeholder={languageArray[0].checkboxPlaceholder}
             />
             {answers.length > 1 && (
               <button

@@ -14,6 +14,8 @@ import {
   setPlayedQuizz,
   setRunningTime,
   setGainedPointsForQuestion,
+  setDisabled,
+  // setTriggerChild,
 } from "./quizPlaySlice";
 import { setEndOfQuizModule } from "../discoverSlice";
 import Puzzle from "./Puzzle";
@@ -50,23 +52,29 @@ export default function QuizPlayModule() {
     progRef.current.style.transition = "1s ease-in-out";
   }, [index, progress]);
 
+  // function handleNextQuiz(calculate) {
+  // if (calculate) {
+  //   hesablamani yerine yetirsin
+  // }
   function handleNextQuiz() {
     if (index < selectedQuiz.questions.length - 1) {
+      // if (selectedQuiz?.questions[index]?.type === "Checkbox") {
+      //   dispatch(setTriggerChild(true));
+      // }
       dispatch(setChangeQuizIndex(index + 1));
+      dispatch(setDisabled(false));
       dispatch(setAnswer(null));
       dispatch(setRunningTime(selectedQuiz?.questions[index]?.answerTime));
       answeredQuestion.answeredOption = answer;
 
       answeredQuestion.gainedPoints = gainedPointsForQuestion;
       dispatch(setGainedPointsForQuestion(0));
-      // answeredQuestion.gainedPoints = gainedPoints;
       const updatedQuestions = [...playedQuiz.questions, answeredQuestion];
       dispatch(setPlayedQuizz({ ...playedQuiz, questions: updatedQuestions }));
     } else if (index === selectedQuiz.questions.length - 1) {
       answeredQuestion.answeredOption = answer;
       answeredQuestion.gainedPoints = gainedPointsForQuestion;
       dispatch(setGainedPointsForQuestion(0));
-      // answeredQuestion.gainedPoints = gainedPoints;
       const updatedQuestions = [...playedQuiz.questions, answeredQuestion];
       dispatch(setPlayedQuizz({ ...playedQuiz, questions: updatedQuestions }));
       dispatch(setEndOfQuizModule(true));
@@ -100,12 +108,14 @@ export default function QuizPlayModule() {
           setPlayedQuizz({ ...playedQuiz, questions: updatedQuestions })
         );
         dispatch(setChangeQuizIndex(index + 1));
+        dispatch(setDisabled(false));
         dispatch(setRunningTime(selectedQuiz?.questions[index]?.answerTime));
       } else if (
         quizRunningTime === 0 &&
         index === selectedQuiz.questions.length - 1
       ) {
         dispatch(setEndOfQuizModule(true));
+        dispatch(setDisabled(false));
       }
     }, 1000);
 
@@ -137,19 +147,19 @@ export default function QuizPlayModule() {
             </div>
           </div>
 
-          {selectedQuiz?.questions[index]?.type === "Multiple" && (
+          {selectedQuiz?.questions[index]?.type === "Multiple Answer" && (
             <MultiAnswer />
           )}
           {selectedQuiz?.questions[index]?.type === "True and False" && (
             <TrueAndFalse />
           )}
-          {selectedQuiz?.questions[index]?.type === "Type answer" && (
+          {selectedQuiz?.questions[index]?.type === "Type Answer" && (
             <TypeAnswer />
           )}
-          {selectedQuiz?.questions[index]?.type === "Voice answer" && (
+          {selectedQuiz?.questions[index]?.type === "Voice Answer" && (
             <VoiceAnswer />
           )}
-          {selectedQuiz?.questions[index]?.type === "Voice note" && (
+          {selectedQuiz?.questions[index]?.type === "Voice Question" && (
             <VoiceQuestion />
           )}
           {selectedQuiz?.questions[index]?.type === "Poll" && <Poll />}
@@ -168,12 +178,14 @@ export default function QuizPlayModule() {
               {quizRunningTime}
             </div>
           </div>
-          {selectedQuiz.questions[index] && (
+          {selectedQuiz.questions[index].image ? (
             <img
               src={selectedQuiz.questions[index].image}
               alt="Question Image"
               className="w-full max-h-[20rem] rounded-xl mt-4"
             />
+          ) : (
+            <div className="w-full h-[20rem] rounded-xl mt-4"></div>
           )}
           <div className="w-full flex justify-end items-center gap-4">
             {!index === 0 && (
@@ -186,6 +198,14 @@ export default function QuizPlayModule() {
             )}
             {answer && index < selectedQuiz.questions.length && (
               <button
+                disabled={!answer}
+                // onClick={() =>
+                //   handleNextQuiz(
+                //     selectedQuiz?.questions[index]?.type === "Puzzle"
+                //       ? true
+                //       : false
+                //   )
+                // }
                 onClick={() => handleNextQuiz()}
                 className="w-[35%] h-[3.2rem] mt-8 rounded-[1.25rem] flex items-center justify-center font-medium text-base font-Rubik text-textColorWhite bg-primaryColor border-none hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:ring-primaryColor focus:secondColor focus:ring-offset-2 transition-colors duration-300"
               >

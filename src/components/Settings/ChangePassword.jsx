@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Logo from "./images/Logo_Queezy_Dark.svg";
-import LogoText from "./images/Queezy_Text_Dark.svg";
 import Lock from "./images/LockIcon.svg";
 import showIcon from "./images/ShowPasswordIcon.svg";
 import hideIcon from "./images/HidePasswordIcon.svg";
@@ -25,13 +23,8 @@ export default function ChangePassword() {
     },
   });
   return (
-    <div className="w-[65%] min-h-[43rem] pl-[5rem] border-l flex flex-col mx-auto items-start justify-center lg:items-start lg:justify-start ">
-      <div className="flex items-center gap-4">
-        <img src={Logo} alt="Logo" />
-        <img src={LogoText} alt="LogoText" />
-      </div>
-
-      <p className="font-bold text-[1.5rem] sm:text-[1.8rem] font-Rubik text-textColorNeutralBlack_0C092A mt-6 lg:mt-[2.5rem]">
+    <div className="w-[65%] min-h-[43rem] pl-[5rem] pt-2 border-l flex flex-col mx-auto items-start justify-center lg:items-start lg:justify-start ">
+      <p className="font-bold text-[1.5rem] sm:text-[1.8rem] font-Rubik text-textColorNeutralBlack_0C092A ">
         {languageArray[0].changeYourPassword}
       </p>
       <form onSubmit={formik.handleSubmit} className="w-[70%] mt-10">
@@ -124,7 +117,7 @@ export default function ChangePassword() {
           htmlFor="passwordChangeConfirm"
           className="mt-4 mb-2 font-medium text-base font-Rubik text-[#49465F]"
         >
-          placeholder={languageArray[0].confirmPassword}
+          {languageArray[0].confirmPassword}
         </label>
 
         <div className="w-full h-[3.5rem] mt-1 flex items-center justify-center relative">

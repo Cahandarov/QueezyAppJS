@@ -54,7 +54,7 @@ export default function TrueAndFalseAnswers() {
         onChange={formik.handleChange}
         className="w-full h-[3.5rem] rounded-[1.25rem]  py-4 px-4 bg-white border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300 "
         type="text"
-        placeholder={languageArray[0].enterTrueOption}
+        placeholder={languageArray[0].trueAndFalsePlaceholder}
       />
 
       {/* <label

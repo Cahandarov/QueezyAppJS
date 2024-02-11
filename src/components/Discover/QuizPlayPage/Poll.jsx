@@ -1,17 +1,16 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useMemo, useState } from "react";
-import { setAnswer } from "./quizPlaySlice";
+import { useMemo } from "react";
+import { setAnswer, setDisabled } from "./quizPlaySlice";
 
 export default function Poll() {
   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
   let index = useSelector((state) => state.quizPlay.index);
   let answer = useSelector((state) => state.quizPlay.answer);
-
-  const [disabled, setDisabled] = useState(false);
+  const disabled = useSelector((state) => state.quizPlay.disabled);
   const dispatch = useDispatch();
 
   const mixedOptions = useMemo(() => {
-    const originalOptions = selectedQuiz?.questions[index]?.options || [];
+    const originalOptions = selectedQuiz?.questions[index]?.optionsPoll || [];
 
     const optionsCopy = [...originalOptions];
     for (let i = optionsCopy.length - 1; i > 0; i--) {
@@ -29,11 +28,13 @@ export default function Poll() {
 
   function handleClickOptions(ClickedValue) {
     dispatch(setAnswer(ClickedValue));
-    setDisabled(true);
+    if (ClickedValue) {
+      dispatch(setDisabled(true));
+    }
   }
 
   return (
-    <div className="flex flex-col mt-4">
+    <div className="flex flex-col mt-4 w-full">
       <p className="font-Rubik font-medium text-2xl text-[#0C092A] mt-1">
         {selectedQuiz?.questions[index].question}
       </p>
@@ -55,11 +56,13 @@ export default function Poll() {
                   width:
                     answer === option
                       ? `${Math.round(
-                          ((Number(Object.values(option)) + 1) / totalVotes) *
+                          ((Number(Object.values(option)) + 1) /
+                            (totalVotes + 1)) *
                             100
                         )}%`
                       : `${Math.round(
-                          (Number(Object.values(option)) / totalVotes) * 100
+                          (Number(Object.values(option)) / (totalVotes + 1)) *
+                            100
                         )}%`,
                 }}
               ></div>
@@ -69,14 +72,15 @@ export default function Poll() {
                 {answer === option ? (
                   <p className="font-Rubik font-medium text-base text-primaryColor text-right">
                     {Math.round(
-                      ((Number(Object.values(option)) + 1) / totalVotes) * 100
+                      ((Number(Object.values(option)) + 1) / (totalVotes + 1)) *
+                        100
                     )}{" "}
                     %
                   </p>
                 ) : (
                   <p className="font-Rubik font-medium text-base text-primaryColor text-right">
                     {Math.round(
-                      (Number(Object.values(option)) / totalVotes) * 100
+                      (Number(Object.values(option)) / (totalVotes + 1)) * 100
                     )}{" "}
                     %
                   </p>

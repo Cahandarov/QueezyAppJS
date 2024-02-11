@@ -1,5 +1,3 @@
-import Logo from "./images/Logo_Queezy_Dark.svg";
-import LogoText from "./images/Queezy_Text_Dark.svg";
 import Email from "./images/emailIconColored.svg";
 import { useFormik } from "formik";
 import { useSelector } from "react-redux";
@@ -19,19 +17,14 @@ export default function ChangeEmail() {
     },
   });
   return (
-    <div className="w-[65%] min-h-[43rem] pl-[5rem] border-l flex flex-col mx-auto items-start justify-center lg:items-start lg:justify-start ">
-      <div className="flex items-center gap-4">
-        <img src={Logo} alt="Logo" />
-        <img src={LogoText} alt="LogoText" />
-      </div>
-
-      <p className="font-bold text-[1.5rem] sm:text-[1.8rem] font-Rubik text-textColorNeutralBlack_0C092A mt-6 lg:mt-[2.5rem]">
+    <div className="w-[65%] min-h-[43rem] pl-[5rem] pt-2 border-l flex flex-col mx-auto items-start justify-center lg:items-start lg:justify-start ">
+      <p className="font-bold text-[1.5rem] sm:text-[1.8rem] font-Rubik text-textColorNeutralBlack_0C092A ">
         {languageArray[0].updateYourEmail}
       </p>
       <form onSubmit={formik.handleSubmit} className="w-[70%] mt-10">
         <label
           htmlFor="emailChangeOld"
-          className="font-medium text-base mb-2 font-Rubik text-[#49465F]"
+          className="font-medium text-base mb-10 font-Rubik text-[#49465F]"
         >
           {languageArray[0].oldEmail}
         </label>

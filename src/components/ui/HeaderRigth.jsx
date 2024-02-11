@@ -46,17 +46,14 @@ export default function HeaderRigth() {
     }
   }
   return (
-    <div className="flex order-1 sm:order-2 gap-2 md:gap-6 items-center justify-center relative">
+    <div className="flex order-1 sm:order-2 pr-2 md:pr-0 gap-2 md:gap-6 items-center justify-center relative">
       <button
-        className="w-8 h-8 md:w-14 md:h-14 rounded-md md:rounded-2xl border-2 border-solid border-[#EFEEFC] flex items-center justify-center hover:border-2 hover:border-primaryColor transition-colors duration-300"
+        className="w-8 h-8 md:w-14 md:h-14 rounded-md md:rounded-2xl border-2 border-[#EFEEFC] flex items-center justify-center"
         onClick={() => HandleShowModal()}
       >
         <img src={searchIcon} alt="searcIcon" />
       </button>
-      <div
-        id="user_avatar_box"
-        className="w-8 h-8 md:w-14 md:h-14 flex justify-center items-center rounded-full bg-secondColor"
-      >
+      <div className="w-7 h-7 md:w-14 md:h-14 flex justify-center items-center rounded-full bg-secondColor">
         <AvatarLetter />
       </div>
       <div
@@ -112,7 +109,7 @@ export default function HeaderRigth() {
       {logoutModal && <LogoutModal />}
       <button
         onClick={() => handleChangeLanguage()}
-        className="w-16 h-8 rounded-xl border-2 border-secondColor absolute -right-6 -top-4 flex justify-center items-center font-Rubik font-medium font-base text-primaryColor"
+        className="w-9 h-5 md:w-16 md:h-8 rounded-lg md:rounded-xl border-2 border-secondColor absolute -right-2 -top-7 sm:-right-3 sm:-top-2 md:-right-6 md:-top-4 flex justify-center items-center font-Rubik font-normal md:font-medium text-xs md:text-base text-primaryColor"
       >
         {language === "eng" ? "ENG" : "AZE"}
       </button>

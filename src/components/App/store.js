@@ -16,7 +16,7 @@ import dashboardReducer from "../Dashboard/dashboardSlice";
 import uiReducer from "../ui/uiSlice";
 import quizPlayReducer from "../Discover/QuizPlayPage/quizPlaySlice";
 import settingsReducer from "../Settings/settingsSlice";
-import favoritesReducer from "../QuizLibary/favoritesSlice";
+import favoritesReducer from "../Dashboard/Favorits/favoritesSlice";
 
 export const store = configureStore({
   reducer: {

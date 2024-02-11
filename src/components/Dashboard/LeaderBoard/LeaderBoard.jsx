@@ -55,9 +55,9 @@ export default function LeaderBoard() {
   }, [viewType]);
 
   return (
-    <div className="w-full sm:w-[80%] md:w-[47%] lg:w-[23rem] h-[25rem] sm:h-[30rem] lg:order-3 px-6 pt-6 pb-0 flex flex-col justify-between gap-0 sm:gap-6 rounden-[2rem] bg-white dashboard_boxes">
+    <div className="w-full sm:w-[80%] md:w-[47%] lg:w-[23rem] h-[25rem] sm:h-[30rem] order-3 px-6 pt-6 pb-0 flex flex-col justify-between gap-0 sm:gap-6 rounden-[2rem] bg-white dashboard_boxes">
       <div className="flex justify-between items-center">
-        <p className="text-sm sm:text-2xl font-medium font-Rubik text-textColorNeutralBlack_0C092A leading-10">
+        <p className="text-sm sm:text-xl md:text-2xl font-medium text-left font-Rubik text-textColorNeutralBlack_0C092A leading-10">
           {languageArray[0].leaderboard}
         </p>
         <button

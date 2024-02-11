@@ -36,8 +36,9 @@ export default function QuizSettings() {
       selectedQuestionType: eng.multipleAnswer,
       addQuestion: "",
       addExplanation: "",
-      addOptions: [],
-      addCorrectOption: [],
+      addOptions: "",
+      addOptionsPoll: "",
+      addCorrectOption: "",
     },
     onSubmit: (values) => {
       // if (
@@ -54,11 +55,12 @@ export default function QuizSettings() {
         id: questions.length + 1,
         type: values.selectedQuestionType,
         question: values.addQuestion,
-        options: values.addOptions,
-        correctAnswer: values.addCorrectOption,
+        options: values.addOptions || [],
+        optionsPoll: values.addOptionsPoll || [],
+        correctAnswer: [values.addCorrectOption] || [],
         explanation: values.addExplanation,
-        answerTime: values.addQuizTimeToQuestion,
-        score: values.addPointsToQuestion,
+        answerTime: +values.addQuizTimeToQuestion,
+        score: +values.addPointsToQuestion,
         image: values.addCoverFileToQuestion,
       };
 
@@ -70,18 +72,33 @@ export default function QuizSettings() {
       formik.setFieldValue("selectedQuestionType", eng.multipleAnswer);
       formik.setFieldValue("addQuestion", "");
       formik.setFieldValue("addExplanation", "");
-      formik.setFieldValue("addCorrectOption", []);
-      formik.setFieldValue("addOptions", []);
+      formik.setFieldValue("addCorrectOption", "");
+      formik.setFieldValue("addOptions", "");
+      formik.setFieldValue("addOptionsPoll", "");
       // }
 
       // formik.resetForm();
     },
   });
+  // const handleFileChange = async (event) => {
+  //   const file = event.target.files[0];
+  //   const base64String = await convertFileToBase64ForAllTypeFiles(file);
+  //   formik.setFieldValue("addCoverFileToQuestion", base64String);
+  // };
+
   const handleFileChange = async (event) => {
-    const file = event.target.files[0];
-    const base64String = await convertFileToBase64ForAllTypeFiles(file);
-    formik.setFieldValue("addCoverFileToQuestion", base64String);
+    const fileInput = event.target;
+    const file = fileInput.files[0];
+
+    fileInput.value = null;
+    fileInput.click();
+
+    if (file) {
+      const base64String = await convertFileToBase64ForAllTypeFiles(file);
+      formik.setFieldValue("addCoverFileToQuestion", base64String);
+    }
   };
+
   function handleOpenLastPage() {
     const updatedNewQuiz = { ...newQuiz, questions: [...questions] };
     dispatch(setSetQuestionsLastPage(true));
@@ -170,7 +187,7 @@ export default function QuizSettings() {
               {formik.values.selectedQuestionType === "Multiple Answer" && (
                 <MultipleAnswers />
               )}
-              {formik.values.selectedQuestionType === "True or False" && (
+              {formik.values.selectedQuestionType === "True and False" && (
                 <TrueAndFalseAnswers />
               )}
               {formik.values.selectedQuestionType === "Type Answer" && (

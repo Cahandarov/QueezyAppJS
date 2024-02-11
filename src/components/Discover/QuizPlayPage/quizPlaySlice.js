@@ -13,6 +13,8 @@ const initialState = {
   numberOfCorrectAnswers: 0,
   numberOfIncorrectAnswers: 0,
   numberOfSkippedQuestions: 0,
+  disabled: false,
+  triggerChild: false,
 };
 
 const quizPlaySlice = createSlice({
@@ -52,6 +54,12 @@ const quizPlaySlice = createSlice({
     setPlayedQuizz(state, action) {
       state.playedQuizz = action.payload;
     },
+    setDisabled(state, action) {
+      state.disabled = action.payload;
+    },
+    setTriggerChild(state, action) {
+      state.triggerChild = action.payload;
+    },
   },
 });
 export const {
@@ -66,5 +74,7 @@ export const {
   setNumberOfIncorrectAnswers,
   setNumberOfSkippedQuestions,
   setPlayedQuizz,
+  setTriggerChild,
+  setDisabled,
 } = quizPlaySlice.actions;
 export default quizPlaySlice.reducer;

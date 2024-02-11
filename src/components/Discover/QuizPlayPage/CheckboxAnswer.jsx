@@ -24,9 +24,9 @@ export default function CheckboxAnswer() {
   );
 
   const mixedOptions = useMemo(() => {
-    const originalOptions = selectedQuiz?.questions[index]?.options || [];
+    const originalOptions = selectedQuiz?.questions[index]?.options;
 
-    const optionsCopy = [...originalOptions, ...correctAnswer];
+    const optionsCopy = [...originalOptions, ...correctAnswer.flat()];
     for (let i = optionsCopy.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
@@ -48,30 +48,30 @@ export default function CheckboxAnswer() {
 
     dispatch(setAnswer(updatedAnswer));
 
-    const allCorrectAnswersChecked = correctAnswer.every((answer) =>
-      updatedAnswer.includes(answer)
-    );
+    const allCorrectAnswersChecked =
+      correctAnswer &&
+      updatedAnswer &&
+      correctAnswer.every((answer) => updatedAnswer.includes(answer));
+
+    const allCorrectAnswersIncorrect =
+      correctAnswer &&
+      updatedAnswer &&
+      correctAnswer.every((answer) => !updatedAnswer.includes(answer));
 
     if (allCorrectAnswersChecked) {
       const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
       dispatch(setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1));
       dispatch(setGainedPoints(updatedPoints));
       dispatch(setGainedPointsForQuestion(selectedQuiz.questions[index].score));
-    } else {
-      const allCorrectAnswersIncorrect = correctAnswer.every(
-        (answer) => !updatedAnswer.includes(answer)
-      );
-
-      if (allCorrectAnswersIncorrect) {
-        if (correctAnswer.includes(CheckedValue)) {
-          dispatch(setNumberOfIncorrectAnswers(numberOfIncorrectAnswers + 1));
-        }
+    } else if (allCorrectAnswersIncorrect) {
+      if (correctAnswer.includes(CheckedValue)) {
+        dispatch(setNumberOfIncorrectAnswers(numberOfIncorrectAnswers + 1));
       }
     }
   }
 
   return (
-    <div className="flex flex-col mt-4">
+    <div className="flex flex-col mt-4 w-full">
       <p className="font-Rubik font-medium text-2xl text-[#0C092A] mt-1">
         {selectedQuiz?.questions[index].question}
       </p>
@@ -104,19 +104,19 @@ export default function CheckboxAnswer() {
 //   setNumberOfCorrectAnswers,
 //   setNumberOfIncorrectAnswers,
 //   setGainedPointsForQuestion,
+//   setTriggerChild,
 // } from "./quizPlaySlice";
 // import { useEffect, useMemo, useState } from "react";
 
 // export default function CheckboxAnswer() {
+//   const [updatedAnswerState, setUpdatedAnswerState] = useState(null);
 //   const dispatch = useDispatch();
-//   const [incorrectInitiallySelected, setIncorrectInitiallySelected] =
-//     useState(false);
-
 //   const selectedQuiz = useSelector((state) => state.discover.selectedQuiz);
 //   let index = useSelector((state) => state.quizPlay.index);
 //   let answer = useSelector((state) => state.quizPlay.answer);
 //   const correctAnswer = selectedQuiz?.questions[index]?.correctAnswer;
 //   const gainedPoints = useSelector((state) => state.quizPlay.gainedPoints);
+//   const triggerChild = useSelector((state) => state.quizPlay.triggerChild);
 
 //   const numberOfCorrectAnswers = useSelector(
 //     (state) => state.quizPlay.numberOfCorrectAnswers
@@ -139,6 +139,7 @@ export default function CheckboxAnswer() {
 
 //   function handleCheckOptions(CheckedValue) {
 //     const isChecked = answer ? answer.includes(CheckedValue) : false;
+
 //     let updatedAnswer;
 
 //     if (isChecked) {
@@ -146,33 +147,32 @@ export default function CheckboxAnswer() {
 //     } else {
 //       updatedAnswer = answer ? [...answer, CheckedValue] : [CheckedValue];
 //     }
+//     setUpdatedAnswerState(updatedAnswer);
 
 //     dispatch(setAnswer(updatedAnswer));
 //   }
 
-//   function calculateResults() {
+//   useEffect(() => {
+//     console.log(triggerChild);
 //     const allCorrectAnswersChecked =
-//       Array.isArray(correctAnswer) &&
-//       correctAnswer.length > 0 &&
-//       correctAnswer.every((correct) => answer?.includes(correct));
+//       correctAnswer &&
+//       updatedAnswerState &&
+//       correctAnswer.every((answer) => updatedAnswerState.includes(answer));
 
+//     const allCorrectAnswersIncorrect =
+//       correctAnswer &&
+//       updatedAnswerState &&
+//       correctAnswer.every((answer) => !updatedAnswerState.includes(answer));
 //     if (allCorrectAnswersChecked) {
 //       const updatedPoints = gainedPoints + selectedQuiz.questions[index].score;
 //       dispatch(setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1));
 //       dispatch(setGainedPoints(updatedPoints));
 //       dispatch(setGainedPointsForQuestion(selectedQuiz.questions[index].score));
-//       dispatch(setNumberOfIncorrectAnswers(0)); // Reset incorrect answers count
-//       setIncorrectInitiallySelected(false); // Reset the flag
-//     } else {
-//       if (incorrectInitiallySelected) {
-//         dispatch(setNumberOfIncorrectAnswers(numberOfIncorrectAnswers + 1));
-//       }
+//     } else if (allCorrectAnswersIncorrect) {
+//       dispatch(setNumberOfIncorrectAnswers(numberOfIncorrectAnswers + 1));
 //     }
-//   }
-
-//   useEffect(() => {
-//     calculateResults();
-//   }, [answer]); // Call calculateResults when answer changes
+//     dispatch(setTriggerChild(false));
+//   }, [triggerChild]);
 
 //   return (
 //     <div className="flex flex-col mt-4">

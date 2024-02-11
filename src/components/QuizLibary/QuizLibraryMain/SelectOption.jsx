@@ -14,7 +14,7 @@ const SelectOption = ({ selectedCategory, setSelectedCategory }) => {
       new Set(quizzes?.map((quiz) => quiz?.categoryName))
     );
     setCategories(uniqueCategories);
-  }, [quizzes]);
+  }, [quizzes.length]);
 
   const handleSelectChange = (category) => {
     setSelectedCategory(category);
@@ -22,7 +22,7 @@ const SelectOption = ({ selectedCategory, setSelectedCategory }) => {
   };
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full ">
       <div
         role="button"
         tabIndex={0}
@@ -30,9 +30,10 @@ const SelectOption = ({ selectedCategory, setSelectedCategory }) => {
         name="category"
         aria-expanded={showOptions}
         aria-haspopup="true"
-        className="w-full rounded-[1.25rem] px-6 py-[0.9rem] bg-[#EFEEFC] border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300"
+        className="w-full h-full rounded-[1.25rem] px-2 md:px-2 xl:px-6  bg-[#EFEEFC] border-2 border-[#EFEEFC]  hover:bg-slate-200 hover:border-slate-300 focus:outline-none focus:ring focus:ring-slate-300 focus:ring-offset-2 transition-colors duration-300"
       >
-        <div className="w-full h-full font-normal flex items-center text-base font-Rubik text-[#6A5AE0]">
+        {/* text-normal md:font-medium text-xs md:text-sm xl:text-base */}
+        <div className="w-full h-full font-normal flex items-center text-sm sm:text-base md:text-sm xl:text-base font-Rubik text-[#6A5AE0]">
           {selectedCategory
             ? `${selectedCategory}`
             : languageArray[0].Category + " (" + categories?.length + ")"}
@@ -51,7 +52,11 @@ const SelectOption = ({ selectedCategory, setSelectedCategory }) => {
           </div>
         )}
       </div>
-      <img src={arrowToBottom} alt="arrow" className="absolute top-4 right-2" />
+      <img
+        src={arrowToBottom}
+        alt="arrow"
+        className="absolute top-3 right-2 md:right-0 lg:right-1 xl:right-2"
+      />
     </div>
   );
 };
