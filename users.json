@@ -1,280 +1,661 @@
 {
-    "users": [
-      {
-        "userId": 1,
-        "firstName": "Alice",
-        "lastName": "Smith",
-        "email": "cahandarov@gmail.com",
-        "password": "12345",
-        "avatar": "alice_avatar.jpg",
-        "country": "USA",
-        "briefInfo": "Web Developer",
-        "badges": ["Bronze", "Silver"],
-        "playedQuizzes": [
-          {
-            "quizId": 1,
-            "category": "Geography",
-            "difficulty": "easy",
-            "title": "World Capitals Quiz",
-            "description": "Test your knowledge of world capitals.",
-            "coverImage": "world_capitals_quiz.jpg",
-            "date": "2023-01-01",
-            "result": "Passed",
-            "score": 60,
-            "correctAnswers": 6,
-            "wrongAnswers": 4,
-            "creator": {
-              "firstName": "John",
-              "lastName": "Doe",
-              "avatar": "john_avatar.jpg"
-            },
-            "questions": [
-              {
-                "questionId": 1,
-                "type": "Multiple",
-                "question": "What is the capital of France?",
-                "options": ["Paris", "London", "Berlin", "Madrid"],
-                "correctAnswer": "Paris",
-                "answeredOption": "Paris",
-                "explanation": "Paris is the capital of France.",
-                "score": 10,
-                "image": "question1.jpg"
-              },
-              {
-                "questionId": 2,
-                "type": "True and False",
-                "question": "The capital of France is Berlin.",
-                "options": ["True", "False"],
-                "correctAnswer": "False",
-                "answeredOption": "False",
-                "explanation": "Paris is the capital of France.",
-                "score": 10,
-                "image": "question1.jpg"
-              },
-              {
-                "questionId": 3,
-                "type": "Type answer",
-                "question": "What is the capital of France?",
-                "correctAnswer": "Paris",
-                "answeredOption": "Parij",
-                "explanation": "Paris is the capital of France.",
-                "score": 0,
-                "image": "question1.jpg"
-              },
-              {
-                "id": 4,
-                "type": "Multiple",
-                "question": "What is the capital of France?",
-                "options": ["Paris", "London", "Berlin", "Madrid"],
-                "correctAnswer": "Paris",
-                "answeredOption": "Paris",
-                "explanation": "Paris is the capital of France.",
-                "score": 10,
-                "image": "question1.jpg"
-              },
-              {
-                "id": 5,
-                "type": "True and False",
-                "question": "The capital of France is Berlin.",
-                "options": ["True", "False"],
-                "correctAnswer": "False",
-                "answeredOption": "False",
-                "explanation": "Paris is the capital of France.",
-                "score": 10,
-                "image": "question1.jpg"
-              },
-              {
-                "id": 6,
-                "type": "Type answer",
-                "question": "What is the capital of France?",
-                "correctAnswer": "Paris",
-                "answeredOption": "Parij",
-                "explanation": "Paris is the capital of France.",
-                "score": 0,
-                "image": "question1.jpg"
-              },
-              {
-                "id": 7,
-                "type": "Multiple",
-                "question": "What is the capital of France?",
-                "options": ["Paris", "London", "Berlin", "Madrid"],
-                "correctAnswer": "Paris",
-                "answeredOption": "Paris",
-                "explanation": "Paris is the capital of France.",
-                "score": 10,
-                "image": "question1.jpg"
-              },
-              {
-                "id": 8,
-                "type": "True and False",
-                "question": "The capital of France is Berlin.",
-                "options": ["True", "False"],
-                "correctAnswer": "False",
-                "answeredOption": "False",
-                "explanation": "Paris is the capital of France.",
-                "score": 10,
-                "image": "question1.jpg"
-              },
-              {
-                "id": 9,
-                "type": "Type answer",
-                "question": "What is the capital of France?",
-                "correctAnswer": "Paris",
-                "answeredOption": "Parij",
-                "explanation": "Paris is the capital of France.",
-                "score": 0,
-                "image": "question1.jpg"
-              },
-              {
-                "id": 10,
-                "type": "Multiple",
-                "question": "What is the capital of France?",
-                "options": ["Paris", "London", "Berlin", "Madrid"],
-                "correctAnswer": "Paris",
-                "answeredOption": "Paris",
-                "explanation": "Paris is the capital of France.",
-                "score": 10,
-                "image": "question1.jpg"
-              }
-            ]
-          }
-        ],
-        "matches": [
-          {
-            "matchId": 1,
-            "firstname": "John",
-            "lastname": "Smith",
-            "date": "2023-01-05",
-            "result": "Won"
-          },
-          {
-            "matchId": 2,
-            "firstname": "Josua",
-            "lastname": "King",
-            "date": "2023-03-05",
-            "result": "Lost"
-          }
-        ],
-        "friends": [
-          {
-            "userId": 2,
-            "Name": "John",
-            "lastName": " Smith",
-            "avatar": "alice_avatar.jpg",
-            "country": "USA",
-            "pointsTotal": [
-              { "point": 107, "gainedDate": "12.01.2023 17:43" },
-              { "point": 207, "gainedDate": "12.11.2023 17:43" },
-              { "point": 57, "gainedDate": "14.11.2023 17:43" },
-              { "point": 107, "gainedDate": "12.11.2023 17:43" },
-              { "point": 207, "gainedDate": "12.10.2023 17:43" },
-              { "point": 57, "gainedDate": "14.11.2023 17:43" }
-            ]
-          },
-          {
-            "userId": 3,
-            "firstName": "Patrick",
-            "lastName": " Johnson",
-            "avatar": "alice_avatar.jpg",
-            "country": "USA",
-            "pointsTotal": [
-                { "point": 107, "gainedDate": "12.01.2023 17:43" },
-                { "point": 207, "gainedDate": "12.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" }
-            ]
-          },
-          {
-            "userId": 4,
-            "firstName": "Bruce",
-            "lastName": " White",
-            "avatar": "alice_avatar.jpg",
-            "country": "USA",
-            "pointsTotal": [
-                { "point": 107, "gainedDate": "12.01.2023 17:43" },
-                { "point": 207, "gainedDate": "12.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" }
-            ]
-          },
-          {
-            "userId": 4,
-            "firstName": "Lee",
-            "lastName": "Bruce",
-            "avatar": "alice_avatar.jpg",
-            "country": "USA",
-            "pointsTotal": [
-                { "point": 107, "gainedDate": "12.01.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" }
-            ]
-          },
-          {
-            "userId": 5,
-            "firstName": "Sasha",
-            "lastName": "Green",
-            "avatar": "alice_avatar.jpg",
-            "country": "USA",
-            "pointsTotal": [
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" }
-            ]
-          },
-          {
-            "userId": 6,
-            "firstName": "Brundi",
-            "lastName": "Black",
-            "avatar": "alice_avatar.jpg",
-            "country": "USA",
-            "pointsTotal": [
-                { "point": 107, "gainedDate": "12.01.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.11.2023 17:43" },
-                { "point": 207, "gainedDate": "12.10.2023 17:43" },
-                { "point": 57, "gainedDate": "14.11.2023 17:43" },
-                { "point": 107, "gainedDate": "12.01.2023 17:43" }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Shamkhal",
+      "lastName": "Jahandarov",
+      "email": "cahandarov@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Azerbaijan",
+      "briefInfo": "Web Developer",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        },
+        {
+          "point": 107,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "10/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "curiosityConnoisseur",
+        "learningLuminary",
+        "badgeCollector",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        },
+        {
+          "id": 4,
+          "date": "01/07/2024, 14:23:21",
+          "result": "Failed",
+          "score": 40,
+          "correctAnswers": 4,
+          "wrongAnswers": 6,
+          "skippedAnswers": 0
+        },
+        {
+          "id": 6,
+          "date": "01/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 80,
+          "correctAnswers": 8,
+          "wrongAnswers": 2,
+          "skippedAnswers": 0
+        },
+        {
+          "id": 11,
+          "date": "01/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 70,
+          "correctAnswers": 7,
+          "wrongAnswers": 3,
+          "skippedAnswers": 0
+        },
+        {
+          "id": 17,
+          "date": "01/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 70,
+          "correctAnswers": 7,
+          "wrongAnswers": 3,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": [
+        {
+          "id": 1707301401975,
+          "date": "02/07/2024, 14:23:21"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Azamat",
+      "lastName": "Seitkaliyev",
+      "email": "seitkaliyev@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Kazakhstan",
+      "briefInfo": "Navy Officer",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "curiosityConnoisseur",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 3,
+      "firstName": "Kuanış",
+      "lastName": "Duanov",
+      "email": "duanov@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Kazakhstan",
+      "briefInfo": "Retaired Navy Officer",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 4,
+      "firstName": "Vugar",
+      "lastName": "Huseynov",
+      "email": "huseynov@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Azerbaijan",
+      "briefInfo": "Oil Saler",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        },
+        {
+          "point": 107,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "10/12/2023 17:43:21"
+        },
+        {
+          "point": 107,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "10/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "curiosityConnoisseur",
+        "badgeCollector",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": [
+        {
+          "id": 1707301401975,
+          "date": "02/07/2024, 14:23:21"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "firstName": "Nikoloz",
+      "lastName": "Tordia",
+      "email": "tordia@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Georgia",
+      "briefInfo": "Truck Driver",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "10/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "badgeCollector",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 6,
+      "firstName": "Shahmuhammed",
+      "lastName": "Hojayev",
+      "email": "hojayev@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Turkmenistan",
+      "briefInfo": "Project Manager",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "10/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "badgeCollector",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 7,
+      "firstName": "Guvanch",
+      "lastName": "Permanov",
+      "email": "permanov@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Turkmenistan",
+      "briefInfo": "Navy Officer",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "10/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "badgeCollector",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 8,
+      "firstName": "Bayram",
+      "lastName": "Seyfullayev",
+      "email": "seyfullayev@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Turkmenistan",
+      "briefInfo": "Navy Officer",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "10/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "10/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "badgeCollector",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 9,
+      "firstName": "Marlond",
+      "lastName": "Druga",
+      "email": "druga@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Albania",
+      "briefInfo": "Banker",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "10/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "curiosityConnoisseur"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 10,
+      "firstName": "Artemis",
+      "lastName": "Mici",
+      "email": "mici@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Albania",
+      "briefInfo": "Navy Officer",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "curiosityConnoisseur"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 11,
+      "firstName": "Bruce",
+      "lastName": "Lee",
+      "email": "lee@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "United States",
+      "briefInfo": "Sportman",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        },
+        {
+          "point": 107,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "curiosityConnoisseur",
+        "learningLuminary",
+        "badgeCollector",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 12,
+      "firstName": "John",
+      "lastName": "Wick",
+      "email": "wick@gmail.com",
+      "registerDate": "02/07/2024, 14:23:21",
+      "lastChangeDateOfPassword": "02/07/2024, 14:23:21",
+      "password": "12345",
+      "avatar": "",
+      "country": "Finland",
+      "briefInfo": "Backend developer",
+      "pointsTotal": [
+        {
+          "point": 107,
+          "gainedDate": "01/12/2023, 17:43:21"
+        },
+        {
+          "point": 207,
+          "gainedDate": "11/12/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        },
+        {
+          "point": 57,
+          "gainedDate": "11/14/2023 17:43:21"
+        }
+      ],
+      "favorites": [],
+      "badges": [
+        "knowledgeNavigator",
+        "curiosityConnoisseur",
+        "queenOfQuizzes"
+      ],
+      "playedQuizzes": [
+        {
+          "id": 1,
+          "date": "02/07/2024, 14:23:21",
+          "result": "Passed",
+          "score": 60,
+          "correctAnswers": 6,
+          "wrongAnswers": 4,
+          "skippedAnswers": 0
+        }
+      ],
+      "createdQuizzes": []
+    },
+    {
+      "id": 1708147881710,
+      "firstName": "Fuad",
+      "lastName": "Jahandarov",
+      "email": "user@gmail.com",
+      "password": "12345",
+      "country": "Angola",
+      "registerDate": "02/17/2024 09:31:21",
+      "lastChangeDateOfPassword": "02/17/2024 09:31:21",
+      "avatar": "",
+      "briefInfo": "",
+      "pointsTotal": [],
+      "favorites": [],
+      "badges": [],
+      "playedQuizzes": [],
+      "createdQuizzes": []
+    }
+  ]
+}

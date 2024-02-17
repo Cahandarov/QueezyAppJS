@@ -45,18 +45,18 @@ export default function LeaderboardPageButton({ setViewType }) {
   );
 
   return (
-    <div
-      className="hidden sm:block your-required-wrapper font-medium font-base"
-      style={{ width: 280, height: 40 }}
-    >
-      <SwitchSelector
-        onChange={onChange}
-        options={options}
-        initialSelectedIndex={initialSelectedIndex}
-        backgroundColor={"#EFEEFC"}
-        fontColor={"white"}
-        fontFamily={"Rubik"}
-      />
-    </div>
+    // <div
+    //   className="hidden sm:block your-required-wrapper font-medium font-base"
+    //   style={{ width: 280, height: 40 }}
+    // >
+    <SwitchSelector
+      onChange={onChange}
+      options={options}
+      initialSelectedIndex={initialSelectedIndex}
+      backgroundColor={"#EFEEFC"}
+      fontColor={"white"}
+      fontFamily={"Rubik"}
+    />
+    // </div>
   );
 }

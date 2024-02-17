@@ -39,7 +39,7 @@ async function addQuiz(newQuiz) {
       "Error posting quiz data:",
       error.response?.data || error.message
     );
-    throw error; // Rethrow the error to propagate it to the caller
+    throw error;
   }
 }
 
@@ -57,7 +57,6 @@ const quizzesSlice = createSlice({
   reducers: {
     setAddQuiz(state, action) {
       state.newQuiz = action.payload;
-      // state.quizzes.push(action.payload);
     },
   },
 

@@ -1,23 +1,31 @@
 import Logo from "../Images/Logo_Queezy_Dark.svg";
 import LogoText from "../Images/Queezy_Text_Dark.svg";
 import EmailColored from "../Images/emailIconColored.svg";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setSignUpStages } from "../userSlice";
 import { MyContext } from "./SignUpContext";
 import { useContext } from "react";
 // import uniqid from 'uniqid';
 
 export default function SignUpAddEmail() {
+  const userData = useSelector((state) => state.userData.users);
   const formik = useContext(MyContext);
 
   const dispatch = useDispatch();
 
   function getEmail() {
-    if (formik.values.emailSignUp) {
+    const matchedEmail = userData?.find(
+      (user) => user.email === formik.values.emailSignUp
+    );
+    if (formik.values.emailSignUp && matchedEmail) {
+      console.log("Entered email registered before.");
+      return;
+    } else if (formik.values.emailSignUp && !matchedEmail) {
       console.log(formik.values.emailSignUp);
       dispatch(setSignUpStages("addPassword"));
     }
   }
+
   return (
     <div className="w-full h-full flex flex-col mx-auto items-start justify-center lg:items-start lg:justify-start ">
       <div className="flex items-center gap-4">

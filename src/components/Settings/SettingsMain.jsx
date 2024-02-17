@@ -21,6 +21,7 @@ import ChangePassword from "./ChangePassword";
 import UpdateAvatar from "./UpdateAvatar";
 
 export default function SettingsMain() {
+  const token = JSON.parse(localStorage.getItem("token"));
   const languageArray = useSelector((state) => state.language.languageArray);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -36,6 +37,14 @@ export default function SettingsMain() {
   );
   const updateAvatarPage = useSelector(
     (state) => state.settings.updateAvatarPage
+  );
+
+  const OneDayInMseconds = 24 * 60 * 60 * 1000;
+  const dateNowInMseconds = new Date().getTime();
+  const emailChangedInMseconds = Date.parse(token.lastChangeDateOfPassword);
+
+  const emailChangedInDays = Math.round(
+    (dateNowInMseconds - emailChangedInMseconds) / OneDayInMseconds
   );
 
   function handleClickFAQ() {
@@ -84,6 +93,7 @@ export default function SettingsMain() {
     dispatch(setChangeEmailPage(false));
     dispatch(setChangePasswordPage(false));
     dispatch(setLogoutPage(false));
+    localStorage.removeItem("token");
     navigate("/login");
   }
 
@@ -113,8 +123,15 @@ export default function SettingsMain() {
                   {languageArray[0][button.text1]}
                 </p>
                 <p className="font-Rubik font-normal text-sm text-left text-[#858494] group-hover:text-white group-hover:text-opacity-70">
-                  {index !== 1 && languageArray[0][button.text2]}
-                  {index == 1 && "madias@yahoo.com"}
+                  {index !== 1 && index !== 2 && languageArray[0][button.text2]}
+                  {index == 1 && token?.email}
+
+                  {index === 2 && (
+                    <>
+                      {languageArray[0][button.text2]} {emailChangedInDays}{" "}
+                      {languageArray[0][button.text3]}
+                    </>
+                  )}
                 </p>
               </div>
             </button>

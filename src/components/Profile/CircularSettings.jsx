@@ -20,14 +20,14 @@ const props = {
     borderRadius: "50%",
   },
 };
-export default function CircularSettings() {
+export default function CircularSettings({ selectedOption, monthly, annual }) {
   const languageArray = useSelector((state) => state.language.languageArray);
   return (
     <div className="relative flex justify-center items-center">
       <CircularProgressBar {...props} />
       <div className="flex flex-col justify-center items-center absolute top-9 left-8">
         <p className="font-Rubik font-bold text-[1.75rem] text-textColorNeutralBlack_0C092A">
-          37{" "}
+          {selectedOption === "Monthly" ? monthly : annual}{" "}
           <span className="font-Rubik font-medium text-base text-[#807CA7]">
             {" "}
             / 50

@@ -9,8 +9,10 @@ import {
 import { setAddQuiz } from "../quizzesSlice";
 import { useDispatch, useSelector } from "react-redux";
 import convertFileToBase64ForAllTypeFiles from "../../App/fileToBase64";
+import { format } from "date-fns";
 
 export default function CreateQuizModal() {
+  const token = JSON.parse(localStorage.getItem("token"));
   const languageArray = useSelector((state) => state.language.languageArray);
   const dispatch = useDispatch();
   const formik = useFormik({
@@ -33,8 +35,14 @@ export default function CreateQuizModal() {
           title: values.addQuizTitle,
           description: values.addQuizDescription,
           coverImage: values.addCoverFile,
-          createdDate: new Date().toLocaleString(),
+          createdDate: format(new Date(), "MM/dd/yyyy HH:mm:ss"),
           timesPlayed: 0,
+          creator: {
+            firstName: token.firstName,
+            lastName: token.lastName,
+            userId: token.userId,
+            avatar: token.avatar,
+          },
         };
         dispatch(setAddQuiz(newQuiz));
         dispatch(setCreateQuizModal(false));

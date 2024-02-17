@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setFavorites } from "./favoritesSlice";
 import { useEffect, useState } from "react";
-import heart from "./images/heartUnfilled.svg";
 import heartRed from "./images/heartRed.svg";
 
 export default function FavoritesItem({

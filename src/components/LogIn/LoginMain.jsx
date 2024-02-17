@@ -29,7 +29,7 @@ export default function LoginMain() {
 
   const userData = useSelector((state) => state.userData.users);
 
-  console.log(userData);
+  // console.log(userData);
   const formik = useFormik({
     initialValues: {
       emailLogin: "",
@@ -50,11 +50,16 @@ export default function LoginMain() {
     );
 
     if (matchedEmail && matchedPassword) {
+      const enteredUser = userData?.filter(
+        (user) => user.email === formik.values.emailLogin
+      );
+      localStorage.setItem("token", JSON.stringify(enteredUser[0]));
+
       dispatch(setLoginStatus(true));
       navigate("/");
-      console.log(setLoginStatus);
       formik.values.emailLogin = "";
       formik.values.passwordLogin = "";
+      return enteredUser;
     } else if (matchedEmail && !matchedPassword) {
       console.log(
         "You entered the wrong password. If you forget the password, please click to reset your password"
@@ -132,7 +137,7 @@ export default function LoginMain() {
           <img
             src={Email}
             alt="lockIcon"
-            className="top-0 left-0 absolute translate-x-4 translate-y-[1.15rem]"
+            className="top-0 left-0 absolute translate-x-4 translate-y-4"
           />
           <input
             id="emailLogin"
@@ -165,7 +170,7 @@ export default function LoginMain() {
           <img
             src={Lock}
             alt="lockIcon"
-            className="top-0 left-0 absolute translate-x-4 translate-y-[1.1rem]"
+            className="top-0 left-0 absolute translate-x-4 translate-y-4"
           />
           <div
             onClick={() => {

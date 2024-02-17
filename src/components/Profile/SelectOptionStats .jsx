@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const SelectOptionStats = ({ selectedOption, setSelectedOption }) => {
   const languageArray = useSelector((state) => state.language.languageArray);
   const [showOptions, setShowOptions] = useState(false);
-  const options = ["Montly", "Annual"];
+  const options = ["Monthly", "Annual"];
   const handleSelectChange = (option) => {
     setSelectedOption(option);
     setShowOptions(false);

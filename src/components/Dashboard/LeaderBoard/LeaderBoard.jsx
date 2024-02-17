@@ -1,6 +1,6 @@
 import LeaderboardButton from "./LeaderboardButton";
 import Podium from "./Podium";
-import { UsersData } from "./LeaderBoardData";
+// import { UsersData } from "./LeaderBoardData";
 import { useEffect, useState } from "react";
 import LeaderboardButtonMobile from "./LeaderBoardButtonMobile";
 import { useNavigate } from "react-router-dom";
@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 export default function LeaderBoard() {
   const languageArray = useSelector((state) => state.language.languageArray);
   const [viewType, setViewType] = useState("Weekly");
+  const users = useSelector((state) => state?.login?.users);
   const [leaderBoardData, setLeaderBoardData] = useState([]);
   const navigate = useNavigate();
 
@@ -18,33 +19,37 @@ export default function LeaderBoard() {
         const OneWeekInMseconds = 7 * 24 * 60 * 60 * 1000;
         const dateNowInMseconds = new Date().getTime();
         const OneWeek_AGO_InMseconds = dateNowInMseconds - OneWeekInMseconds;
-        const WeeklyData = UsersData.map((users) => ({
-          Name: users.Name,
-          Surname: users.Surname,
-          avatar: users.avatar,
-          country: users.country,
-          pointsTotal: users.pointsTotal.reduce((acc, entry) => {
-            const gainedPointInMseconds = new Date(entry.gainedDate).getTime();
-            if (gainedPointInMseconds >= OneWeek_AGO_InMseconds) {
-              acc += entry.point;
-            }
-            return acc;
-          }, 0),
-        }))
+        const WeeklyData = users
+          .map((users) => ({
+            Name: users.firstName,
+            Surname: users.lastName,
+            avatar: users.avatar,
+            country: users.country,
+            pointsTotal: users.pointsTotal.reduce((acc, entry) => {
+              const gainedPointInMseconds = new Date(
+                entry.gainedDate
+              ).getTime();
+              if (gainedPointInMseconds >= OneWeek_AGO_InMseconds) {
+                acc += entry.point;
+              }
+              return acc;
+            }, 0),
+          }))
           .sort((a, b) => b.pointsTotal - a.pointsTotal)
           .slice(0, 3);
         setLeaderBoardData(WeeklyData);
       } else if (viewType === "All Time") {
-        const AllTimesData = UsersData.map((users) => ({
-          Name: users.Name,
-          Surname: users.Surname,
-          avatar: users.avatar,
-          country: users.country,
-          pointsTotal: users.pointsTotal.reduce((acc, entry) => {
-            acc += entry.point;
-            return acc;
-          }, 0),
-        }))
+        const AllTimesData = users
+          .map((users) => ({
+            Name: users.firstName,
+            Surname: users.lastName,
+            avatar: users.avatar,
+            country: users.country,
+            pointsTotal: users.pointsTotal.reduce((acc, entry) => {
+              acc += entry.point;
+              return acc;
+            }, 0),
+          }))
           .sort((a, b) => b.pointsTotal - a.pointsTotal)
           .slice(0, 3);
         setLeaderBoardData(AllTimesData);

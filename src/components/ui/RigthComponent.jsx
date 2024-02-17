@@ -15,15 +15,15 @@ import DiscoverMain from "../Discover/DiscoverMain";
 import QuizPlayPage from "../Discover/QuizPlayPage/QuizPlayPage";
 import QuizLibraryMain from "../QuizLibary/QuizLibraryMain/QuizLibraryMain";
 import QuizSettings from "../QuizLibary/QuizSettings/QuizSettings";
-import { useLayoutEffect } from "react";
+// import { useLayoutEffect } from "react";
 
 export default function RigthComponent() {
-  const navigate = useNavigate();
-  useLayoutEffect(() => {
-    if (window.location.pathname !== "/") {
-      navigate("/");
-    }
-  }, []);
+  // const navigate = useNavigate();
+  // useLayoutEffect(() => {
+  //   if (window.location.pathname !== "/") {
+  //     navigate("/");
+  //   }
+  // }, []);
   return (
     <div className="flex flex-col h-full w-full lg:w-[81.67%] lg:h-full">
       <Routes>

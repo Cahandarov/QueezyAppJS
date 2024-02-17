@@ -4,11 +4,11 @@ import LogoutModal from "./LogoutModal";
 import Modal from "./Modal";
 import { useState } from "react";
 import "primeicons/primeicons.css";
-import AvatarLetter from "./AvatarLetter";
 import { useDispatch, useSelector } from "react-redux";
 import { setLogoutModal } from "./uiSlice";
 import { setLanguage, setLanguageArray } from "./languageSlice";
 import { aze, eng } from "./languageData";
+import AvatarColoredHeader from "./AvatarColoredHeader";
 
 export default function HeaderRigth() {
   const dispatch = useDispatch();
@@ -16,6 +16,8 @@ export default function HeaderRigth() {
   const logoutModal = useSelector((state) => state.ui.logoutModal);
   const language = useSelector((state) => state.language.language);
   const languageArray = useSelector((state) => state.language.languageArray);
+  const token = JSON.parse(localStorage.getItem("token"));
+
   function HandleShowModal() {
     setShowModal(true);
   }
@@ -53,8 +55,11 @@ export default function HeaderRigth() {
       >
         <img src={searchIcon} alt="searcIcon" />
       </button>
-      <div className="w-7 h-7 md:w-14 md:h-14 flex justify-center items-center rounded-full bg-secondColor">
-        <AvatarLetter />
+      <div className="w-7 h-7 md:w-14 md:h-14 flex justify-center items-center rounded-full">
+        <AvatarColoredHeader
+          name={token?.firstName}
+          surname={token?.lastName}
+        />
       </div>
       <div
         id="header_rigth_rigth"
@@ -91,7 +96,7 @@ export default function HeaderRigth() {
             id="user_name"
             className="font-medium text-base md:text-2xl font-Rubik text-black"
           >
-            Madelyn Dias
+            {token?.firstName} {token?.lastName}
           </p>
           <button
             onClick={(e) => {

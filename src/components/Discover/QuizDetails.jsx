@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import questionIcon from "./images/questionIcon.svg";
 import pointsIcon from "./images/pointsIcon.svg";
-import avatarPNG from "./images/Avatar.png";
 import SuggestedQuizItem from "./SuggestedQuizItem";
 import { useNavigate } from "react-router-dom";
 import { setDashboardMainPage } from "../Dashboard/dashboardSlice";
@@ -20,6 +19,7 @@ import {
   setQuizPlayStatus,
   setRunningTime,
 } from "./QuizPlayPage/quizPlaySlice";
+import QuizDetailsAvatar from "./QuizDetailsAvatar";
 
 export default function QuizDetails() {
   const languageArray = useSelector((state) => state.language.languageArray);
@@ -123,7 +123,7 @@ export default function QuizDetails() {
           <img
             src={selectedQuiz.coverImage}
             alt="Cover Image"
-            className="w-full max-h-[23rem] mb-6"
+            className="w-[80%] max-h-[23rem] mb-6 mx-auto"
           />
           <p className="font-Rubik font-medium text-base text-[#858494] uppercase">
             {selectedQuiz.categoryName}
@@ -153,16 +153,24 @@ export default function QuizDetails() {
             {selectedQuiz.description}
           </p>
           <div className="w-full flex items-center mt-6 gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#C4D0FB] flex justify-center items-center ">
-              <img
-                src={avatarPNG}
-                alt="Avatar"
-                className="w-[2.4rem] h-[2.5rem]"
+            {selectedQuiz?.creator?.avatar ? (
+              <div className="w-12 h-12 rounded-full bg-[#C4D0FB] flex justify-center items-center ">
+                <img
+                  src={selectedQuiz?.creator?.avatar}
+                  alt="Avatar"
+                  className="w-[2.4rem] h-[2.5rem]"
+                />
+              </div>
+            ) : (
+              <QuizDetailsAvatar
+                name={selectedQuiz?.creator?.firstName}
+                surname={selectedQuiz?.creator?.lastName}
               />
-            </div>
+            )}
             <div className="flex flex-col item-start gap-1">
               <p className="font-Rubik font-medium text-base text-textColorNeutralBlack_0C092A">
-                Brandon Curtis
+                {selectedQuiz?.creator?.firstName}{" "}
+                {selectedQuiz?.creator?.lastName}
               </p>
               <p className="font-Rubik font-normal text-sm text-[#858494]">
                 {languageArray[0].Creator}

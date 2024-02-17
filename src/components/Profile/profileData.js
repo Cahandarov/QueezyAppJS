@@ -8,7 +8,7 @@ import badge2 from "../Profile/images/badge2.png";
 import badge3 from "../Profile/images/badge3.png";
 import badge4 from "../Profile/images/badge4.png";
 import badge5 from "../Profile/images/badge5.png";
-import badge6 from "../Profile/images/badge6.png";
+
 const profileData = [
   { image: localRank, text: "localRank", text2: "#56" },
   { image: star, text: "Points", text2: "590" },
@@ -22,6 +22,6 @@ const badges = [
   { badge: badge3, badgeName: "learningLuminary" },
   { badge: badge4, badgeName: "badgeCollector" },
   { badge: badge5, badgeName: "queenOfQuizzes" },
-  { badge: badge6, badgeName: "quizWarrior" },
+  { badge: badge5, badgeName: "quizWarrior" },
 ];
 export { profileData, badges };

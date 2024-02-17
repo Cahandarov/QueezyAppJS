@@ -1,33 +1,11 @@
 import Logo from "../Images/Logo_Queezy_Dark.svg";
 import LogoText from "../Images/Queezy_Text_Dark.svg";
 import UserIcon from "../Images/UserIcon.svg";
-import { useDispatch } from "react-redux";
-import { setRegisteredStatus } from "../userSlice";
-import { setSignUpStages } from "../userSlice";
-import { setLoginStatus } from "../userSlice";
 import { MyContext } from "./SignUpContext";
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function SignUpAddNameAndSurname() {
   const formik = useContext(MyContext);
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-
-  if (!formik) {
-    return null;
-  }
-
-  function getNameAndSurName() {
-    if (formik.values.nameSignUp && formik.values.surNameSignUp) {
-      console.log(formik.values.nameSignUp);
-      console.log(formik.values.surNameSignUp);
-      dispatch(setSignUpStages("idle"));
-      dispatch(setRegisteredStatus(true));
-      dispatch(setLoginStatus(true));
-      navigate("/");
-    }
-  }
 
   return (
     <div className="w-full h-full flex flex-col mx-auto items-start justify-center lg:items-start lg:justify-start ">
@@ -101,10 +79,6 @@ export default function SignUpAddNameAndSurname() {
       </div>
 
       <input
-        onClick={(e) => {
-          e.preventDefault();
-          getNameAndSurName();
-        }}
         type="submit"
         value="Complete Account"
         className="w-[66%] h-[3.3rem] min-w-[240px] mx-auto lg:mx-0 font-medium text-base font-Rubik text-white rounded-[1.25rem] flex items-center justify-center bg-primaryColor mt-6 hover:bg-secondColor hover:border-secondColor focus:outline-none focus:ring focus:ring-secondColor focus:ring-offset-2 transition-colors duration-300"

@@ -171,10 +171,19 @@ nav .active .navButtons img > path {
   animation-timing-function: ease;
   animation-delay: 0s;
 }
-/* .p-chart {
-  color: white;
-} */
-
-/* .p-chart canvas {
-  color: white;
-} */
+@keyframes zerotoTop {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    top: 100px;
+    opacity: 1;
+  }
+}
+.chart {
+  animation-name: zerotoTop;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+}

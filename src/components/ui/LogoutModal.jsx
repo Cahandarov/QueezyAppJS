@@ -5,23 +5,33 @@ import { useDispatch, useSelector } from "react-redux";
 import { setLoginStatus } from "../LogIn/userSlice";
 import { useNavigate } from "react-router-dom";
 import { setLogoutModal } from "../ui/uiSlice";
+import AvatarLogoutModal from "./AvatarLogoutModal";
 
 export default function LogoutModal() {
   const languageArray = useSelector((state) => state.language.languageArray);
+  const token = JSON.parse(localStorage.getItem("token"));
   const dispatch = useDispatch();
   const navigate = useNavigate();
   function LogOut(event) {
     event.stopPropagation();
     dispatch(setLoginStatus(false));
     dispatch(setLogoutModal(false));
+    localStorage.removeItem("token");
     navigate("/login");
   }
 
   return (
     <div className="w-[320px] h-[310px] rounded-[4px] px-4 items-center absolute top-0 right-0 z-20 bg-white dashboard_boxes2 translate-y-[82px] translate-x-10 flex flex-col">
       <div className="flex items-center justify-start gap-5  px-4 py-4 w-[98%] border shadow-md rounded-lg mx-auto mt-2">
-        <div className="w-10 h-10 rounded-full bg-secondColor"></div>
-        <p className="font-normal text-xl font-Rubik">Madelyn Dias</p>
+        <div className="w-10 h-10 rounded-full ">
+          <AvatarLogoutModal
+            name={token?.firstName}
+            surname={token?.lastName}
+          />
+        </div>
+        <p className="font-normal text-xl font-Rubik">
+          {token?.firstName} {token?.lastName}
+        </p>
       </div>
       <div
         onClick={() => navigate("/profile")}

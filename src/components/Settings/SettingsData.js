@@ -12,12 +12,13 @@ const buttonData = [
   {
     image: mail,
     text1: "changeEmail",
-    text2: "madias@yahoo.com",
+    text2: "email",
   },
   {
     image: lock,
     text1: "changePassword",
     text2: "lastPasswordChanges",
+    text3: "lastPasswordChanges2",
   },
   {
     image: portrait,

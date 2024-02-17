@@ -3,11 +3,23 @@ import SignUpAddEmail from "./SignUpAddEmail";
 import SignUpAddPassword from "./SignUpAddPassword";
 import SignUpAddNameAndSurname from "./SignUpAddNameAndSurname";
 import SignUpAddCountry from "./SignUpAddCountry";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useFormik } from "formik";
 import { MyContext } from "./SignUpContext";
+import { format } from "date-fns";
+import {
+  postNewUserThunk,
+  setAddUser,
+  setLoginStatus,
+  setRegisteredStatus,
+  setSignUpStages,
+} from "../userSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const formik = useFormik({
     initialValues: {
       emailSignUp: "",
@@ -19,6 +31,40 @@ export default function SignUp() {
     // validationSchema:validation
     onSubmit: (values) => {
       console.log(values);
+
+      if (!formik) {
+        return;
+      }
+
+      const newUser = {
+        id: Date.now(),
+        firstName: formik.values.nameSignUp,
+        lastName: formik.values.surNameSignUp,
+        email: formik.values.emailSignUp,
+        password: formik.values.passwordSignUp,
+        country: formik.values.countrySignUp,
+        registerDate: format(new Date(), "MM/dd/yyyy HH:mm:ss"),
+        lastChangeDateOfPassword: format(new Date(), "MM/dd/yyyy HH:mm:ss"),
+        avatar: "",
+        briefInfo: "",
+        pointsTotal: [],
+        favorites: [],
+        badges: [],
+        playedQuizzes: [],
+        createdQuizzes: [],
+      };
+      dispatch(setAddUser(newUser));
+      dispatch(postNewUserThunk(newUser));
+
+      if (newUser) {
+        localStorage.setItem("token", JSON.stringify(newUser));
+        dispatch(setSignUpStages("idle"));
+        dispatch(setRegisteredStatus(true));
+        dispatch(setLoginStatus(true));
+        navigate("/");
+      } else {
+        console.error("Entered user not found in userData");
+      }
     },
   });
 

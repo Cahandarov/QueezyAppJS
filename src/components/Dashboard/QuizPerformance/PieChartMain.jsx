@@ -1,6 +1,8 @@
 import { PieChart, pieArcLabelClasses } from "@mui/x-charts/PieChart";
+import { useSelector } from "react-redux";
 
 export default function PieChartMain({ totalLength, sortedData }) {
+  const languageArray = useSelector((state) => state.language.languageArray);
   const value1 =
     (sortedData &&
       sortedData[0] &&
@@ -30,7 +32,7 @@ export default function PieChartMain({ totalLength, sortedData }) {
       color: "#C4D0FB",
     },
     {
-      label: "Other",
+      label: languageArray[0].other,
       value: 100 - (value1 + value2 + value3),
       color: "#C4B0FB",
     },
@@ -119,7 +121,7 @@ export default function PieChartMain({ totalLength, sortedData }) {
               id="data4_in_pieChart"
               className="font-medium text-base font-Rubik text-[#49465F]"
             >
-              Other
+              {languageArray[0].other}
             </p>
           </div>
 
