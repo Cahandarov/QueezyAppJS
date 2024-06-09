@@ -1,8 +1,18 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Queezy React APP
 
-Currently, two official plugins are available:
+Before npm run dev in terminal run 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+json-server --watch db.json 
+
+json-server --watch users.json --port 8000
+
+npm run dev
+
+Contact
+
+If you have any questions, suggestions, or need support, you can contact me through the following:
+cahandarov@gmail.com
+
+
+
